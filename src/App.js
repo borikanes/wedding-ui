@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import './Topheader.css'
 
@@ -38,6 +38,13 @@ class TopHeader extends Component {
         </div>
         <div className="Header-title">
           <h1>Mallory & Bori</h1>
+        </div>
+        <div className="Header-nav-buttons-div">
+        <a className="Header-nav-buttons-first">HOME</a>
+        <a className="Header-nav-buttons">WEDDING PARTY</a>
+        <a className="Header-nav-buttons">REGISTRY</a>
+        <a className="Header-nav-buttons">RSVP</a>
+        <a className="Header-nav-buttons">FAQs</a>
         </div>
       </div>
     );
