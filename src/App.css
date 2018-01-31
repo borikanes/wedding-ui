@@ -43,3 +43,10 @@
   padding: 1px 20px; 
   color: white;
 }
+
+@media only screen and (max-width : 600px) {
+  .App-header {
+    height: 4.0em;
+    padding: 1px 0.625em;
+  }
+}

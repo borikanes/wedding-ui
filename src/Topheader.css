@@ -35,7 +35,6 @@
     font-size: 1.2em;
     letter-spacing: 0.7em;
     margin-top: -1em;
-
 }
 
 .Header-nav-buttons-div {
@@ -60,4 +59,49 @@
 .Header-nav-buttons-first:hover {
     text-decoration: underline;
     color: teal;
+}
+
+/* hide hamburger menu */
+.Header-hamburger-div {
+    display: none;
+}
+
+@media only screen and (max-width : 600px) {
+    .Top-row-div {
+        display: none
+    }
+
+    .Header-title {
+        float: left;
+        font-size: 1em;
+        letter-spacing: 0.5em;
+        margin-top: -3.55em;
+    }
+
+    .Header-nav-buttons-div {
+        display: none;
+    }
+
+    .Header-hamburger-div {
+        width: 40px !important;
+        float: right;
+        margin-top: -27px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .Top-row-div {
+        display: none
+    }
+
+    .Header-title {
+        float: left;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        margin-top: -3.7em;
+    }
+
+    .Header-nav-buttons-div {
+        display: none;
+    }
 }

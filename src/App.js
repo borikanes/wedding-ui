@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import './Topheader.css'
 
@@ -45,6 +45,9 @@ class TopHeader extends Component {
         <a className="Header-nav-buttons">REGISTRY</a>
         <a className="Header-nav-buttons">RSVP</a>
         <a className="Header-nav-buttons">FAQs</a>
+        </div>
+        <div className="Header-hamburger-div">
+          <a><i className="fa fa-bars fa-2x nav-bar-a"></i></a>
         </div>
       </div>
     );
