@@ -25,9 +25,6 @@ export default class TopHeader extends Component {
           <a className="Header-nav-buttons">RSVP</a>
           <a className="Header-nav-buttons">FAQs</a>
           </div>
-          {/* <div className="Header-hamburger-div">
-            <a><i className="fa fa-bars fa-2x nav-bar-a"></i></a>
-          </div> */}
           <DropDown />
         </div>
       );
@@ -60,8 +57,9 @@ class DropDown extends Component {
         );
       } else {
         return(
-          <div>
-          </div>
+            <div className="Header-hamburger-div">
+                <a onClick={this.toggleDropDownBool}><i className="fa fa-close fa-2x nav-bar-a"></i></a>
+            </div>
         );
       }
     }
