@@ -86,7 +86,9 @@
         width: 40px !important;
         float: right;
         margin-top: -27px;
+        display: block;
     }
+
 }
 
 @media only screen and (max-width : 480px) {
