@@ -44,7 +44,7 @@
   color: white;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 610px) {
   .App-header {
     height: 4.0em;
     padding: 1px 0.625em;

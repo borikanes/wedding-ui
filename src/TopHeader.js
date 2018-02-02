@@ -51,15 +51,21 @@ class DropDown extends Component {
     render() {
       if (!this.state.isDown) {
         return(
-            <div className="Header-hamburger-div">
-                <a onClick={this.toggleDropDownBool}><i className="fa fa-bars fa-2x nav-bar-a"></i></a>
-            </div>
+          <div className="Header-hamburger-div">
+              <a onClick={this.toggleDropDownBool}><i className="fa fa-bars fa-2x nav-bar-a"></i></a>
+          </div>
         );
       } else {
         return(
+          <div>
             <div className="Header-hamburger-div">
                 <a onClick={this.toggleDropDownBool}><i className="fa fa-close fa-2x nav-bar-a"></i></a>
             </div>
+            <div></div>
+            <div className="Header-dropdown-div">
+
+            </div>
+          </div>
         );
       }
     }
