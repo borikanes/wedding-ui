@@ -6,11 +6,10 @@ import './Topheader.css'
 
 class DropDown extends Component {
 
+    // if you click outside the drop down menu it will set isDown to false thereby
+    // dismissing it 
     handleClickOutside = evt => {
-      // ..handling code goes here...
-      console.log('OUTSIDE CLICK');
-      
-      var dropdownRootDiv = document.getElementById('dropdown-root');
+      let dropdownRootDiv = document.getElementById('dropdown-root');
       if (dropdownRootDiv) {
         this.setState({isDown: false});
       } 
@@ -60,4 +59,4 @@ class DropDown extends Component {
     }
 }
 
-  export default onClickOutside(DropDown);
+export default onClickOutside(DropDown);

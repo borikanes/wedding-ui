@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
-import './Topheader.css'
-import TopHeader from './TopHeader.js'
+import './Topheader.css';
+import TopHeader from './TopHeader.js';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          < TopHeader />
-        </header>
-        <h1 className="App-body">
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    < TopHeader />
+                </header>
+                <h1 className="App-body">
           Save the Date!
-        </h1>
-        <p className="App-body-detail">Mallory & Bori</p>
-        <p className="App-body-detail">September 22, 2018</p>
+                </h1>
+                <p className="App-body-detail">Mallory & Bori</p>
+                <p className="App-body-detail">September 22, 2018</p>
 
-      </div>
-    );
-  }
+            </div>
+        );
+    }
 }
 
 export default App;
