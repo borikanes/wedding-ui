@@ -66,6 +66,10 @@
     display: none;
 }
 
+.Header-dropdown-div {
+    display: none;
+}
+
 @media only screen and (max-width : 610px) {
     .Top-row-div {
         display: none
@@ -90,12 +94,60 @@
     }
 
     .Header-dropdown-div {
-        background-color: black;
         width: 110%;
-        height: 3.125em;
+        height: 18em;
         display: inline-block;
         margin-top: -0.71875em;
         margin-left: -1.25em;
+        background-color: #800020;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        animation-name: dropdown;
+        animation-duration: 1s;
+    }
+
+    .Header-dropdown-buttons-div {
+        height: 100%;
+        width: 100%;
+        /* animation-name: buttonsfade;
+        animation-duration: 0.2s;
+        animation-delay: 1.5s; */
+    }
+
+    .Header-dropdown-each-button {
+        display: block;
+        margin-bottom: 20px;
+        margin-block-start: 10px;
+        font-size: 1.5em;
+        /* animation-name: buttonsfade;
+        animation-duration: 0.2s;
+        animation-delay: 1.5s;
+        opacity: 1; */
+    }
+
+    .Header-dropdown-each-button:hover {
+        text-decoration: underline;
+        color: teal;
+    }
+
+    @keyframes dropdown {
+        from { 
+            height: 0em;
+        }
+        to { 
+            height: 18em; 
+        }
+    }
+
+    @keyframes buttonsfade {
+        from {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        to {
+            opacity: 1.0;
+            filter: alpha(opacity=100);
+        }
     }
 }
 

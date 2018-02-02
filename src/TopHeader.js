@@ -19,11 +19,11 @@ export default class TopHeader extends Component {
             <h1>Mallory & Bori</h1>
           </div>
           <div className="Header-nav-buttons-div">
-          <a className="Header-nav-buttons-first">HOME</a>
-          <a className="Header-nav-buttons">WEDDING PARTY</a>
-          <a className="Header-nav-buttons">REGISTRY</a>
-          <a className="Header-nav-buttons">RSVP</a>
-          <a className="Header-nav-buttons">FAQs</a>
+            <a className="Header-nav-buttons-first">HOME</a>
+            <a className="Header-nav-buttons">WEDDING PARTY</a>
+            <a className="Header-nav-buttons">REGISTRY</a>
+            <a className="Header-nav-buttons">RSVP</a>
+            <a className="Header-nav-buttons">FAQs</a>
           </div>
           <DropDown />
         </div>
@@ -63,7 +63,11 @@ class DropDown extends Component {
             </div>
             <div></div>
             <div className="Header-dropdown-div">
-
+              <a className="Header-dropdown-each-button">HOME</a>
+              <a className="Header-dropdown-each-button">WEDDING PARTY</a>
+              <a className="Header-dropdown-each-button">REGISTRY</a>
+              <a className="Header-dropdown-each-button">RSVP</a>
+              <a className="Header-dropdown-each-button">FAQs</a>
             </div>
           </div>
         );
