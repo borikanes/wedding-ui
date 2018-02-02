@@ -11,11 +11,14 @@ class App extends Component {
                 <header className="App-header">
                     < TopHeader />
                 </header>
-                <h1 className="App-body">
-          Save the Date!
+                <div className="App-top-image-div">
+
+                </div>
+                {/* <h1 className="App-body">
+                  Save the Date!
                 </h1>
                 <p className="App-body-detail">Mallory & Bori</p>
-                <p className="App-body-detail">September 22, 2018</p>
+                <p className="App-body-detail">September 22, 2018</p> */}
 
             </div>
         );
