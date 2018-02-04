@@ -7,8 +7,9 @@ export default class HomePage extends Component {
     render() {
         return (
             <div className="Homepage-top-image-div">
-                <div className="Homepage-top-image">
-
+                <div className="Homepage-top-image"></div>
+                <div className="Homepage-top-image-text-div">
+                    <h1>We're getting married!</h1>
                 </div>
             </div>
         );

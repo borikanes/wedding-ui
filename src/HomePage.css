@@ -3,6 +3,19 @@
     width: 100%;
     background-size: cover;
     position: relative;
+    font-family: 'Merienda One', cursive;
+    z-index: -1;
+}
+
+.Homepage-top-image-text-div {
+    width: 100%;
+    margin-top: -110px;
+    color: white;
+    vertical-align: middle;
+}
+
+.Homepage-top-image-text-div h1 {
+    margin: 0;
 }
 
 .Homepage-top-image {
@@ -15,37 +28,43 @@
 
 @media only screen and (max-width : 660px) {
     .Homepage-top-image-div {
-        height: 440px;
-        width: 100%;
-        background-size: cover;
-        position: relative;
+        height: 420px;
     }
+/* 
+    .Homepage-top-image-text-div {
+        margin-top: -150px;
+    } */
 }
 
 @media only screen and (max-width : 570px) {
     .Homepage-top-image-div {
         height: 400px;
-        width: 100%;
-        background-size: cover;
-        position: relative;
     }
 }
 
 @media only screen and (max-width : 510px) {
     .Homepage-top-image-div {
         height: 300px;
-        width: 100%;
-        background-size: cover;
-        position: relative;
     }
 }
 
 @media only screen and (max-width : 445px) {
     .Homepage-top-image-div {
         height: 250px;
-        width: 100%;
-        background-size: cover;
-        position: relative;
+    }
+
+    .Homepage-top-image-text-div {
+        margin-top: -80px;
+        font-size: 0.75em;
     }
 }
 
+/* @media only screen and (max-width : 445px) {
+    .Homepage-top-image-text-div {
+        width: 100%;
+        margin-top: -80px;
+        color: white;
+        vertical-align: middle;
+        font-size: 0.75em;
+    }
+} */
