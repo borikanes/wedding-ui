@@ -1,0 +1,51 @@
+.Homepage-top-image-div {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.Homepage-top-image {
+    height: 100%;
+    width: 100%;
+    background: url("home-picture.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width : 660px) {
+    .Homepage-top-image-div {
+        height: 440px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 570px) {
+    .Homepage-top-image-div {
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 510px) {
+    .Homepage-top-image-div {
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 445px) {
+    .Homepage-top-image-div {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+}
+

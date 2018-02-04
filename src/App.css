@@ -24,12 +24,6 @@
   color: white;
 }
 
-.App-top-image-div {
-  height: 500px;
-  width: 100%;
-  background-color: black;
-}
-
 @media only screen and (max-width : 610px) {
   .App-header {
     height: 4.0em;

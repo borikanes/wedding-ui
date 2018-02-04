@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import './Topheader.css';
 import TopHeader from './TopHeader.js';
+import HomePage from './HomePage.js';
 
 class App extends Component {
     render() {
@@ -11,9 +12,8 @@ class App extends Component {
                 <header className="App-header">
                     < TopHeader />
                 </header>
-                <div className="App-top-image-div">
-
-                </div>
+                < HomePage />
+                
                 {/* <h1 className="App-body">
                   Save the Date!
                 </h1>
