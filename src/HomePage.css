@@ -40,12 +40,23 @@
 
 .Homepage-mid-innerbase-div {
     top: 40px;
-    background-color: white;
+    background-color: rgb(247, 247, 234);
     height: 1000px;
     width: 80%;
     position: relative;
     display: inline-block;
 }
+
+.Homepage-mid-name-div {
+    top: 40px;
+    background-color: black;
+    height: 400px;
+    width: 60%;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;  
+}
+
 
 @media only screen and (max-width : 660px) {
     .Homepage-top-image-div {

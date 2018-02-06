@@ -12,7 +12,9 @@ export default class HomePage extends Component {
                 </div>
                 <div className="Homepage-mid-base-div">
                     <div className="Homepage-mid-innerbase-div">
-
+                        <div className="Homepage-mid-name-div">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
