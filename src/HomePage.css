@@ -40,11 +40,26 @@
 
 .Homepage-mid-innerbase-div {
     top: 40px;
-    background-color: rgb(247, 247, 234);
+    background-color: white;
     height: 1000px;
     width: 80%;
     position: relative;
     display: inline-block;
+    /* border-radius: 75px; */
+}
+
+.Homepage-mid-top-left-arc-div {
+    height: 70px;
+    width: 70px;
+    float: left;
+    background-image: url("top-left.png");
+}
+
+.Homepage-mid-top-right-arc-div {
+    height: 70px;
+    width: 70px;
+    float: right;
+    background-image: url("top-right.png");
 }
 
 .Homepage-mid-name-div {
@@ -54,9 +69,61 @@
     width: 60%;
     position: relative;
     display: inline-flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.Homepage-mid-bottom-left-arc-div {
+    height: 70px;
+    width: 70px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("bottom-left.png");
+}
+
+.Homepage-mid-bottom-right-arc-div {
+    height: 70px;
+    width: 70px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("bottom-right.png");
+}
+
+@media only screen and (max-width : 767px) {
+    .Homepage-mid-top-left-arc-div {
+        height: 35px;
+        width: 35px;
+        float: left;
+        background-image: url("top-left-35.png");
+    }
+    
+    .Homepage-mid-top-right-arc-div {
+        height: 35px;
+        width: 35px;
+        float: right;
+        background-image: url("top-right-35.png");
+    }
+
+    .Homepage-mid-bottom-left-arc-div {
+        height: 35px;
+        width: 35px;
+        /* left: 0px;
+        bottom: 0px; */
+        position: absolute;
+        background-image: url("bottom-left-35.png");
+    }
+    
+    .Homepage-mid-bottom-right-arc-div {
+        height: 35px;
+        width: 35px;
+        /* right: 0px;
+        bottom: 0px; */
+        position: absolute;
+        background-image: url("bottom-right-35.png");
+    }
+}
 
 @media only screen and (max-width : 660px) {
     .Homepage-top-image-div {
