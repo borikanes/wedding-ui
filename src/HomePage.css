@@ -34,8 +34,7 @@
     background-color: #800020;
     margin-top: 50px;
     text-align: center;
-    vertical-align: middle;
-    /* display: table-cell; */
+    /* vertical-align: middle; */
 }
 
 .Homepage-mid-innerbase-div {
@@ -45,7 +44,6 @@
     width: 80%;
     position: relative;
     display: inline-block;
-    /* border-radius: 75px; */
 }
 
 .Homepage-mid-top-left-arc-div {
@@ -65,12 +63,50 @@
 .Homepage-mid-name-div {
     top: 40px;
     background-color: black;
-    height: 400px;
+    height: 300px;
     width: 60%;
     position: relative;
     display: inline-flex;
-    flex-wrap: wrap;
+    /* display: flex; */
     justify-content: center;
+}
+
+.Homepage-mid-name-ampersand-div {
+    height: 300px;
+    width: 20%;
+    justify-content: center;
+}
+
+.Homepage-mid-mallory-div {
+    /* height: 70px; */
+    background-color: brown;
+    width: 40%;
+    /* position: flex; */
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.Homepage-mid-mallory-div h1 {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
+}
+
+.Homepage-mid-bori-div {
+    /* height: 70px; */
+    background-color: blue;
+    width: 40%;
+    /* position: flex; */
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.Homepage-mid-bori-div h1 {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
 }
 
 .Homepage-mid-bottom-left-arc-div {
@@ -91,37 +127,42 @@
     background-image: url("bottom-right.png");
 }
 
+@media only screen and (max-width : 1050px) {
+    .Homepage-mid-innerbase-div {
+        height: 1000px;
+        width: 90%;
+        position: relative;
+        display: inline-block;
+    }
+}
+
 @media only screen and (max-width : 767px) {
     .Homepage-mid-top-left-arc-div {
         height: 35px;
         width: 35px;
         float: left;
-        background-image: url("top-left-35.png");
+        background-image: url("top-left-small.png");
     }
     
     .Homepage-mid-top-right-arc-div {
         height: 35px;
         width: 35px;
         float: right;
-        background-image: url("top-right-35.png");
+        background-image: url("top-right-small.png");
     }
 
     .Homepage-mid-bottom-left-arc-div {
         height: 35px;
         width: 35px;
-        /* left: 0px;
-        bottom: 0px; */
         position: absolute;
-        background-image: url("bottom-left-35.png");
+        background-image: url("bottom-left-small.png");
     }
     
     .Homepage-mid-bottom-right-arc-div {
         height: 35px;
         width: 35px;
-        /* right: 0px;
-        bottom: 0px; */
         position: absolute;
-        background-image: url("bottom-right-35.png");
+        background-image: url("bottom-right-small.png");
     }
 }
 
