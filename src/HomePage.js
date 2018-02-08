@@ -5,7 +5,8 @@ import './HomePage.css';
 var ampersandSpanStyle = {
     fontSize: '60px',
     color: 'white',
-    alignItems: 'center'
+    alignItems: 'center',
+    display: 'flex'
 };
 
 
@@ -29,7 +30,7 @@ export default class HomePage extends Component {
                                     <span> McDonald </span>
                                 </h1>
                             </div>
-                            <span>&</span>
+                            <span style={ampersandSpanStyle}>&</span>
                             <div className="Homepage-mid-bori-div">
                                 <h1> 
                                     Oluwabori

@@ -63,8 +63,8 @@
 .Homepage-mid-name-div {
     top: 40px;
     background-color: black;
-    height: 300px;
-    width: 60%;
+    height: 200px;
+    width: 70%;
     position: relative;
     display: inline-flex;
     /* display: flex; */
@@ -81,7 +81,6 @@
     /* height: 70px; */
     background-color: brown;
     width: 40%;
-    /* position: flex; */
     display: flex;
     justify-content: center;
     vertical-align: middle;
@@ -169,6 +168,16 @@
 @media only screen and (max-width : 660px) {
     .Homepage-top-image-div {
         height: 420px;
+    }
+
+    .Homepage-mid-mallory-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 40px;
+    }
+
+    .Homepage-mid-bori-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 40px;
     }
 }
 
