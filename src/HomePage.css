@@ -68,7 +68,7 @@
     position: relative;
     display: inline-flex;
     /* display: flex; */
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .Homepage-mid-name-ampersand-div {
@@ -96,7 +96,6 @@
     /* height: 70px; */
     background-color: blue;
     width: 40%;
-    /* position: flex; */
     display: flex;
     justify-content: center;
     vertical-align: middle;
@@ -179,11 +178,20 @@
         font-family: 'Dancing Script', cursive !important;
         font-size: 40px;
     }
+
+    .Homepage-mid-name-div {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width : 570px) {
     .Homepage-top-image-div {
         height: 400px;
+    }
+
+    .Homepage-mid-name-div {
+        width: 90%;
+        top: 20px;
     }
 }
 
@@ -214,7 +222,7 @@
         position: relative;
         display: inline-flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;;
     }
 
     .Homepage-mid-mallory-div {

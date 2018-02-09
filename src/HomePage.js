@@ -2,18 +2,36 @@ import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './HomePage.css';
 
-var ampersandSpanStyle = {
-    fontSize: '60px',
-    color: 'white',
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'center'
-};
+// var ampersandSpanStyle = {
+//     fontSize: '60px',
+//     color: 'white',
+//     alignItems: 'center',
+//     display: 'flex',
+//     justifyContent: 'center'
+// };
 
 
 export default class HomePage extends Component {
 
     render() {
+        var ampersandSpanStyle;
+        if (window.matchMedia("(min-width: 446px)").matches && window.matchMedia("(max-width: 659px)").matches) {
+            ampersandSpanStyle = {
+                fontSize: '40px',
+                color: 'white',
+                alignItems: 'center',
+                display: 'flex',
+                justifyContent: 'center'
+            };
+        } else {
+            ampersandSpanStyle = {
+                fontSize: '60px',
+                color: 'white',
+                alignItems: 'center',
+                display: 'flex',
+                justifyContent: 'center'
+            };
+        }
         return (
             <div className="Homepage-top-image-div">
                 <div className="Homepage-top-image"></div>
