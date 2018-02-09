@@ -6,7 +6,8 @@ var ampersandSpanStyle = {
     fontSize: '60px',
     color: 'white',
     alignItems: 'center',
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'center'
 };
 
 
