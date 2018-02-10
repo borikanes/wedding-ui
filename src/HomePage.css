@@ -125,6 +125,92 @@
     background-image: url("bottom-right.png");
 }
 
+/* Date and hashtag section */
+
+.Homepage-mid-hashtag-div {
+    background-color: tomato;
+    top: 30px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Homepage-mid-date-base-div {
+    background-color: burlywood;
+    top: 30px;
+    width: 70%;
+    height: 200px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.Homepage-mid-date-month-div {
+    background-color: black;
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Homepage-mid-date-month-div p {
+    color: white;
+    margin: 8px 8px;
+}
+
+.Homepage-mid-date-day-div {
+    background-color: blue;
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.Homepage-mid-date-day-div p {
+    color: black;
+    font-size: 5em;
+}
+
+.Homepage-mid-date-year-div {
+    background-color: red;
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Homepage-mid-hashtag-div {
+    background-color: tomato;
+    top: 30px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Homepage-mid-date-year-div p {
+    color: white;
+    margin: 8px 8px;
+}
+
+.Homepage-horizontal-line {
+    color: red;
+    width: 100%;
+}
+
 @media only screen and (max-width : 1050px) {
     .Homepage-mid-innerbase-div {
         height: 1000px;
@@ -182,6 +268,14 @@
     .Homepage-mid-name-div {
         width: 80%;
     }
+
+    .Homepage-mid-date-base-div {
+        width: 80%;
+    }
+
+    .Homepage-mid-hashtag-div {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width : 570px) {
@@ -193,11 +287,25 @@
         width: 90%;
         top: 20px;
     }
+
+    .Homepage-mid-date-base-div {
+        width: 90%;
+        top: 20px;
+    }
+
+    .Homepage-mid-hashtag-div {
+        width: 90%;
+        top: 20px;
+    }
 }
 
 @media only screen and (max-width : 510px) {
     .Homepage-top-image-div {
         height: 300px;
+    }
+
+    .Homepage-mid-name-div {
+        justify-content: space-around;
     }
 }
 
@@ -222,7 +330,7 @@
         position: relative;
         display: inline-flex;
         flex-direction: column;
-        justify-content: flex-start;;
+        justify-content: flex-start;
     }
 
     .Homepage-mid-mallory-div {
@@ -248,5 +356,14 @@
         height: 20%;
         justify-content: center;
         align-items: center;
+    }
+
+    .Homepage-mid-date-base-div {
+        height: 300px;
+        width: 70%;
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }

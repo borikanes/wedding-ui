@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './HomePage.css';
 
-// var ampersandSpanStyle = {
-//     fontSize: '60px',
-//     color: 'white',
-//     alignItems: 'center',
-//     display: 'flex',
-//     justifyContent: 'center'
-// };
-
 
 export default class HomePage extends Component {
 
@@ -55,6 +47,24 @@ export default class HomePage extends Component {
                                     Oluwabori
                                     <span> Oludemi </span>
                                 </h1>
+                            </div>
+                        </div>
+                        <div className="Homepage-mid-hashtag-div">
+                            <p>#malloryandbori</p>
+                        </div>
+                        <div className="Homepage-mid-date-base-div">
+                            <div className="Homepage-mid-date-month-div">
+                                <hr className="Homepage-horizontal-line" />
+                                <p>September</p>
+                                <hr className="Homepage-horizontal-line" />
+                            </div>
+                            <div className="Homepage-mid-date-day-div">
+                                <p>22</p>
+                            </div>
+                            <div className="Homepage-mid-date-year-div">
+                            <hr className="Homepage-horizontal-line" />
+                                <p>2018</p>
+                                <hr className="Homepage-horizontal-line" />
                             </div>
                         </div>
                         <div className="Homepage-mid-bottom-left-arc-div"></div>
