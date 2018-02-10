@@ -67,6 +67,9 @@ export default class HomePage extends Component {
                                 <hr className="Homepage-horizontal-line" />
                             </div>
                         </div>
+                        <div className="Homepage-mid-location-div" >
+                                <p>College Park, MD</p>
+                        </div>
                         <div className="Homepage-mid-bottom-left-arc-div"></div>
                         <div className="Homepage-mid-bottom-right-arc-div"></div>
                     </div>
