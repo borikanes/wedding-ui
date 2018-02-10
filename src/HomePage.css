@@ -358,6 +358,11 @@
         align-items: center;
     }
 
+    .Homepage-mid-hashtag-div {
+        width: 70%;
+        top: 50px;
+    }
+
     .Homepage-mid-date-base-div {
         height: 300px;
         width: 70%;
@@ -365,5 +370,18 @@
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
+        top: 70px;
+    }
+
+    .Homepage-mid-date-month-div {
+        width: 100%;
+    }
+
+    .Homepage-mid-date-day-div {
+        width: 100%;
+    }
+
+    .Homepage-mid-date-year-div {
+        width: 100%;
     }
 }
