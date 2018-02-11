@@ -9,7 +9,7 @@ export default class HomePage extends Component {
         if (window.matchMedia("(min-width: 446px)").matches && window.matchMedia("(max-width: 659px)").matches) {
             ampersandSpanStyle = {
                 fontSize: '40px',
-                color: 'white',
+                color: 'black',
                 alignItems: 'center',
                 display: 'flex',
                 justifyContent: 'center'
@@ -17,7 +17,7 @@ export default class HomePage extends Component {
         } else {
             ampersandSpanStyle = {
                 fontSize: '60px',
-                color: 'white',
+                color: 'black',
                 alignItems: 'center',
                 display: 'flex',
                 justifyContent: 'center'
