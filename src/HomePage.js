@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './HomePage.css';
 
-
 export default class HomePage extends Component {
 
     render() {
@@ -44,7 +43,7 @@ export default class HomePage extends Component {
                             <span style={ampersandSpanStyle}>&</span>
                             <div className="Homepage-mid-bori-div">
                                 <h1> 
-                                    Oluwabori
+                                    Bori
                                     <span> Oludemi </span>
                                 </h1>
                             </div>
@@ -73,6 +72,11 @@ export default class HomePage extends Component {
                         
                         <div className="Homepage-mid-bottom-horizontal-line-div">
                             <hr className="Homepage-bottom-horizontal-line" />
+                        </div>
+                        <div className="Homepage-mid-initials-div">
+                            <p>M</p>
+                            <div className="Homepage-mid-initials-vertical-line-div" ></div>
+                            <p>B</p>
                         </div>
                         <div className="Homepage-mid-bottom-left-arc-div"></div>
                         <div className="Homepage-mid-bottom-right-arc-div"></div>

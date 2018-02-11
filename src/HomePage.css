@@ -30,7 +30,7 @@
 
 .Homepage-mid-base-div {
     width: 100%;
-    height: 1500px;
+    height: 1000px;
     background-color: #800020;
     margin-top: 50px;
     text-align: center;
@@ -40,7 +40,7 @@
 .Homepage-mid-innerbase-div {
     top: 40px;
     background-color: white;
-    height: 1000px;
+    height: 760px;
     width: 80%;
     position: relative;
     display: inline-block;
@@ -256,9 +256,37 @@
     width: 100%;
 }
 
+.Homepage-mid-initials-div {
+    background-color: gold;
+    top: 100px;
+    width: 40%;
+    height: 120px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
+}
+
+.Homepage-mid-initials-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+@media only screen and (max-width : 1500px) {
+    .Homepage-mid-mallory-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 45px;
+    }
+}
+
 @media only screen and (max-width : 1050px) {
     .Homepage-mid-innerbase-div {
-        height: 1000px;
+        height: 760px;
         width: 90%;
         position: relative;
         display: inline-block;
@@ -373,8 +401,12 @@
     }
 
     .Homepage-mid-base-div {
-        height: 1500px;
+        height: 1300px;
         margin-top: 40px;
+    }
+
+    .Homepage-mid-innerbase-div {
+        height: 1060px;
     }
 
     .Homepage-mid-name-div {
@@ -444,7 +476,15 @@
     }
 
     .Homepage-mid-bottom-horizontal-line-div {
-        top: 120px;
+        top: 130px;
         width: 70%;
+    }
+
+    .Homepage-mid-initials-div {
+        width: 60%;
+    }
+
+    .Homepage-mid-initials-div {
+        top: 155px;
     }
 }
