@@ -100,8 +100,8 @@
         margin-top: -0.71875em;
         margin-left: -1.25em;
         background-color: #800020;
-        opacity: 0.9;
-        filter: alpha(opacity=90);
+        opacity: 0.8;
+        filter: alpha(opacity=80);
         animation-name: dropdown;
         animation-duration: 1s;
     }

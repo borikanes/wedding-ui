@@ -1,0 +1,476 @@
+.Homepage-top-image-div {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    font-family: 'Merienda One', cursive;
+    z-index: -1;
+}
+
+.Homepage-top-image-text-div {
+    width: 100%;
+    margin-top: -110px;
+    color: white;
+    vertical-align: middle;
+}
+
+.Homepage-top-image-text-div h1 {
+    margin: 0;
+}
+
+.Homepage-top-image {
+    height: 100%;
+    width: 100%;
+    background: url("home-picture.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Middle section */
+
+.Homepage-mid-base-div {
+    width: 100%;
+    height: 1000px;
+    background-color: #800020;
+    margin-top: 50px;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+.Homepage-mid-innerbase-div {
+    top: 40px;
+    background-color: white;
+    height: 760px;
+    width: 80%;
+    position: relative;
+    display: inline-block;
+}
+
+.Homepage-mid-top-left-arc-div {
+    height: 70px;
+    width: 70px;
+    float: left;
+    background-image: url("top-left.png");
+}
+
+.Homepage-mid-top-right-arc-div {
+    height: 70px;
+    width: 70px;
+    float: right;
+    background-image: url("top-right.png");
+}
+
+.Homepage-mid-name-div {
+    top: 40px;
+    /* background-color: black; */
+    height: 200px;
+    width: 70%;
+    position: relative;
+    display: inline-flex;
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+
+.Homepage-mid-name-ampersand-div {
+    height: 300px;
+    width: 20%;
+    justify-content: center;
+}
+
+.Homepage-mid-mallory-div {
+    /* background-color: brown; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.Homepage-mid-mallory-div h1 {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
+}
+
+.Homepage-mid-bori-div {
+    /* background-color: blue; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.Homepage-mid-bori-div h1 {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
+}
+
+.Homepage-mid-bottom-left-arc-div {
+    height: 70px;
+    width: 70px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("bottom-left.png");
+}
+
+.Homepage-mid-bottom-right-arc-div {
+    height: 70px;
+    width: 70px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("bottom-right.png");
+}
+
+/* Date and hashtag section */
+
+.Homepage-mid-hashtag-div {
+    /* background-color: tomato; */
+    top: 30px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Homepage-mid-date-base-div {
+    /* background-color: burlywood; */
+    top: 30px;
+    width: 70%;
+    height: 200px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.Homepage-mid-date-month-div {
+    /* background-color: black; */
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.Homepage-mid-date-month-div p {
+    color: black;
+    margin: 8px 8px;
+}
+
+.Homepage-mid-date-day-div {
+    /* background-color: blue; */
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    
+}
+
+.Homepage-mid-date-day-div p {
+    color: black;
+    font-size: 5em;
+}
+
+.Homepage-mid-date-year-div {
+    /* background-color: red; */
+    width: 33%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.Homepage-mid-hashtag-div {
+    /* background-color: tomato; */
+    top: 30px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.Homepage-mid-date-year-div p {
+    color: black;
+    margin: 8px 8px;
+}
+
+.Homepage-horizontal-line {
+    color: red;
+    width: 100%;
+}
+
+/* Location in mid section*/
+.Homepage-mid-location-div {
+    /* background-color: violet; */
+    top: 30px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.Homepage-mid-bottom-horizontal-line-div {
+    /* background-color: gold; */
+    top: 70px;
+    width: 70%;
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Homepage-bottom-horizontal-line {
+    color: #800020;
+    width: 100%;
+}
+
+.Homepage-mid-initials-div {
+    /* background-color: gold; */
+    top: 100px;
+    width: 40%;
+    height: 120px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
+}
+
+.Homepage-mid-initials-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+@media only screen and (max-width : 1500px) {
+    .Homepage-mid-mallory-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width : 1050px) {
+    .Homepage-mid-innerbase-div {
+        height: 760px;
+        width: 90%;
+        position: relative;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .Homepage-mid-top-left-arc-div {
+        height: 35px;
+        width: 35px;
+        float: left;
+        background-image: url("top-left-small.png");
+    }
+    
+    .Homepage-mid-top-right-arc-div {
+        height: 35px;
+        width: 35px;
+        float: right;
+        background-image: url("top-right-small.png");
+    }
+
+    .Homepage-mid-bottom-left-arc-div {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        background-image: url("bottom-left-small.png");
+    }
+    
+    .Homepage-mid-bottom-right-arc-div {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        background-image: url("bottom-right-small.png");
+    }
+}
+
+@media only screen and (max-width : 660px) {
+    .Homepage-top-image-div {
+        height: 420px;
+    }
+
+    .Homepage-mid-mallory-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 40px;
+    }
+
+    .Homepage-mid-bori-div h1 {
+        font-family: 'Dancing Script', cursive !important;
+        font-size: 40px;
+    }
+
+    .Homepage-mid-name-div {
+        width: 80%;
+    }
+
+    .Homepage-mid-date-base-div {
+        width: 80%;
+    }
+
+    .Homepage-mid-hashtag-div {
+        width: 80%;
+    }
+
+    .Homepage-mid-bottom-horizontal-line-div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 570px) {
+    .Homepage-top-image-div {
+        height: 400px;
+    }
+
+    .Homepage-mid-name-div {
+        width: 90%;
+        top: 20px;
+    }
+
+    .Homepage-mid-date-base-div {
+        width: 90%;
+        top: 20px;
+    }
+
+    .Homepage-mid-hashtag-div {
+        width: 90%;
+        top: 20px;
+    }
+
+    .Homepage-mid-bottom-horizontal-line-div {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width : 510px) {
+    .Homepage-top-image-div {
+        height: 300px;
+    }
+
+    .Homepage-mid-name-div {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width : 445px) {
+    .Homepage-top-image-div {
+        height: 250px;
+    }
+
+    .Homepage-top-image-text-div {
+        margin-top: -80px;
+        font-size: 0.75em;
+    }
+
+    .Homepage-mid-base-div {
+        height: 1300px;
+        margin-top: 40px;
+    }
+
+    .Homepage-mid-innerbase-div {
+        height: 1060px;
+    }
+
+    .Homepage-mid-name-div {
+        height: 300px;
+        width: 70%;
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .Homepage-mid-mallory-div {
+        /* background-color: brown; */
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Homepage-mid-bori-div {
+        /* background-color: blue; */
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    .Homepage-mid-name-ampersand-div {
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Homepage-mid-hashtag-div {
+        width: 70%;
+        top: 50px;
+    }
+
+    .Homepage-mid-date-base-div {
+        height: 300px;
+        width: 70%;
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 70px;
+    }
+
+    .Homepage-mid-date-month-div {
+        width: 100%;
+    }
+
+    .Homepage-mid-date-day-div {
+        width: 100%;
+    }
+
+    .Homepage-mid-date-year-div {
+        width: 100%;
+    }
+
+    .Homepage-mid-location-div {
+        width: 70%;
+        top: 10%;
+    }
+
+    .Homepage-mid-bottom-horizontal-line-div {
+        top: 130px;
+        width: 70%;
+    }
+
+    .Homepage-mid-initials-div {
+        width: 60%;
+    }
+
+    .Homepage-mid-initials-div {
+        top: 155px;
+    }
+}
