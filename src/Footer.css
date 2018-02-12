@@ -1,0 +1,32 @@
+.Footer-parent-div {
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 888px;
+    padding-bottom: 10px;
+}
+
+.Footer-base-div {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Footer-made-with-love-style {
+    font-family: 'Merienda One', cursive;
+    color: teal;
+}
+
+.Footer-other-info-style {
+    margin: 2px;
+    color: teal;
+}
+
+@media only screen and (max-width : 445px) {
+    .Footer-parent-div {
+        top: 1196px;
+    }
+}

@@ -4,6 +4,7 @@ import './App.css';
 import './Topheader.css';
 import TopHeader from './TopHeader.js';
 import HomePage from './HomePage.js';
+import Footer from './Footer.js';
 
 class App extends Component {
     render() {
@@ -13,13 +14,7 @@ class App extends Component {
                     < TopHeader />
                 </header>
                 < HomePage />
-                
-                {/* <h1 className="App-body">
-                  Save the Date!
-                </h1>
-                <p className="App-body-detail">Mallory & Bori</p>
-                <p className="App-body-detail">September 22, 2018</p> */}
-
+                < Footer />
             </div>
         );
     }
