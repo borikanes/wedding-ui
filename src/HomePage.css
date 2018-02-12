@@ -21,7 +21,7 @@
 .Homepage-top-image {
     height: 100%;
     width: 100%;
-    background: url("home-picture.JPG");
+    background: url("images/home-picture.JPG");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -30,7 +30,7 @@
 
 .Homepage-mid-base-div {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     background-color: #800020;
     margin-top: 50px;
     text-align: center;
@@ -50,14 +50,14 @@
     height: 70px;
     width: 70px;
     float: left;
-    background-image: url("top-left.png");
+    background-image: url("images/top-left.png");
 }
 
 .Homepage-mid-top-right-arc-div {
     height: 70px;
     width: 70px;
     float: right;
-    background-image: url("top-right.png");
+    background-image: url("images/top-right.png");
 }
 
 .Homepage-mid-name-div {
@@ -111,7 +111,7 @@
     left: 0px;
     bottom: 0px;
     position: absolute;
-    background-image: url("bottom-left.png");
+    background-image: url("images/bottom-left.png");
 }
 
 .Homepage-mid-bottom-right-arc-div {
@@ -120,7 +120,7 @@
     right: 0px;
     bottom: 0px;
     position: absolute;
-    background-image: url("bottom-right.png");
+    background-image: url("images/bottom-right.png");
 }
 
 /* Date and hashtag section */
@@ -209,7 +209,7 @@
 }
 
 .Homepage-horizontal-line {
-    color: red;
+    color: #800020;
     width: 100%;
 }
 
@@ -284,28 +284,28 @@
         height: 35px;
         width: 35px;
         float: left;
-        background-image: url("top-left-small.png");
+        background-image: url("images/top-left-small.png");
     }
     
     .Homepage-mid-top-right-arc-div {
         height: 35px;
         width: 35px;
         float: right;
-        background-image: url("top-right-small.png");
+        background-image: url("images/top-right-small.png");
     }
 
     .Homepage-mid-bottom-left-arc-div {
         height: 35px;
         width: 35px;
         position: absolute;
-        background-image: url("bottom-left-small.png");
+        background-image: url("images/bottom-left-small.png");
     }
     
     .Homepage-mid-bottom-right-arc-div {
         height: 35px;
         width: 35px;
         position: absolute;
-        background-image: url("bottom-right-small.png");
+        background-image: url("images/bottom-right-small.png");
     }
 }
 
@@ -387,7 +387,7 @@
     }
 
     .Homepage-mid-base-div {
-        height: 1300px;
+        height: 1200px;
         margin-top: 40px;
     }
 
