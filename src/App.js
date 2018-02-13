@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import './Topheader.css';
@@ -9,13 +10,16 @@ import Footer from './Footer.js';
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    < TopHeader />
-                </header>
-                < HomePage />
-                < Footer />
-            </div>
+            <Router>
+                <div className="App">
+                    <header className="App-header">
+                        < TopHeader />
+                    </header>
+                    <Route exact path="/" component={HomePage}/>
+                    {/* <Route path="*" component={HomePage}/> */}
+                    < Footer />
+                </div>
+            </Router>
         );
     }
 }
