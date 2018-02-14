@@ -6,7 +6,7 @@ import TopicHeader from './TopicHeader.js';
 export default class WeddingParty extends Component {
     render(){
         return(
-            <TopicHeader />
+            <TopicHeader title="Wedding Party" detail="Meet our friends" />
         );
     }
 }

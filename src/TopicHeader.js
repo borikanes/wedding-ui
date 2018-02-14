@@ -9,8 +9,8 @@ export default class TopicHeader extends Component {
             <div className="TopicHeader-parent-div">
                 <div className="TopicHeader-header-parent-div">
                     <div className="TopicHeader-header-content-div">
-                        <h1>FAQs</h1>
-                        <p>Common questions you may have about our wedding. Feel free to message us if you have more questions!</p>
+                        <h1>{this.props.title}</h1>
+                        <p>{this.props.detail}</p>
                     </div>
                 </div>
             </div>

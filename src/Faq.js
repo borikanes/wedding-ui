@@ -6,7 +6,7 @@ import TopicHeader from './TopicHeader.js';
 export default class Faq extends Component {
     render(){
         return(
-            <TopicHeader />
+            <TopicHeader title="FAQs" detail="Common questions you may have about our wedding. Feel free to message us if you have more questions!"/>
         );
     }
 }
