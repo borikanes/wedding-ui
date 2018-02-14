@@ -6,6 +6,7 @@ import './Topheader.css';
 import TopHeader from './TopHeader.js';
 import HomePage from './HomePage.js';
 import Footer from './Footer.js';
+import Faq from './Faq';
 
 class App extends Component {
     render() {
@@ -16,7 +17,7 @@ class App extends Component {
                         < TopHeader />
                     </header>
                     <Route exact path="/" component={HomePage}/>
-                    {/* <Route path="*" component={HomePage}/> */}
+                    <Route exact path="/faq" component={Faq}/>
                     < Footer />
                 </div>
             </Router>

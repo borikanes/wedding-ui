@@ -1,5 +1,8 @@
 .Faq-parent-div {
-    height: 500px;
+    height: 124.5%;
     width: 100%;
     background-color: black;
+    position: absolute;
+    font-family: 'Merienda One', cursive;
+    z-index: -1;
 }

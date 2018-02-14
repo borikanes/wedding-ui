@@ -20,11 +20,11 @@ export default class TopHeader extends Component {
                     <h1>Mallory & Bori</h1>
                 </div>
                 <div className="Header-nav-buttons-div">
-                    <a className="Header-nav-buttons-first">HOME</a>
+                    <a href="/" className="Header-nav-buttons-first">HOME</a>
                     <a className="Header-nav-buttons">WEDDING PARTY</a>
                     <a className="Header-nav-buttons">REGISTRY</a>
                     <a className="Header-nav-buttons">RSVP</a>
-                    <a className="Header-nav-buttons">FAQs</a>
+                    <a href="/faq" className="Header-nav-buttons">FAQs</a>
                 </div>
                 <DropDown />
             </div>
