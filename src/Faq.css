@@ -1,8 +1,26 @@
 .Faq-parent-div {
     height: 124.5%;
     width: 100%;
-    background-color: black;
+    background-color: #800020;
     position: absolute;
     font-family: 'Merienda One', cursive;
     z-index: -1;
+}
+
+.Faq-header-parent-div {
+    background-color: #800020;;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.Faq-header-content-div {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -7,6 +7,7 @@ import TopHeader from './TopHeader.js';
 import HomePage from './HomePage.js';
 import Footer from './Footer.js';
 import Faq from './Faq';
+import Weddingparty from './WeddingParty';
 
 class App extends Component {
     render() {
@@ -16,8 +17,9 @@ class App extends Component {
                     <header className="App-header">
                         < TopHeader />
                     </header>
-                    <Route exact path="/" component={HomePage}/>
                     <Route exact path="/faq" component={Faq}/>
+                    <Route exact path="/weddingparty" component={Weddingparty}/>
+                    <Route exact path="/" component={HomePage}/>
                     < Footer />
                 </div>
             </Router>
