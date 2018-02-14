@@ -7,7 +7,9 @@ import TopHeader from './TopHeader.js';
 import HomePage from './HomePage.js';
 import Footer from './Footer.js';
 import Faq from './Faq';
-import Weddingparty from './WeddingParty';
+import Weddingparty from './WeddingParty.js';
+import Registry from './Registry.js';
+import Rsvp from './Rsvp.js';
 
 class App extends Component {
     render() {
@@ -19,6 +21,8 @@ class App extends Component {
                     </header>
                     <Route exact path="/faq" component={Faq}/>
                     <Route exact path="/weddingparty" component={Weddingparty}/>
+                    <Route exact path="/registry" component={Registry}/>
+                    <Route exact path="/rsvp" component={Rsvp}/>
                     <Route exact path="/" component={HomePage}/>
                     < Footer />
                 </div>
