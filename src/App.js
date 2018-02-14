@@ -24,7 +24,7 @@ class App extends Component {
                     <Route exact path="/registry" component={Registry}/>
                     <Route exact path="/rsvp" component={Rsvp}/>
                     <Route exact path="/" component={HomePage}/>
-                    < Footer />
+                    {/* < Footer /> */}
                 </div>
             </Router>
         );
