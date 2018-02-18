@@ -1,14 +1,13 @@
 .Faq-parent-div {
-    height: 124.5%;
     width: 100%;
     background-color: #800020;
-    position: absolute;
+    position: relative;
     font-family: 'Merienda One', cursive;
     z-index: -1;
 }
 
 .Faq-header-parent-div {
-    background-color: #800020;;
+    background-color: #800020;
     height: 150px;
     width: 100%;
     display: flex;
@@ -25,3 +24,51 @@
     flex-direction: column;
 }
 
+.Faq-body-content-div {
+    width: 80%;
+    height: 400px;
+    background-color: blue;
+    display: inline-flex;
+    /* justify-content: center; */
+    margin-top: 220px;
+    position: inherit;
+}
+
+.Faq-mid-top-left-arc-div {
+    height: 70px;
+    width: 70px;
+    float: left;
+    background-image: url("images/top-left.png");
+}
+
+.Faq-mid-top-right-arc-div {
+    height: 70px;
+    width: 70px;
+    float: right;
+    background-image: url("images/top-right.png");
+    right: 0;
+    position: absolute;
+}
+
+.Faq-inner-div {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+
+@media only screen and (max-width : 610px) {
+    .Faq-mid-top-right-arc-div {
+        height: 35px;
+        width: 35px;
+        background-image: url("images/top-right-small.png");
+        right: 0;
+        position: absolute;
+    }
+
+    .Faq-mid-top-left-arc-div {
+        height: 35px;
+        width: 35px;
+        float: left;
+        background-image: url("images/top-left-small.png");
+    }
+}
