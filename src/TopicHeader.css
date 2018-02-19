@@ -1,8 +1,7 @@
 .TopicHeader-parent-div {
-    /* height: 124.5%; */
     width: 100%;
     background-color: #800020;
-    position: absolute;
+    position: relative;
     font-family: 'Merienda One', cursive;
     z-index: -1;
 }
