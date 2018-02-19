@@ -14,13 +14,21 @@ export default class Faq extends Component {
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
-                        <div className="Faq-test-div" >
-
-                        </div>
+                        <QuestionAndAnswer />
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
                     <div className="MidSection-mid-bottom-right-arc-div"></div>
                 </div>
+            </div>
+        );
+    }
+}
+
+class QuestionAndAnswer extends Component {
+    render(){
+        return (
+            <div className="Faq-test-div" >
+
             </div>
         );
     }
