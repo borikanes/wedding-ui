@@ -43,6 +43,11 @@
     margin-top: -0.8em;
 }
 
+.Header-nav-buttons-div a {
+    color: white;
+    text-decoration: none;
+}
+
 .Header-nav-buttons {
     margin-left: 3.5em;
 }
@@ -119,6 +124,8 @@
         margin-bottom: 20px;
         margin-block-start: 10px;
         font-size: 1.5em;
+        color: white;
+        text-decoration: none;
         /* animation-name: buttonsfade;
         animation-duration: 0.2s;
         animation-delay: 1.5s;

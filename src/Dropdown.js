@@ -47,11 +47,11 @@ class DropDown extends Component {
             </div>
             <div></div>
             <div className="Header-dropdown-div">
-              <a className="Header-dropdown-each-button">HOME</a>
-              <a className="Header-dropdown-each-button">WEDDING PARTY</a>
-              <a className="Header-dropdown-each-button">REGISTRY</a>
-              <a className="Header-dropdown-each-button">RSVP</a>
-              <a className="Header-dropdown-each-button">FAQs</a>
+              <a href="/" className="Header-dropdown-each-button">HOME</a>
+              <a href="/weddingparty" className="Header-dropdown-each-button">WEDDING PARTY</a>
+              <a href="/registry" className="Header-dropdown-each-button">REGISTRY</a>
+              <a href="/rsvp" className="Header-dropdown-each-button">RSVP</a>
+              <a href="/faq" className="Header-dropdown-each-button">FAQs</a>
             </div>
           </div>
         );

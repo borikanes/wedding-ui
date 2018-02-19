@@ -1,0 +1,48 @@
+.TopicHeader-parent-div {
+    width: 100%;
+    background-color: #800020;
+    position: relative;
+    font-family: 'Merienda One', cursive;
+    z-index: -1;
+}
+
+.TopicHeader-header-parent-div {
+    background-color: #800020;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.TopicHeader-header-content-div {
+    width: 80%;
+    /* height: 100%; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.TopicHeader-header-content-div h1 {
+    margin: 8px;
+}
+
+@media only screen and (max-width : 510px) {
+    .TopicHeader-header-parent-div p {
+        font-size: 15px;
+        margin: 3px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .TopicHeader-header-parent-div {
+        font-size: 13px;
+    }
+
+    .Footer-parent-div {
+        top: 1000px;
+        font-size: 12px;
+    }
+}

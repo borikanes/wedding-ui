@@ -105,23 +105,23 @@
     font-size: 50px;
 }
 
-.Homepage-mid-bottom-left-arc-div {
-    height: 70px;
-    width: 70px;
-    left: 0px;
-    bottom: 0px;
-    position: absolute;
-    background-image: url("images/bottom-left.png");
-}
+    .Homepage-mid-bottom-left-arc-div {
+        height: 70px;
+        width: 70px;
+        left: 0px;
+        bottom: 0px;
+        position: absolute;
+        background-image: url("images/bottom-left.png");
+    }
 
-.Homepage-mid-bottom-right-arc-div {
-    height: 70px;
-    width: 70px;
-    right: 0px;
-    bottom: 0px;
-    position: absolute;
-    background-image: url("images/bottom-right.png");
-}
+    .Homepage-mid-bottom-right-arc-div {
+        height: 70px;
+        width: 70px;
+        right: 0px;
+        bottom: 0px;
+        position: absolute;
+        background-image: url("images/bottom-right.png");
+    }
 
 /* Date and hashtag section */
 
