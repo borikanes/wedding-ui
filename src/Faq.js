@@ -27,8 +27,18 @@ export default class Faq extends Component {
 class QuestionAndAnswer extends Component {
     render(){
         return (
-            <div className="Faq-test-div" >
-
+            <div className="Faq-question-answer-parent-div">
+                <div className="Faq-question-div">
+                    <h1>Question:</h1>
+                    <p>Which hotel can I stay at the night before the wedding</p>
+                </div>
+                <div className="Faq-vertical-line-enclosing-div" >
+                    <div className="Faq-vertical-line-div" ></div>
+                </div>
+                <div className="Faq-answer-div">
+                    <h1>Answer</h1>
+                    <p>You can stay at any hotel in College park or in Laurel</p>
+                </div>
             </div>
         );
     }

@@ -1,5 +1,76 @@
-.Faq-test-div {
+.Faq-question-answer-parent-div {
     width: 100%;
-    background-color: green;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.Faq-question-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Faq-question-div h1 {
+    font-size: 25px;
+}
+
+.Faq-question-div p {
+    font-size: 15px;
+}
+
+.Faq-vertical-line-enclosing-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Faq-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+}
+
+.Faq-answer-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Faq-answer-div h1 {
+    font-size: 25px;
+}
+
+.Faq-answer-div p {
+    font-size: 15px;
+}
+
+@media only screen and (max-width : 510px) {
+    .Faq-question-div h1 {
+        font-size: 20px;
+    }
+    
+    .Faq-question-div p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 410px) {
+    .Faq-question-div h1 {
+        font-size: 15px;
+    }
+    
+    .Faq-question-div p {
+        font-size: 20px;
+    }
 }
