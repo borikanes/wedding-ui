@@ -3,7 +3,7 @@
     width: 100%;
     height: 130px;
     position: relative;
-    top: 888px;
+    /* top: 888px; */
     padding-bottom: 10px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width : 445px) {
-    /* .Footer-parent-div {
-        top: 1196px;
-    } */
+    .Footer-parent-div {
+        font-size: 12px;
+    }
 }
