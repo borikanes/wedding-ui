@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'font-awesome/css/font-awesome.css';
 import './HomePage.css';
+import Footer from './Footer.js';
+import './MidSection.css';
 
 export default class HomePage extends Component {
 
@@ -82,6 +84,8 @@ export default class HomePage extends Component {
                         <div className="Homepage-mid-bottom-right-arc-div"></div>
                     </div>
                 </div>
+                <div className="MidSection-footer-divider-div" ></div>
+                <Footer />
             </div>
         );
     }

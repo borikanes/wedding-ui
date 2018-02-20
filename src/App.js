@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
 import './Topheader.css';
 import TopHeader from './TopHeader.js';
 import HomePage from './HomePage.js';
-import Footer from './Footer.js';
 import Faq from './Faq';
 import Weddingparty from './WeddingParty.js';
 import Registry from './Registry.js';
@@ -24,7 +23,6 @@ class App extends Component {
                     <Route exact path="/registry" component={Registry}/>
                     <Route exact path="/rsvp" component={Rsvp}/>
                     <Route exact path="/" component={HomePage}/>
-                    {/* < Footer /> */}
                 </div>
             </Router>
         );
