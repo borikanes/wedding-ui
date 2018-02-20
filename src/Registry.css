@@ -1,0 +1,53 @@
+.Registry-parent-div {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.Registry-left-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Registry-circular-div {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+.Registry-information-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width : 980px) {
+    .Registry-parent-div {
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .Registry-parent-div {
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width : 735px) {
+    .Registry-parent-div {
+        margin-left: 55px;
+        margin-right: 50px;
+    }
+}
