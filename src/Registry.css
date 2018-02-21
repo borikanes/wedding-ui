@@ -29,6 +29,36 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.Registry-vertical-line-enclosing-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Registry-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+    margin-top: -5px;
+}
+
+.Registry-rectangular-div {
+    height: 200px;
+    width: 200px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    background-color: black;
 }
 
 @media only screen and (max-width : 980px) {

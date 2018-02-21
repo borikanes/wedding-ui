@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 import './Registry.css';
 import TopicHeader from './TopicHeader.js';
 import Footer from './Footer.js';
+import { Button } from 'semantic-ui-react'
 
 export default class Registry extends Component {
     render(){
@@ -25,11 +26,14 @@ export default class Registry extends Component {
                             <div className="Registry-left-div" >
                                 <TextInCircle height={heightValue} width={heightValue}/>
                             </div>
-                            <div className="Faq-vertical-line-enclosing-div" >
-                                <div className="Faq-vertical-line-div" ></div>
+                            <div className="Registry-vertical-line-enclosing-div" >
+                                <div className="Registry-vertical-line-div" ></div>
                             </div>
                             <div className="Registry-information-div" >
-
+                                <div className="Registry-rectangular-div">
+                                    <p>Checkout our Zola Registry</p>
+                                    <button type="button">Zola Registry</button>
+                                </div>
                             </div>
                         </div>
                     </div>
