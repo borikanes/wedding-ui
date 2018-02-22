@@ -3,7 +3,8 @@ import 'font-awesome/css/font-awesome.css';
 import './Registry.css';
 import TopicHeader from './TopicHeader.js';
 import Footer from './Footer.js';
-import { Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 export default class Registry extends Component {
     render(){
@@ -32,7 +33,7 @@ export default class Registry extends Component {
                             <div className="Registry-information-div" >
                                 <div className="Registry-rectangular-div">
                                     <p>Checkout our Zola Registry</p>
-                                    <button type="button">Zola Registry</button>
+                                    <Button color='teal' onClick='https://www.zola.com/registry/dashboard'>Our Registry</Button>
                                 </div>
                             </div>
                         </div>
