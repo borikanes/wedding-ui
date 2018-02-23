@@ -57,8 +57,17 @@
     flex-direction: column;
 }
 
-.button {
-    background-color: black;
+.Registry-zola-button {
+    width: 200px;
+    height: 30px;
+    background-color: teal;
+    font-family: 'Merienda One', cursive;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.Registry-zola-button:hover {
+    opacity: 50%;
 }
 
 @media only screen and (max-width : 980px) {

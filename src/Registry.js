@@ -3,9 +3,18 @@ import 'font-awesome/css/font-awesome.css';
 import './Registry.css';
 import TopicHeader from './TopicHeader.js';
 import Footer from './Footer.js';
-import { Button } from 'semantic-ui-react'
 
 export default class Registry extends Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log('GOT CLICKED');
+        window.open("https://www.zola.com/registry/dashboard")
+    }
+
     render(){
         var heightValue;
         if (window.matchMedia("(max-width: 700px)").matches) {
@@ -15,6 +24,17 @@ export default class Registry extends Component {
         } else {
             heightValue = '180'
         }
+
+        var zolaButtonStyle = {
+            height: '30px',
+            width: '100px',
+            color: 'white',
+            backgroundColor: 'teal'
+        }
+
+        // var button = document.getElementById('butt');
+        // button.addEventListener('click', this.handleClickListener);
+
         return(
             <div className="MidSection-parent-div">
                 <TopicHeader title="Registry" detail="Check out our registry!" />
@@ -30,9 +50,11 @@ export default class Registry extends Component {
                                 <div className="Registry-vertical-line-div" ></div>
                             </div>
                             <div className="Registry-information-div" >
-                                <div className="Registry-rectangular-div">
+                                <div onClick={this.handleClick} className="Registry-rectangular-div">
                                     <p>Checkout our Zola Registry</p>
-                                    <button type="button">Zola Registry</button>
+                                    {/* <a style={{zIndex: '1001'}} href="https://www.zola.com/registry/dashboard" target="_blank" className="Registry-zola-button">Our Zola Registry</a> */}
+                                    <button id="butt" onClick={this.handleClick} >Our Zola Registry</button>
+                                    {/* <input type="button" onClick={this.handleClick} value="Our Zola Registry!" /> */}
                                 </div>
                             </div>
                         </div>
