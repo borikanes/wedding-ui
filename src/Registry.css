@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.Registry-information-div p {
+    font-size: 25px;
+}
+
 .Registry-vertical-line-enclosing-div {
     width: 40%;
     height: 100%;
@@ -71,10 +75,23 @@
     opacity: 50%;
 }
 
+.Registry-rectangular-div:button:hover {
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
 @media only screen and (max-width : 980px) {
     .Registry-parent-div {
         margin-left: 70px;
         margin-right: 50px;
+    }
+
+    .Registry-information-div p {
+        font-size: 17px;
     }
 }
 
@@ -103,20 +120,70 @@
     }
 }
 
-@media only screen and (max-width : 550px) {
+@media only screen and (max-width : 577px) {
+    .Registry-parent-div {
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 37px;
+    }
+
     .Registry-left-div {
-        margin-left: -42px;
-        width: 44%;
+        width: 100%;
+        height: 40%;
+        margin-left: -2px;
+    }
+
+    .Registry-information-div {
+        width: 100%;
+        height: 35%;
     }
 
     .Registry-vertical-line-enclosing-div {
-        width: 10%;
+        width: 100%;
+        height: 20%;
+        margin-top: 77px;
+    }
+    
+    .Registry-vertical-line-div {
+        height: 2px;
+        width: 100%;
+    }
+
+    .Registry-rectangular-div {
+        margin-top: -50px;
     }
 }
 
-@media only screen and (max-width : 525px) {
+@media only screen and (max-width : 400px) {
+
     .Registry-left-div {
-        margin-left: -64px;
-        width: 49%;
+        margin-left: -12px;
+    }
+
+    .Registry-information-div {
+        margin-left: -9px;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        margin-left: -9px;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .Registry-left-div {
+        margin-left: -14px;
+    }
+
+    .Registry-information-div {
+        margin-left: -11px;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        margin-left: -11px;
+    }
+
+    .Registry-parent-div {
+        margin-left: 33px;
     }
 }

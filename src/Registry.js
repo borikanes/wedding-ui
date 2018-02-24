@@ -18,7 +18,7 @@ export default class Registry extends Component {
     render(){
         var heightValue;
         if (window.matchMedia("(max-width: 700px)").matches) {
-            heightValue = '170'
+            heightValue = '190'
         } else if(window.matchMedia("(max-width: 610px)").matches){
             heightValue = '150'
         } else if(window.matchMedia("(max-width: 510px)").matches){
@@ -32,7 +32,11 @@ export default class Registry extends Component {
             height: '30px',
             color: 'white',
             backgroundColor: 'teal',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            // transform: 'translateZ(0)',
+            // boxShadow: '0 0 1px rgba(0, 0, 0, 0)',
+            // transitionDuration: '0.3s',
+            // transitionProperty: 'transform'
         }
 
         // var button = document.getElementById('butt');
@@ -54,9 +58,9 @@ export default class Registry extends Component {
                             </div>
                             <div className="Registry-information-div" >
                                 <div className="Registry-rectangular-div">
-                                    <p>Checkout our Zola Registry</p>
+                                    <p>Click below for our Registry</p>
                                     <button style={zolaButtonStyle} onClick={this.handleClick} >Our Zola Registry</button>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -83,6 +87,10 @@ class TextInCircle extends Component {
             display: 'flex',
             flexDirection: 'column'
         };
+
+        if (window.matchMedia("(max-width: 500px)").matches) {
+            circleStyle.marginTop = '15px'
+        }
         return(
             <div style={circleStyle}>
                 <p>For</p>
