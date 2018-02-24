@@ -85,7 +85,8 @@ class TextInCircle extends Component {
             backgroundColor: '#FFD700',
             justifyContent: 'center',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            marginTop: '20px'
         };
 
         if (window.matchMedia("(max-width: 500px)").matches) {
