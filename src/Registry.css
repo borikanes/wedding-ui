@@ -105,11 +105,18 @@
 
 @media only screen and (max-width : 550px) {
     .Registry-left-div {
-        margin-left: -20px;
+        margin-left: -42px;
         width: 44%;
     }
 
     .Registry-vertical-line-enclosing-div {
         width: 10%;
+    }
+}
+
+@media only screen and (max-width : 525px) {
+    .Registry-left-div {
+        margin-left: -64px;
+        width: 49%;
     }
 }
