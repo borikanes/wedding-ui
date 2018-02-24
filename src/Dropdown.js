@@ -33,6 +33,10 @@ class DropDown extends Component {
     }
   
     render() {
+      var dropdownRootDivStyle = {
+        zIndex: '1000',
+        position: 'relative'
+    }
       if (!this.state.isDown) {
         return(
           <div className="Header-hamburger-div">
@@ -41,11 +45,10 @@ class DropDown extends Component {
         );
       } else {
         return(
-          <div id="dropdown-root">
+          <div id="dropdown-root" style={dropdownRootDivStyle}>
             <div className="Header-hamburger-div">
                 <a onClick={this.toggleDropDownBool}><i className="fa fa-close fa-2x nav-bar-a"></i></a>
             </div>
-            <div></div>
             <div className="Header-dropdown-div">
               <a href="/" className="Header-dropdown-each-button">HOME</a>
               <a href="/weddingparty" className="Header-dropdown-each-button">WEDDING PARTY</a>
