@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-content: center;
 }
 
 .Registry-zola-button {
@@ -88,5 +89,27 @@
     .Registry-parent-div {
         margin-left: 55px;
         margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .Registry-left-div {
+        margin-left: -32px;
+        width: 44%;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .Registry-left-div {
+        margin-left: -20px;
+        width: 44%;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        width: 10%;
     }
 }

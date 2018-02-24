@@ -19,17 +19,20 @@ export default class Registry extends Component {
         var heightValue;
         if (window.matchMedia("(max-width: 700px)").matches) {
             heightValue = '170'
-        } else if(window.matchMedia("(max-width: 600px)").matches){
+        } else if(window.matchMedia("(max-width: 610px)").matches){
             heightValue = '150'
-        } else {
+        } else if(window.matchMedia("(max-width: 510px)").matches){
+            heightValue = '130'
+        } 
+        else {
             heightValue = '180'
         }
 
         var zolaButtonStyle = {
             height: '30px',
-            width: '100px',
             color: 'white',
-            backgroundColor: 'teal'
+            backgroundColor: 'teal',
+            cursor: 'pointer'
         }
 
         // var button = document.getElementById('butt');
@@ -50,11 +53,9 @@ export default class Registry extends Component {
                                 <div className="Registry-vertical-line-div" ></div>
                             </div>
                             <div className="Registry-information-div" >
-                                <div onClick={this.handleClick} className="Registry-rectangular-div">
+                                <div className="Registry-rectangular-div">
                                     <p>Checkout our Zola Registry</p>
-                                    {/* <a style={{zIndex: '1001'}} href="https://www.zola.com/registry/dashboard" target="_blank" className="Registry-zola-button">Our Zola Registry</a> */}
-                                    <button id="butt" onClick={this.handleClick} >Our Zola Registry</button>
-                                    {/* <input type="button" onClick={this.handleClick} value="Our Zola Registry!" /> */}
+                                    <button style={zolaButtonStyle} onClick={this.handleClick} >Our Zola Registry</button>
                                 </div>
                             </div>
                         </div>
