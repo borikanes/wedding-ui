@@ -75,27 +75,16 @@ class Initials extends Component {
 
 class TextInCircle extends Component {
     render(){
-        // var 
         var circleStyle = {
             height: this.props.height + 'px',
             width: this.props.width + 'px',
-            borderRadius: '50%',
-            alignItems: 'center',
-            backgroundColor: '#FFD700',
-            justifyContent: 'center',
-            display: 'flex',
-            flexDirection: 'column',
-            marginTop: '20px',
-            transform: 'rotateY(180deg)',
-            transformStyle: 'preserve-3d',
-            transition: 'all 0.6s'
         };
 
         if (window.matchMedia("(max-width: 500px)").matches) {
             circleStyle.marginTop = '15px'
         }
         return(
-            <div style={circleStyle}>
+            <div style={circleStyle} className="TextInCircle">
                 <p>For</p>
                 <p style={{marginTop: '0'}}>Mallory and Bori</p>
             </div>
