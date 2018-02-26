@@ -3,7 +3,7 @@
     height: 400px;
     display: flex;
     justify-content: center;
-    /* background-color: black; */
+    align-content: center;
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -55,7 +55,6 @@
 .Registry-rectangular-div {
     height: 200px;
     width: 200px;
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,16 +62,19 @@
 }
 
 .Registry-zola-button {
-    width: 200px;
     height: 30px;
     background-color: teal;
-    font-family: 'Merienda One', cursive;
-    pointer-events: visible;
     cursor: pointer;
+    color: white
 }
 
 .Registry-zola-button:hover {
-    opacity: 50%;
+    color: gold;
+    animation: shakeThatBooty 0.5s linear 1;
+    -webkit-animation: shakeThatBooty 0.3s linear 1;
+    -moz-animation: shakeThatBooty 0.3s linear 1;
+    -o-animation: shakeThatBooty 0.3s linear 1;
+    -ms-animation: shakeThatBooty 0.3s linear 1;
 }
 
 .Registry-rectangular-div:button:hover {
@@ -84,6 +86,73 @@
     transition-property: transform;
 }
 
+.Initials-div {
+    width: 40%;
+    height: 120px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
+    margin-left: 28%;
+}
+
+.Initials-vertical-line-div {
+    height: 86%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+@keyframes shakeThatBooty {
+    33% {
+      transform: rotateZ(10deg);
+      -webkit-transform: rotateZ(10deg);
+      -moz-transform: rotateZ(10deg);
+      -o-transform: rotateZ(10deg);
+      -ms-transform: rotateZ(10deg);
+    }
+    67% {
+      transform: rotateZ(-10deg);
+      -webkit-transform: rotateZ(-10deg);
+      -moz-transform: rotateZ(-10deg);
+      -o-transform: rotateZ(-10deg);
+      -ms-transform: rotateZ(-10deg);
+    }
+    100% {
+      transform: rotateZ(10deg);
+      -webkit-transform: rotateZ(10deg);
+      -moz-transform: rotateZ(10deg);
+      -o-transform: rotateZ(10deg);
+      -ms-transform: rotateZ(10deg);
+    }
+}
+
+@keyframes button-animation {
+    from {background-color: teal;}
+    to {background-color: gold;}
+}
+
+@media only screen and (max-width : 1840px) {
+    .Initials-div {
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width : 1620px) {
+    .Initials-div {
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width : 1150px) {
+    .Initials-div {
+        margin-left: 28%;
+    }
+}
+
 @media only screen and (max-width : 980px) {
     .Registry-parent-div {
         margin-left: 70px;
@@ -92,6 +161,10 @@
 
     .Registry-information-div p {
         font-size: 17px;
+    }
+
+    .Initials-div {
+        margin-left: 28%;
     }
 }
 
@@ -106,6 +179,10 @@
     .Registry-parent-div {
         margin-left: 55px;
         margin-right: 50px;
+    }
+
+    .Initials-div {
+        margin-left: 29%;
     }
 }
 
@@ -152,6 +229,15 @@
 
     .Registry-rectangular-div {
         margin-top: -50px;
+    }
+
+    .Initials-div {
+        font-size: 60px !important;
+        margin-left: 29%;
+    }
+    
+    .Initials-vertical-line-div {
+        height: 77% !important;
     }
 }
 

@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 import './Registry.css';
 import TopicHeader from './TopicHeader.js';
 import Footer from './Footer.js';
+import './HomePage.css';
 
 export default class Registry extends Component {
     constructor(props) {
@@ -28,20 +29,6 @@ export default class Registry extends Component {
             heightValue = '180'
         }
 
-        var zolaButtonStyle = {
-            height: '30px',
-            color: 'white',
-            backgroundColor: 'teal',
-            cursor: 'pointer',
-            // transform: 'translateZ(0)',
-            // boxShadow: '0 0 1px rgba(0, 0, 0, 0)',
-            // transitionDuration: '0.3s',
-            // transitionProperty: 'transform'
-        }
-
-        // var button = document.getElementById('butt');
-        // button.addEventListener('click', this.handleClickListener);
-
         return(
             <div className="MidSection-parent-div">
                 <TopicHeader title="Registry" detail="Check out our registry!" />
@@ -59,16 +46,28 @@ export default class Registry extends Component {
                             <div className="Registry-information-div" >
                                 <div className="Registry-rectangular-div">
                                     <p>Click below for our Registry</p>
-                                    <button style={zolaButtonStyle} onClick={this.handleClick} >Our Zola Registry</button>
+                                    <button className="Registry-zola-button" onClick={this.handleClick} >Our Zola Registry</button>
                                 </div> 
                             </div>
                         </div>
                     </div>
+                    <Initials />
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
                     <div className="MidSection-mid-bottom-right-arc-div"></div>
                 </div>
                 <div className="MidSection-footer-divider-div" ></div>
                 <Footer />
+            </div>
+        );
+    }
+}
+
+class Initials extends Component {
+    render() {
+        return(<div className="Initials-div">
+                <p>M</p>
+                <div className="Initials-vertical-line-div" ></div>
+                <p>B</p>
             </div>
         );
     }
@@ -86,7 +85,10 @@ class TextInCircle extends Component {
             justifyContent: 'center',
             display: 'flex',
             flexDirection: 'column',
-            marginTop: '20px'
+            marginTop: '20px',
+            transform: 'rotateY(180deg)',
+            transformStyle: 'preserve-3d',
+            transition: 'all 0.6s'
         };
 
         if (window.matchMedia("(max-width: 500px)").matches) {
