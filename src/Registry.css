@@ -1,0 +1,314 @@
+.Registry-parent-div {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.Registry-left-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Registry-circular-div {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+.Registry-information-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Registry-information-div p {
+    font-size: 25px;
+}
+
+.Registry-vertical-line-enclosing-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Registry-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+    margin-top: -5px;
+}
+
+.Registry-rectangular-div {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Registry-zola-button {
+    height: 30px;
+    background-color: teal;
+    cursor: pointer;
+    color: white
+}
+
+.Registry-zola-button:hover {
+    color: gold;
+    animation: shakeThatBooty 0.5s linear 1;
+    -webkit-animation: shakeThatBooty 0.3s linear 1;
+    -moz-animation: shakeThatBooty 0.3s linear 1;
+    -o-animation: shakeThatBooty 0.3s linear 1;
+    -ms-animation: shakeThatBooty 0.3s linear 1;
+}
+
+.Initials-div {
+    width: 40%;
+    height: 120px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
+    margin-left: 28%;
+}
+
+.Initials-vertical-line-div {
+    height: 86%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+.TextInCircle {
+    /* transform: rotateY(180deg);
+    transition: all 0.6; */
+    background-color: #FFD700;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.TextInCircle:hover {
+    animation: cirleSpin 1s linear 1;
+    -webkit-animation: cirleSpin 1s linear 1;
+    -moz-animation: cirleSpin 1s linear 1;
+    -o-animation: cirleSpin 1s linear 1;
+    -ms-animation: cirleSpin 1s linear 1;
+}
+
+@keyframes cirleSpin {
+    50% {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    }
+    100% {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    }
+}
+
+@keyframes shakeThatBooty {
+    33% {
+      transform: rotateZ(10deg);
+      -webkit-transform: rotateZ(10deg);
+      -moz-transform: rotateZ(10deg);
+      -o-transform: rotateZ(10deg);
+      -ms-transform: rotateZ(10deg);
+    }
+    67% {
+      transform: rotateZ(-10deg);
+      -webkit-transform: rotateZ(-10deg);
+      -moz-transform: rotateZ(-10deg);
+      -o-transform: rotateZ(-10deg);
+      -ms-transform: rotateZ(-10deg);
+    }
+    100% {
+      transform: rotateZ(10deg);
+      -webkit-transform: rotateZ(10deg);
+      -moz-transform: rotateZ(10deg);
+      -o-transform: rotateZ(10deg);
+      -ms-transform: rotateZ(10deg);
+    }
+}
+
+@keyframes button-animation {
+    from {background-color: teal;}
+    to {background-color: gold;}
+}
+
+@media only screen and (max-width : 1840px) {
+    .Initials-div {
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width : 1620px) {
+    .Initials-div {
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width : 1150px) {
+    .Initials-div {
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width : 980px) {
+    .Registry-parent-div {
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+
+    .Registry-information-div p {
+        font-size: 17px;
+    }
+
+    .Initials-div {
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .Registry-parent-div {
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width : 735px) {
+    .Registry-parent-div {
+        margin-left: 55px;
+        margin-right: 50px;
+    }
+
+    .Initials-div {
+        margin-left: 29%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .Registry-left-div {
+        margin-left: -32px;
+        width: 44%;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width : 577px) {
+    .Registry-parent-div {
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 37px;
+    }
+
+    .Registry-left-div {
+        width: 100%;
+        height: 40%;
+        margin-left: -2px;
+    }
+
+    .Registry-information-div {
+        width: 100%;
+        height: 35%;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        width: 100%;
+        height: 20%;
+        margin-top: 77px;
+    }
+    
+    .Registry-vertical-line-div {
+        height: 2px;
+        width: 100%;
+    }
+
+    .Registry-rectangular-div {
+        margin-top: -50px;
+    }
+
+    .Initials-div {
+        font-size: 60px !important;
+        margin-left: 29%;
+    }
+    
+    .Initials-vertical-line-div {
+        height: 77% !important;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+
+    .Registry-left-div {
+        margin-left: -12px;
+    }
+
+    .Registry-information-div {
+        margin-left: -9px;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        margin-left: -9px;
+    }
+}
+
+@media only screen and (max-width : 386px) {
+    .Initials-div {
+        font-size: 40px !important;
+        margin-left: 29%;
+    }
+    
+    .Initials-vertical-line-div {
+        height: 50% !important;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .Registry-left-div {
+        margin-left: -14px;
+    }
+
+    .Registry-information-div {
+        margin-left: -11px;
+    }
+
+    .Registry-vertical-line-enclosing-div {
+        margin-left: -11px;
+    }
+
+    .Registry-parent-div {
+        margin-left: 33px;
+    }
+}

@@ -45,6 +45,7 @@ export default class HomePage extends Component {
                             <span style={ampersandSpanStyle}>&</span>
                             <div className="Homepage-mid-bori-div">
                                 <h1> 
+                                    
                                     Bori
                                     <span> Oludemi </span>
                                 </h1>

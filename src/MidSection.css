@@ -3,7 +3,7 @@
     background-color: #800020;
     position: relative;
     font-family: 'Merienda One', cursive;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .MidSection-body-content-div {
