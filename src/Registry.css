@@ -284,6 +284,17 @@
     }
 }
 
+@media only screen and (max-width : 386px) {
+    .Initials-div {
+        font-size: 40px !important;
+        margin-left: 29%;
+    }
+    
+    .Initials-vertical-line-div {
+        height: 50% !important;
+    }
+}
+
 @media only screen and (max-width : 340px) {
     .Registry-left-div {
         margin-left: -14px;
