@@ -15,7 +15,24 @@ export default class WeddingParty extends Component {
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
-                        <WeddingPartyProfile height="200px"/>
+                        <WeddingPartyProfile height="200px" leftName="TUMI OLUDEMI" rightName="RACHEL POISALL"
+                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" 
+                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" />
+                        <div className="WeddingParty-question-answer-space-div"></div>
+                        <WeddingPartyProfile height="200px" leftName="TUMI OLUDEMI" rightName="RACHEL POISALL"
+                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" 
+                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" />
+                        <div className="WeddingParty-question-answer-space-div"></div>
+                        <WeddingPartyProfile height="200px" leftName="TUMI OLUDEMI" rightName="RACHEL POISALL"
+                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" 
+                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" />
+                        <div className="WeddingParty-question-answer-space-div"></div>
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
                     <div className="MidSection-mid-bottom-right-arc-div"></div>
@@ -33,22 +50,22 @@ class WeddingPartyProfile extends Component {
             <div style={{'height': this.props.height}} className="Wedding-question-answer-parent-div">
                 <div className="Wedding-left-profile-div">
                     <div className="Wedding-avatar-style" >
-                        <Avatar className="Wedding-avatar-style" size="100" round="true" src="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" />
+                        <Avatar className="Wedding-avatar-style" size={100} round={true} src={this.props.leftSrc} />
                     </div>
-                    <h1>TUMI OLUDEMI</h1>
-                    <p>Bridesmaid</p>
-                    <p>I'm the most awesome person ever but not really this is just a placeholder for text to test</p>
+                    <h1>{this.props.leftName}</h1>
+                    <p>Groomsman</p>
+                    <p>{this.props.leftDescription}</p>
                 </div>
                 <div className="Wedding-vertical-line-enclosing-div" >
                     <div className="Wedding-vertical-line-div" ></div>
                 </div>
                 <div className="Wedding-right-profile-div">
                     <div className="Wedding-avatar-style" >
-                        <Avatar className="Wedding-avatar-style" size="100" round="true" src="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966" />
+                        <Avatar className="Wedding-avatar-style" size={100} round={true} src={this.props.rightSrc} />
                     </div>
-                    <h1>RACHEL POISALL</h1>
+                    <h1>{this.props.rightName}</h1>
                     <p>Bridesmaid</p>
-                    <p>I'm the most awesome person ever but not really this is just a placeholder for text to test</p>
+                    <p>{this.props.rightDescription}</p>
                 </div>
             </div>
         );
