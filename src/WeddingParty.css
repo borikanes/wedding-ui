@@ -1,0 +1,69 @@
+.Wedding-question-answer-parent-div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    /* background-color: black; */
+}
+
+.Wedding-left-profile-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Wedding-left-profile-div h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.Wedding-left-profile-div p {
+    font-size: 0.8em;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+.Wedding-vertical-line-enclosing-div {
+    width: 40%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.Wedding-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+    margin-top: -30px;
+}
+
+.Wedding-right-profile-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Wedding-right-profile-div h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.Wedding-right-profile-div p {
+    font-size: 0.8em;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.Wedding-avatar-style {
+    width: 100px;
+}
