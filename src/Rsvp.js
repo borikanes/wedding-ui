@@ -21,7 +21,7 @@ export default class Rsvp extends Component {
                         </p>
                         <br/> 
                         <p>
-                            If you've not received an email from us please reach out to Bori or Mallory. 
+                            If you've not received an email from us that includes your personal RSVP link, please reach out to Bori or Mallory. 
                         </p>
                         <br/> 
                         <p>
