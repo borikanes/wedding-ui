@@ -1,0 +1,209 @@
+.Wedding-question-answer-parent-div {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 68px;
+}
+
+.Wedding-left-profile-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Wedding-left-profile-div h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.Wedding-left-profile-div p {
+    font-size: 0.8em;
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+.Wedding-vertical-line-enclosing-div {
+    width: 40%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.Wedding-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+    margin-top: -30px;
+}
+
+.Wedding-right-profile-div {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Wedding-right-profile-div h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.Wedding-right-profile-div p {
+    font-size: 0.8em;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.Wedding-avatar-style {
+    width: 100%;
+}
+
+.WeddingParty-question-answer-space-div {
+    width: 100%;
+    height: 120px;
+    /* background-color: black; */
+}
+
+.Wedding-mid-initials-div {
+    top: 100px;
+    width: 95%;
+    height: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Satisfy', cursive;
+}
+
+.Wedding-mid-initials-vertical-line-div {
+    height: 80%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+.Wedding-vertical-line-small-enclosing-div {
+    display: none;
+}
+
+.Wedding-vertical-line-small-div {
+    display: none;
+}
+
+@media only screen and (min-width : 1100px) {
+    .Wedding-question-answer-parent-div {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (min-width : 1400px) {
+    .Wedding-question-answer-parent-div {
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (min-width : 1600px) {
+    .Wedding-question-answer-parent-div {
+        margin-left: 109px;
+    }
+}
+
+@media only screen and (max-width : 830px) {
+    .Wedding-right-profile-div h1 {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    .Wedding-left-profile-div h1 {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    .Wedding-question-answer-parent-div {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .Wedding-question-answer-parent-div {
+        width: 87%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25px !important;
+    }
+
+    .Wedding-left-profile-div {
+        width: 100%;
+        height: 700px;
+        /* background-color: black; */
+    }
+
+    .Wedding-vertical-line-enclosing-div {
+        width: 100%;
+        height: 50px;
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+    
+    .Wedding-vertical-line-div {
+        height: 2px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .Wedding-right-profile-div {
+        width: 100%;
+        height: 700px;
+    }
+
+    .WeddingParty-question-answer-space-div {
+        width: 100%;
+        height: 0;
+    }
+
+    .Wedding-vertical-line-small-enclosing-div {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+    .Wedding-vertical-line-small-div {
+        height: 2px;
+        width: 100%;
+        color: #800020;
+        background-color: #800020;
+        margin-top: 0;
+        display: inline;
+    }
+
+    .Wedding-mid-initials-div {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width : 410px) {
+    .Wedding-question-answer-parent-div {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width : 390px) {
+    .Wedding-question-answer-parent-div {
+        width: 83%;
+    }
+}

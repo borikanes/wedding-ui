@@ -15,17 +15,24 @@ export default class Faq extends Component {
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
-                        <QuestionAndAnswer question="Which hotel can I stay at the night before the wedding" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Which hotel can I stay at the night before the wedding" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="200px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <div className="Faq-question-answer-space-div" ></div>
+                        <div className="Faq-question-answer-space-div" ></div>
+                        <div className="Faq-mid-initials-div">
+                            <p>M</p>
+                            <div className="Faq-mid-initials-vertical-line-div" ></div>
+                            <p>B</p>
+                        </div>
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
                     <div className="MidSection-mid-bottom-right-arc-div"></div>
@@ -40,7 +47,7 @@ export default class Faq extends Component {
 class QuestionAndAnswer extends Component {
     render(){
         return (
-            <div className="Faq-question-answer-parent-div">
+            <div style={{'height': this.props.height}} className="Faq-question-answer-parent-div">
                 <div className="Faq-question-div">
                     <h1>QUESTION</h1>
                     <p>{this.props.question}</p>
