@@ -30,10 +30,10 @@ export default class WeddingParty extends Component {
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="MIKE FERRACO" rightName="ALLISON SEELEY"
                         leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
-                        leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
+                        leftSrc="http://gravatar.com/avatar/a97d67d08221ce54272481f69c000a6a?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
-                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="JOSHUA ODUMOSU" rightName="JENNY POISALL"
+                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="JOSHUA ODUMOSU" rightName="JENNY EVENSEEN"
                         leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
