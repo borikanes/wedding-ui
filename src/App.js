@@ -13,18 +13,18 @@ import Rsvp from './Rsvp.js';
 class App extends Component {
     render() {
         return (
-            <Router>
-                <div className="App">
-                    <header className="App-header">
-                        < TopHeader />
-                    </header>
-                    <Route exact path="/faq" component={Faq}/>
-                    <Route exact path="/weddingparty" component={Weddingparty}/>
-                    <Route exact path="/registry" component={Registry}/>
-                    <Route exact path="/rsvp" component={Rsvp}/>
-                    <Route exact path="/" component={HomePage}/>
+            <div className="App">
+                <header className="App-header"></header>
+                <div className="App-body-left-div" >
+                    <p>M</p>
                 </div>
-            </Router>
+                <div className="App-body-base-image-div">
+                    <div className="App-body-image-div" ></div>
+                </div>
+                <div className="App-body-right-div" >
+                    <p>B</p>
+                </div>
+            </div>
         );
     }
 }

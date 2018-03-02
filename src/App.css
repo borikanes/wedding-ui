@@ -1,10 +1,54 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: 'Great Vibes', cursive;
+  color: turquoise;
 }
 
 .App-body {
   font-size: 500%;
   font-family: 'Merienda One', cursive;
+}
+
+.App-body-base-image-div {
+  width: 50%;
+  height: 782px;
+  display: flex;
+  justify-content: center;
+}
+
+.App-body-image-div {
+  width: 80%;
+  height: 100%;
+  background: url("images/save-the-date-image.png");
+  background-repeat: no-repeat;
+}
+
+.App-body-left-div {
+  width: 25%;
+  font-size: 200px;
+  left: 0;
+  margin-top: 50px;
+  /* float: left; */
+}
+
+.App-body-left-div p {
+  float: left;
+  padding-left: 20px;
+}
+
+.App-body-right-div {
+  width: 25%;
+  font-size: 200px;
+  right: 0;
+  margin-top: 50px;
+}
+
+.App-body-right-div p {
+  float: right;
+  padding-right: 40px;
 }
 
 .App-body-detail {
@@ -19,14 +63,127 @@
 
 .App-header {
   background-color: #800020;
-  height: 9.0em;
-  padding: 1px 20px; 
+  height: 0em;
+  /* padding: 1px 20px;  */
   color: white;
+  /* z-index: -1; */
 }
 
-@media only screen and (max-width : 610px) {
-  .App-header {
-    height: 4.0em;
-    padding: 1px 0.625em;
+@media only screen and (max-width : 1540px) {
+  .App-body-right-div {
+    width: 15%;
+    font-size: 150px;
+    right: 0;
+    margin-top: 50px;
+  }
+
+  .App-body-left-div {
+    width: 15%;
+    font-size: 150px;
+    left: 0;
+    margin-top: 50px;
+    /* float: left; */
+  }
+
+  .App-body-image-div {
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width : 1190px) {
+  .App-body-base-image-div {
+    width: 60%;
+  }
+
+  .App-body-left-div {
+    width: 20%;
+    font-size: 120px;
+    margin-top: 140px;
+  }
+  
+  .App-body-right-div {
+    width: 20%;
+    font-size: 120px;
+    margin-top: 140px;
+  }
+
+  .App-body-left-div p {
+    float: left;
+    /* padding-left: 20px; */
+  }
+
+  .App-body-right-div p {
+    float: right;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width : 999px) {
+  .App-body-base-image-div {
+    width: 80%;
+  }
+
+  .App-body-left-div {
+    font-size: 90px;
+    margin-top: 210px;
+  }
+  
+  .App-body-right-div {
+    font-size: 90px;
+    margin-top: 210px;
+  }
+}
+
+@media only screen and (max-width : 900px) {
+  .App-body-base-image-div {
+    width: 90%;
+  }
+
+  .App-body-left-div {
+    font-size: 70px;
+    margin-top: 210px;
+  }
+  
+  .App-body-right-div {
+    font-size: 70px;
+    margin-top: 210px;
+  }
+}
+
+@media only screen and (max-width : 860px) {
+  .App-body-image-div {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width : 760px) {
+  .App-body-image-div {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width : 725px) {
+  .App-body-image-div {
+    width: 100%;
+    margin-left: 5px;
+  }
+  
+  .App-body-left-div {
+    font-size: 50px;
+  }
+  
+  .App-body-right-div {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  .App-body-right-div {
+    display: none;
+  }
+
+  .App-body-left-div {
+    display: none;
   }
 }
