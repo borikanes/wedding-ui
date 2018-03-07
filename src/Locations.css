@@ -1,0 +1,17 @@
+.Locations-parent-div {
+    width: 80%;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.Locations-church-div {
+    
+}
+
+.Locations-reception-div {
+    
+}
