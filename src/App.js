@@ -11,6 +11,9 @@ import './App.css';
 // import Rsvp from './Rsvp.js';
 
 class App extends Component {
+    handleClick(){
+        console.log(process.env.REACT_APP_DEEZ);
+    }
     render() {
         return (
             <div className="App">
@@ -18,6 +21,7 @@ class App extends Component {
                 <div className="App-body-left-div" >
                     <p>M</p>
                 </div>
+                {/* <button onClick={this.handleClick}>CLickME</button> */}
                 <div className="App-body-base-image-div">
                     <div className="App-body-image-div" ></div>
                 </div>

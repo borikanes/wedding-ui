@@ -85,8 +85,8 @@
     /* float: left; */
   }
 
-  .App-body-image-div {
-    /* background-size: contain; */
+  .App-body-base-image-div {
+    width: 47%;
   }
 }
 
