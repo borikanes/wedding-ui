@@ -12,7 +12,8 @@ export default class Locations extends Component {
         this.state = {
             isAllowedToSeeContent: false,
             passwd: '',
-            isCodeWrong: false
+            isCodeWrong: false,
+            shouldBeDisabled: true
         };
     }
 
@@ -27,9 +28,21 @@ export default class Locations extends Component {
             passwd: event.target.value,
             isCodeWrong: false
         });
+        if (event.target.value.length === 0) {
+            this.setState({
+                shouldBeDisabled: true
+            });
+        } else {
+            this.setState({
+                shouldBeDisabled: false
+            });
+        }
     };
 
     handlePasswordSubmit() {
+        if (!process.env.REACT_APP_LOCATION_CODE) {
+            alert("Tell bori he broke his website by not setting the Location code....smh")
+        }
         if (this.state.passwd.toLowerCase() === process.env.REACT_APP_LOCATION_CODE) {
             this.setState({
                 isAllowedToSeeContent: true
@@ -43,7 +56,7 @@ export default class Locations extends Component {
 
     render() {
         var errorParagraph;
-        var inputErrorState = {}
+        var inputErrorState = {};
         if (this.state.isCodeWrong) {
             errorParagraph = <p style={{'color': 'red', 'fontSize': '15px'}} >Sorry, the code you entered is wrong. Reach out to bori or mallory if you don't know the code</p>
             inputErrorState = {
@@ -106,7 +119,7 @@ export default class Locations extends Component {
                                 {errorParagraph}
                                 <div>
                                     <input style={inputErrorState} className="Locations-input" type="text" placeholder="Enter code here..." value={this.state.passwd} onChange={this.handlePasswordTextChange} />
-                                    <button onClick={this.handlePasswordSubmit} className="Locations-input-button" >S u b m i t</button>
+                                    <button disabled={this.state.shouldBeDisabled} onClick={this.handlePasswordSubmit} className="Locations-input-button">S u b m i t</button>
                                 </div>
                             </div>
                             <div className="Locations-initials-div">
