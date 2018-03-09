@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .Registry-left-div {
@@ -37,7 +37,7 @@
 }
 
 .Registry-vertical-line-enclosing-div {
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -78,19 +78,18 @@
 }
 
 .Initials-div {
-    width: 40%;
+    width: 100%;
     height: 120px;
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 80px;
-    font-family: 'Satisfy', cursive;
-    margin-left: 28%;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
 }
 
 .Initials-vertical-line-div {
-    height: 86%;
+    height: 79%;
     width: 2px;
     color: #800020;
     background-color: #800020;
@@ -98,8 +97,6 @@
 }
 
 .TextInCircle {
-    /* transform: rotateY(180deg);
-    transition: all 0.6; */
     background-color: #FFD700;
     justify-content: center;
     display: flex;
@@ -163,63 +160,13 @@
     to {background-color: gold;}
 }
 
-@media only screen and (max-width : 1840px) {
-    .Initials-div {
-        margin-left: 26%;
-    }
-}
-
-@media only screen and (max-width : 1620px) {
-    .Initials-div {
-        margin-left: 27%;
-    }
-}
-
-@media only screen and (max-width : 1150px) {
-    .Initials-div {
-        margin-left: 28%;
-    }
-}
-
 @media only screen and (max-width : 980px) {
-    .Registry-parent-div {
-        margin-left: 70px;
-        margin-right: 50px;
-    }
-
     .Registry-information-div p {
         font-size: 17px;
-    }
-
-    .Initials-div {
-        margin-left: 28%;
-    }
-}
-
-@media only screen and (max-width : 950px) {
-    .Registry-parent-div {
-        margin-left: 60px;
-        margin-right: 50px;
-    }
-}
-
-@media only screen and (max-width : 735px) {
-    .Registry-parent-div {
-        margin-left: 55px;
-        margin-right: 50px;
-    }
-
-    .Initials-div {
-        margin-left: 29%;
     }
 }
 
 @media only screen and (max-width : 600px) {
-    .Registry-left-div {
-        margin-left: -32px;
-        width: 44%;
-    }
-
     .Registry-vertical-line-enclosing-div {
         width: 20%;
     }
@@ -230,13 +177,11 @@
         justify-content: center;
         flex-direction: column;
         align-content: center;
-        margin-left: 37px;
     }
 
     .Registry-left-div {
         width: 100%;
         height: 40%;
-        margin-left: -2px;
     }
 
     .Registry-information-div {
@@ -260,8 +205,7 @@
     }
 
     .Initials-div {
-        font-size: 60px !important;
-        margin-left: 29%;
+        font-size: 40px !important;
     }
     
     .Initials-vertical-line-div {
@@ -269,46 +213,8 @@
     }
 }
 
-@media only screen and (max-width : 400px) {
-
-    .Registry-left-div {
-        margin-left: -12px;
-    }
-
-    .Registry-information-div {
-        margin-left: -9px;
-    }
-
-    .Registry-vertical-line-enclosing-div {
-        margin-left: -9px;
-    }
-}
-
 @media only screen and (max-width : 386px) {
-    .Initials-div {
-        font-size: 40px !important;
-        margin-left: 29%;
-    }
-    
     .Initials-vertical-line-div {
         height: 50% !important;
-    }
-}
-
-@media only screen and (max-width : 340px) {
-    .Registry-left-div {
-        margin-left: -14px;
-    }
-
-    .Registry-information-div {
-        margin-left: -11px;
-    }
-
-    .Registry-vertical-line-enclosing-div {
-        margin-left: -11px;
-    }
-
-    .Registry-parent-div {
-        margin-left: 33px;
     }
 }

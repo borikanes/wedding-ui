@@ -3,7 +3,6 @@
     background-color: #800020;
     position: relative;
     font-family: 'Merienda One', cursive;
-    /* z-index: -1; */
 }
 
 .MidSection-body-content-div {
@@ -60,6 +59,12 @@
     width: 100%;
     height: 2px;
     background-color: white
+}
+
+@media only screen and (min-height : 1366px) {
+    .MidSection-footer-divider-div {
+        margin-top: 162px;
+    }
 }
 
 @media only screen and (max-width : 767px) {
