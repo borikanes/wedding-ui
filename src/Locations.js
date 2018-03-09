@@ -57,11 +57,18 @@ export default class Locations extends Component {
     render() {
         var errorParagraph;
         var inputErrorState = {};
+        var disabledButtonStyle = {};
         if (this.state.isCodeWrong) {
             errorParagraph = <p style={{'color': 'red', 'fontSize': '15px'}} >Sorry, the code you entered is wrong. Reach out to bori or mallory if you don't know the code</p>
             inputErrorState = {
                 'border': '1px solid red'
             }
+        }
+
+        if (this.state.shouldBeDisabled) {
+            disabledButtonStyle = {
+                'opacity': '0.5'
+            };
         }
 
         if (this.state.isAllowedToSeeContent) {
@@ -119,7 +126,7 @@ export default class Locations extends Component {
                                 {errorParagraph}
                                 <div>
                                     <input style={inputErrorState} className="Locations-input" type="text" placeholder="Enter code here..." value={this.state.passwd} onChange={this.handlePasswordTextChange} />
-                                    <button disabled={this.state.shouldBeDisabled} onClick={this.handlePasswordSubmit} className="Locations-input-button">S u b m i t</button>
+                                    <button style={disabledButtonStyle} disabled={this.state.shouldBeDisabled} onClick={this.handlePasswordSubmit} className="Locations-input-button">S u b m i t</button>
                                 </div>
                             </div>
                             <div className="Locations-initials-div">
