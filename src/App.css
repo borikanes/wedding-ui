@@ -24,6 +24,13 @@
   color: white;
 }
 
+@media only screen and (max-width : 780px) {
+  .App-header {
+    height: 4.0em;
+    padding: 1px 0.625em;
+  }
+}
+
 @media only screen and (max-width : 610px) {
   .App-header {
     height: 4.0em;

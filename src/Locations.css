@@ -1,0 +1,147 @@
+.Locations-parent-div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Locations-church-div {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Locations-vertical-line-enclosing-div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.Locations-vertical-line-div {
+    height: 100%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 10px;
+    margin-top: -5px;
+}
+
+.Locations-reception-div {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Locations-direction-button {
+    height: 30px;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+.Locations-initials-div {
+    height: 120px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 120px;
+}
+
+.Locations-initials-vertical-line-div {
+    height: 86%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+.Locations-passwd-parent-div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Locations-input {
+    border: 1px solid black;
+    height: 25px;
+    width: 250px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.Locations-input-button {
+    height: 35px;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width : 780px) {
+    .Locations-parent-div {
+        flex-direction: column;
+    }
+
+    .Locations-church-div {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Locations-reception-div {
+        height: 40%;
+        width: 100%;
+    }
+
+    .Locations-vertical-line-enclosing-div {
+        width: 100%;
+        height: 20%;
+        margin-top: 77px;
+    }
+    
+    .Locations-vertical-line-div {
+        height: 2px;
+        width: 100%;
+    }
+
+    .Locations-direction-button{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width : 520px) {
+    .Locations-initials-div {
+        height: 70px;
+    }
+
+    .Locations-initials-div {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .Locations-input {
+        border: 1px solid black;
+        height: 25px;
+        width: 200px;
+    }
+}

@@ -24,6 +24,7 @@ export default class TopHeader extends Component {
                     <a href="/weddingparty" className="Header-nav-buttons">WEDDING PARTY</a>
                     <a href="/registry" className="Header-nav-buttons">REGISTRY</a>
                     <a href="/rsvp" className="Header-nav-buttons">RSVP</a>
+                    <a href="/locations" className="Header-nav-buttons">LOCATIONS</a>
                     <a href="/faq" className="Header-nav-buttons">FAQs</a>
                 </div>
                 <DropDown />

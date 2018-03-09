@@ -8,6 +8,7 @@ import HomePage from './HomePage.js';
 import Faq from './Faq';
 import Weddingparty from './WeddingParty.js';
 import Registry from './Registry.js';
+import Locations from './Locations.js';
 import Rsvp from './Rsvp.js';
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
                     <Route exact path="/weddingparty" component={Weddingparty}/>
                     <Route exact path="/registry" component={Registry}/>
                     <Route exact path="/rsvp" component={Rsvp}/>
+                    <Route exact path="/locations" component={Locations}/>
                     <Route exact path="/" component={HomePage}/>
                 </div>
             </Router>
