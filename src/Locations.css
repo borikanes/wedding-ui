@@ -64,6 +64,38 @@
     margin: 20px;
 }
 
+.Locations-passwd-parent-div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Locations-input {
+    border: 1px solid black;
+    height: 25px;
+    width: 250px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.Locations-input-button {
+    height: 35px;
+    background-color: teal;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
 @media only screen and (max-width : 780px) {
     .Locations-parent-div {
         flex-direction: column;
@@ -103,5 +135,13 @@
 
     .Locations-initials-div {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .Locations-input {
+        border: 1px solid black;
+        height: 25px;
+        width: 200px;
     }
 }
