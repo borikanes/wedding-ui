@@ -4,6 +4,7 @@ import TopicHeader from './TopicHeader.js';
 import './MidSection.css';
 import Footer from './Footer.js';
 import './Locations.css';
+import AWS from 'aws-sdk';
 
 export default class Locations extends Component {
     constructor(props) {

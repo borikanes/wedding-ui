@@ -17,7 +17,7 @@ export default class Rsvp extends Component {
                         <div className="Rsvp-paragraph-div" >
                         <p>
                             Because we are passionate about saving trees, we will NOT be sending out paper 
-                            invites but rather we will send them over email.
+                            invites but rather will send them over email.
                         </p>
                         <br/> 
                         <p>
