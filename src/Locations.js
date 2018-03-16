@@ -4,7 +4,7 @@ import TopicHeader from './TopicHeader.js';
 import './MidSection.css';
 import Footer from './Footer.js';
 import './Locations.css';
-import AWS from 'aws-sdk';
+import axios from 'axios';
 
 export default class Locations extends Component {
     constructor(props) {
@@ -14,8 +14,51 @@ export default class Locations extends Component {
             isAllowedToSeeContent: false,
             passwd: '',
             isCodeWrong: false,
-            shouldBeDisabled: true
+            shouldBeDisabled: true,
+            churchName: '',
+            churchAddress: '',
+            churchTime: '',
+            churchDirection: '',
+            receptionName: '',
+            receptionAddress: '',
+            receptionDirection: '',
+            receptionTime: '',
+            didRequestFail: false
         };
+    }
+
+    componentDidMount(){
+        var axxiosInstance = axios.create({
+            baseURL: process.env.REACT_APP_API_URL,
+            headers: {'x-api-key': process.env.REACT_APP_API_KEY}
+        });
+        let self = this;
+        axxiosInstance.get()
+            .then(function(response){
+                if (response.status === 200) {
+                    let responseJson = JSON.parse(response.data)
+                    self.setState({
+                        churchName: responseJson.church.Name,
+                        churchAddress: responseJson.church.Address,
+                        churchDirection: responseJson.church.Direction,
+                        churchTime: responseJson.church.Time,
+                        receptionName: responseJson.reception.Name,
+                        receptionAddress: responseJson.reception.Address,
+                        receptionDirection: responseJson.reception.Direction,
+                        receptionTime: responseJson.reception.Time
+                    })
+                } else {
+                    self.setState({
+                        didRequestFail: true
+                    })
+                }
+            }).then(function(error){
+                if (error) {
+                    self.setState({
+                        didRequestFail: true
+                    })
+                }
+            });
     }
 
     handlePinButtonClick() {
@@ -73,47 +116,63 @@ export default class Locations extends Component {
         }
 
         if (this.state.isAllowedToSeeContent) {
-            return (
-                <div className="MidSection-parent-div">
-                    <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
-                    <div className="MidSection-body-content-div" >
-                        <div className="MidSection-mid-top-left-arc-div"></div>
-                        <div className="MidSection-mid-top-right-arc-div"></div>
-                        <div className="MidSection-inner-div" >
-                            <div className="Locations-parent-div" >
-                                <div className="Locations-church-div" >
-                                    <h1>Church</h1>
-                                    <p>Some church</p>
-                                    <p>Church ceremony starts at 11am</p>
-                                    <p>1600 Pennsylvania Ave, Some City, MD 22222</p>
-                                    <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button" >D i r e c t i o n</button>
-                                </div>
-                                <div className="Locations-vertical-line-enclosing-div" >
-                                    <div className="Locations-vertical-line-div" ></div>
-                                </div>
-                                <div className="Locations-reception-div" >
-                                    <h1 style={{'marginTop': 0, 'marginBottom': 0}}>Reception</h1>
-                                    <h2 style={{'marginTop': 0, 'marginBottom': 0}} >&</h2>
-                                    <h2 style={{'marginTop': 0}}>Nigerian ceremony</h2>
-                                    <p>Some Hall's Placeholder</p>
-                                    <p>Reception starts at 2pm. You're welcome to arrive early</p>
-                                    <p>1600 Pennsylvania Avenue, Some City, MD 22222</p>
-                                    <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button" >D i r e c t i o n</button>
-                                </div>
-                            </div>
-                            <div className="Locations-initials-div">
-                                    <p>M</p>
-                                    <div className="Locations-initials-vertical-line-div" ></div>
-                                    <p>B</p>
-                            </div>
-                        </div>
-                        <div className="MidSection-mid-bottom-left-arc-div"></div>
-                        <div className="MidSection-mid-bottom-right-arc-div"></div>
+            if (!this.state.churchAddress) { // If response from server doesn't come back or it's still loading
+                return(
+                    <div className="MidSection-parent-div">
+                        <p style={{'fontSize': '50px', 'color': 'white'}}>Loading.....</p>
                     </div>
-                    <div className="MidSection-footer-divider-div" ></div>
-                    <Footer />
-                </div>
-            );
+                );
+            } else if(this.state.didRequestFail) { // If the request fails throw informational error
+                return(
+                    <div className="MidSection-parent-div">
+                        <p style={{'fontSize': '30px', 'color': 'white'}}>Couldn't reach the server to pull the location information. Please inform bori, sorry</p>
+                    </div>
+                );
+            } else {
+                var churchDirection = ''
+                churchDirection = this.state.churchDirection
+                return (
+                    <div className="MidSection-parent-div">
+                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <div className="MidSection-body-content-div" >
+                            <div className="MidSection-mid-top-left-arc-div"></div>
+                            <div className="MidSection-mid-top-right-arc-div"></div>
+                            <div className="MidSection-inner-div" >
+                                <div className="Locations-parent-div" >
+                                    <div className="Locations-church-div" >
+                                        <h1>Church</h1>
+                                        <p>{this.state.churchName}</p>
+                                        <p>{this.state.churchTime}</p>
+                                        <p>{this.state.churchAddress}</p>
+                                        <button onClick={()=> window.open(churchDirection)} className="Locations-direction-button" >D i r e c t i o n</button>
+                                    </div>
+                                    <div className="Locations-vertical-line-enclosing-div" >
+                                        <div className="Locations-vertical-line-div" ></div>
+                                    </div>
+                                    <div className="Locations-reception-div" >
+                                        <h1 style={{'marginTop': 0, 'marginBottom': 0}}>Reception</h1>
+                                        <h2 style={{'marginTop': 0, 'marginBottom': 0}} >&</h2>
+                                        <h2 style={{'marginTop': 0}}>Nigerian ceremony</h2>
+                                        <p>{this.state.receptionName}</p>
+                                        <p>{this.state.receptionTime}</p>
+                                        <p>{this.state.receptionAddress}</p>
+                                        <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button" >D i r e c t i o n</button>
+                                    </div>
+                                </div>
+                                <div className="Locations-initials-div">
+                                        <p>M</p>
+                                        <div className="Locations-initials-vertical-line-div" ></div>
+                                        <p>B</p>
+                                </div>
+                            </div>
+                            <div className="MidSection-mid-bottom-left-arc-div"></div>
+                            <div className="MidSection-mid-bottom-right-arc-div"></div>
+                        </div>
+                        <div className="MidSection-footer-divider-div" ></div>
+                        <Footer />
+                    </div>
+                );
+            }
         } else {
             return (
                 <div className="MidSection-parent-div">
