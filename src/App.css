@@ -3,62 +3,235 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  font-family: 'Great Vibes', cursive;
-  color: turquoise;
+  font-family: 'Dancing Script', cursive;
+  /* color: teal; */
 }
 
-.App-body {
-  font-size: 500%;
-  font-family: 'Merienda One', cursive;
-}
-
-.App-body-base-image-div {
+.App-body-mid-div {
   width: 50%;
-  height: 782px;
   display: flex;
   justify-content: center;
 }
 
-.App-body-image-div {
-  width: 80%;
+.App-mid-innerbase-div {
+  top: 40px;
+  background-color: white;
+  height: 780px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.App-mid-top-left-arc-div {
+  height: 70px;
+  width: 70px;
+  float: left;
+  background-image: url("images/top-left.png");
+}
+
+.App-mid-top-right-arc-div {
+  height: 70px;
+  width: 70px;
+  float: right;
+  background-image: url("images/top-right.png");
+}
+
+.App-mid-name-div {
+  /* background-color: black; */
+  height: 120px;
+  width: 90%;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.App-mid-name-div h1 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.App-mallory-div {
   height: 100%;
-  background: url("images/save-the-date-image.png");
-  background-repeat: no-repeat;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.App-ampersand-div {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.App-bori-div {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.App-uppermid-div {
+  width: 90%;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.App-date-div {
+  width: 90%;
+  height: 150px;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.App-horizontal-line {
+  width: 100%;
+}
+
+.App-month-div {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-month-div p {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.App-day-div {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.App-year-div {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-year-div p {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.App-location-div {
+  margin-top: -20px;
+  width: 90%;
+  height: 90px;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.App-location-div h1 {
+  margin: 0;
+}
+
+.App-mid-bottom-horizontal-line-div {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.App-bottom-horizontal-line {
+  color: #800020;
+  width: 90%;
+}
+
+.App-mid-initials-div {
+  margin-top: 30px;
+  width: 50%;
+  height: 120px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 70px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.App-mid-initials-vertical-line-div {
+  height: 100%;
+  width: 2px;
+  color: #800020;
+  background-color: #800020;
+  margin: 20px;
+}
+
+.App-mid-bottom-left-arc-div {
+  height: 70px;
+  width: 70px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-image: url("images/bottom-left.png");
+}
+
+.App-mid-bottom-right-arc-div {
+  height: 70px;
+  width: 70px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-image: url("images/bottom-right.png");
 }
 
 .App-body-left-div {
   width: 25%;
-  font-size: 200px;
-  left: 0;
+  font-size: 20px;
   margin-top: 50px;
-  /* float: left; */
+  display: flex;
+  justify-content: center;
 }
 
 .App-body-left-div p {
-  float: left;
-  padding-left: 20px;
+  font-size: 12em;
+  color: teal;
 }
 
 .App-body-right-div {
   width: 25%;
-  font-size: 200px;
-  right: 0;
+  font-size: 20px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .App-body-right-div p {
-  /* float: right; */
-  padding-right: 220px;
+  font-size: 12em;
+  color: teal;
 }
 
 .App-body-detail {
   font-size: 250%;
   font-family: 'Merienda One', cursive;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .App-header {
@@ -69,134 +242,113 @@
   /* z-index: -1; */
 }
 
-@media only screen and (max-width : 1540px) {
-  .App-body-right-div {
-    width: 15%;
-    font-size: 150px;
-    right: 0;
-    margin-top: 50px;
+@media only screen and (max-width : 1160px) {
+  .App-mallory-div {
+    font-size: 1.3em;
   }
 
-  .App-body-left-div {
-    width: 15%;
-    font-size: 150px;
-    left: 0;
-    margin-top: 50px;
-    /* float: left; */
-  }
-
-  .App-body-base-image-div {
-    width: 47%;
+  .App-bori-div {
+    font-size: 1.3em;
   }
 }
 
-@media only screen and (max-width : 1190px) {
-  .App-body-base-image-div {
-    width: 60%;
+@media only screen and (max-width : 980px) {
+  .App-mallory-div {
+    font-size: 1em;
   }
 
-  .App-body-left-div {
-    width: 20%;
-    font-size: 120px;
-    margin-top: 140px;
+  .App-bori-div {
+    font-size: 1em;
   }
-  
+}
+
+@media only screen and (max-width : 880px) {
+  .App-mid-initials-div {
+    font-size: 50px;
+  }
+
+  .App-body-mid-div {
+    width: 66%;
+  }
+
   .App-body-right-div {
-    width: 20%;
-    font-size: 120px;
-    margin-top: 140px;
-  }
-
-  .App-body-left-div p {
-    float: left;
-    /* padding-left: 20px; */
+    margin-top: 150px;
+    width: 17%;
   }
 
   .App-body-right-div p {
-    float: right;
-    padding-right: 40px;
+    font-size: 7em;
+  }
+
+  .App-body-left-div {
+    margin-top: 150px;
+    width: 17%;
+  }
+
+  .App-body-left-div p {
+    font-size: 7em;
+  }
+
+  .App-mid-top-left-arc-div {
+    height: 35px;
+    width: 35px;
+    background-image: url("images/top-left-small.png");
+  }
+  
+  .App-mid-top-right-arc-div {
+    height: 35px;
+    width: 35px;
+    background-image: url("images/top-right-small.png");
+  }
+
+  .App-mid-bottom-left-arc-div {
+    height: 35px;
+    width: 35px;
+    background-image: url("images/bottom-left-small.png");
+  }
+  
+  .App-mid-bottom-right-arc-div {
+    height: 35px;
+    width: 35px;
+    background-image: url("images/bottom-right-small.png");
   }
 }
 
-@media only screen and (max-width : 999px) {
-  .App-body-base-image-div {
+@media only screen and (max-width : 880px) {
+  .App-body-right-div {
+    margin-top: 250px;
+  }
+
+  .App-body-right-div p {
+    font-size: 4em;
+  }
+
+  .App-body-left-div {
+    margin-top: 250px;
+  }
+
+  .App-body-left-div p {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width : 680px) {
+  .App-ampersand-div {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width : 510px) {
+  .App-body-mid-div {
     width: 80%;
+    margin-left: -100px;
   }
 
-  .App-body-left-div {
-    font-size: 90px;
-    margin-top: 210px;
-  }
-  
-  .App-body-right-div {
-    font-size: 90px;
-    margin-top: 210px;
-  }
-}
-
-@media only screen and (max-width : 900px) {
-  .App-body-base-image-div {
-    width: 90%;
-  }
-
-  .App-body-left-div {
-    font-size: 70px;
-    margin-top: 210px;
-  }
-  
-  .App-body-right-div {
-    font-size: 70px;
-    margin-top: 210px;
-  }
-}
-
-@media only screen and (max-width : 860px) {
-  .App-body-image-div {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width : 760px) {
-  .App-body-image-div {
-    width: 100%;
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width : 725px) {
-  .App-body-image-div {
-    width: 100%;
-    margin-left: 5px;
-  }
-  
-  .App-body-left-div {
-    font-size: 50px;
-  }
-  
-  .App-body-right-div {
-    font-size: 50px;
-  }
-}
-
-@media only screen and (max-width : 700px) {
   .App-body-right-div {
     display: none;
   }
 
   .App-body-left-div {
     display: none;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  .App-body-base-image-div {
-    width: 100%;
-    height: 980px;
-  }
-  
-  .App-body-image-div {
-    background: url("images/save-the-date-small.png");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
