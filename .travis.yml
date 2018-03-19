@@ -8,8 +8,10 @@ branches:
 before_install:
   - sudo pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
-env:
-  - AWS_ACCESS_KEY_ID=$access_key_id
-  - AWS_SECRET_ACCESS_KEY=$secret_access_key
+  - export AWS_ACCESS_KEY_ID=$access_key_id
+  - export AWS_SECRET_ACCESS_KEY=$secret_access_key
+# env:
+#   - AWS_ACCESS_KEY_ID=$access_key_id
+#   - AWS_SECRET_ACCESS_KEY=$secret_access_key
 script:
   - aws s3 ls
