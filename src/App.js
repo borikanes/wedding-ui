@@ -15,6 +15,32 @@ class App extends Component {
         console.log(process.env.REACT_APP_DEEZ);
     }
     render() {
+        var saveTheDateStyle;
+        var dayStyle;
+        if (window.matchMedia("(max-width: 400px)").matches) {
+            saveTheDateStyle = {
+                marginBottom: '20px', 
+                marginTop: '20px', 
+                fontSize: '35px', 
+                color: 'turquoise'
+            };
+
+            dayStyle = {
+                fontSize: '40px',
+                marginTop: '15px'
+            };
+        } else {
+            saveTheDateStyle = {
+                marginBottom: '0', 
+                marginTop: '0', 
+                fontSize: '50px', 
+                color: 'turquoise'
+            };
+            
+            dayStyle = {
+                fontSize: '45px'
+            };
+        }
         return (
             <div className="App">
                 <header className="App-header"></header>
@@ -40,7 +66,7 @@ class App extends Component {
                             </div>
                         </div>
                         <div className="App-uppermid-div">
-                            <h1 style={{'marginBottom': '0', 'marginTop': '0', 'fontSize': '50px', 'color': 'turquoise'}} >SAVE THE DATE!</h1>
+                            <h1 className="App-save-the-date-h1" >SAVE THE DATE!</h1>
                             <h1 style={{'marginBottom': '0', 'marginTop': '10px'}} >We're getting married</h1>
                             <h1 style={{'marginBottom': '0', 'marginTop': '0'}} >on</h1>
                         </div>
@@ -51,7 +77,7 @@ class App extends Component {
                                 <hr className="App-horizontal-line" />
                             </div>
                             <div className="App-day-div">
-                                <p style={{'fontSize': '45px'}} >22</p>
+                                <p>22</p>
                             </div>
                             <div className="App-year-div">
                             <hr className="App-horizontal-line" />
@@ -65,6 +91,9 @@ class App extends Component {
                         </div>
                         <div className="App-mid-bottom-horizontal-line-div">
                             <hr className="App-bottom-horizontal-line" />
+                        </div>
+                        <div className="App-webiste-info-div" >
+                            <p>Wedding Website - <a href="http://boriandmallory.com">boriandmallory.com</a></p>
                         </div>
                         <div className="App-mid-initials-div">
                             <p>M</p>

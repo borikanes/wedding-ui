@@ -4,13 +4,13 @@
   justify-content: space-around;
   flex-direction: row;
   font-family: 'Dancing Script', cursive;
-  /* color: teal; */
 }
 
 .App-body-mid-div {
   width: 50%;
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .App-mid-innerbase-div {
@@ -37,7 +37,6 @@
 }
 
 .App-mid-name-div {
-  /* background-color: black; */
   height: 120px;
   width: 90%;
   position: relative;
@@ -60,6 +59,7 @@
   justify-content: center;
   flex-direction: column;
   font-size: 1.5em;
+  align-items: center;
 }
 
 .App-ampersand-div {
@@ -78,6 +78,7 @@
   justify-content: center;
   flex-direction: column;
   font-size: 1.5em;
+  align-items: center;
 }
 
 .App-uppermid-div {
@@ -86,6 +87,13 @@
   display: inline-flex;
   justify-content: space-evenly;
   flex-direction: column;
+}
+
+.App-save-the-date-h1 {
+  margin-bottom: 0; 
+  margin-top: 0; 
+  font-size: 50px; 
+  color: turquoise;
 }
 
 .App-date-div {
@@ -119,7 +127,10 @@
   width: 20%;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
+}
+
+.App-day-div p {
+  font-size: 45px;
 }
 
 .App-year-div {
@@ -164,6 +175,20 @@
   width: 90%;
 }
 
+.App-webiste-info-div {
+  width: 90%;
+  position: relative;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-size: 1.2em;
+  font-family: 'Inconsolata', cursive;
+}
+
+.App-webiste-info-div p {
+  margin: 0;
+}
+
 .App-mid-initials-div {
   margin-top: 30px;
   width: 50%;
@@ -174,7 +199,7 @@
   justify-content: center;
   flex-direction: row;
   font-size: 70px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Sacramento', cursive;
 }
 
 .App-mid-initials-vertical-line-div {
@@ -206,27 +231,30 @@
 .App-body-left-div {
   width: 25%;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
+  font-family: 'Great Vibes', cursive;
 }
 
 .App-body-left-div p {
-  font-size: 12em;
-  color: teal;
+  font-size: 7em;
+  color: turquoise;
+  margin-left: -32px;
 }
 
 .App-body-right-div {
   width: 25%;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
+  font-family: 'Great Vibes', cursive;
 }
 
 .App-body-right-div p {
-  font-size: 12em;
-  color: teal;
+  font-size: 7em;
+  color: turquoise;
 }
 
 .App-body-detail {
@@ -237,9 +265,7 @@
 .App-header {
   background-color: #800020;
   height: 0em;
-  /* padding: 1px 20px;  */
   color: white;
-  /* z-index: -1; */
 }
 
 @media only screen and (max-width : 1160px) {
@@ -289,6 +315,7 @@
     font-size: 7em;
   }
 
+
   .App-mid-top-left-arc-div {
     height: 35px;
     width: 35px;
@@ -312,11 +339,19 @@
     width: 35px;
     background-image: url("images/bottom-right-small.png");
   }
+
+  .App-mid-initials-div {
+    /* margin-top: 50px; */
+  }
+
+  .App-mid-initials-vertical-line-div {
+    height: 80%;
+  }
 }
 
 @media only screen and (max-width : 880px) {
   .App-body-right-div {
-    margin-top: 250px;
+    margin-top: 275px;
   }
 
   .App-body-right-div p {
@@ -324,17 +359,42 @@
   }
 
   .App-body-left-div {
-    margin-top: 250px;
+    margin-top: 275px;
   }
 
   .App-body-left-div p {
     font-size: 4em;
+    margin-left: -20px;
   }
 }
 
 @media only screen and (max-width : 680px) {
   .App-ampersand-div {
     font-size: 25px;
+  }
+
+  .App-save-the-date-h1 {
+    font-size: 44px; 
+  }
+
+  .App-body-left-div {
+    margin-top: 300px;
+  }
+
+  .App-body-right-div {
+    margin-top: 300px;
+  }
+
+  .App-body-left-div p {
+    font-size: 3em;
+  }
+
+  .App-body-right-div p {
+    font-size: 3em;
+  }
+
+  .App-webiste-info-div {
+    font-size: 1.1em;
   }
 }
 
@@ -350,5 +410,93 @@
 
   .App-body-left-div {
     display: none;
+  }
+
+  .App-save-the-date-h1 {
+    font-size: 42px; 
+  }
+
+  .App-webiste-info-div {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .App-mid-innerbase-div {
+    height: 1080px;
+  }
+
+  .App-mid-name-div {
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    margin-top: 0;
+    align-items: center;
+    font-size: 0.9em;
+  }
+  
+  .App-ampersand-div {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .App-uppermid-div {
+    font-size: 15px;
+  }
+
+  .App-save-the-date-h1 {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    font-size: 35px; 
+    color: turquoise;
+  }
+
+  .App-date-div {
+    align-items: center;
+    height: 250px;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .App-month-div p {
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  .App-day-div p {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+
+  .App-year-div p {
+    font-size: 25px;
+    margin: 5px;
+  }
+
+  .App-location-div {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .App-mid-initials-div {
+    font-size: 40px;
+    height: 80px;
+    width: 60%;
+    margin-top: 70px;
+  }
+
+  .App-mid-initials-vertical-line-div {
+    height: 80%;
+    margin: 10px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width : 327px) {
+  .App-mid-initials-div {
+    font-size: 40px;
+    height: 80px;
+    width: 60%;
+    margin-top: 30px;
   }
 }
