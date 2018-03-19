@@ -10,10 +10,12 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
   - export AWS_ACCESS_KEY_ID=$access_key_id
   - export AWS_SECRET_ACCESS_KEY=$secret_access_key
-# env:
-#   - AWS_ACCESS_KEY_ID=$access_key_id
-#   - AWS_SECRET_ACCESS_KEY=$secret_access_key
 install:
   - npm install
 script:
   - aws s3 ls
+  - REACT_APP_API_URL=$REACT_APP_API_URL npm run build
+  - aws s3 cp build/* s3://boriandmallorytravis/ --recursive
+cache:
+  directories:
+    - "node_modules"
