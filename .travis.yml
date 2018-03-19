@@ -13,6 +13,7 @@ before_install:
 # env:
 #   - AWS_ACCESS_KEY_ID=$access_key_id
 #   - AWS_SECRET_ACCESS_KEY=$secret_access_key
-script:
+install:
   - npm install
+script:
   - aws s3 ls
