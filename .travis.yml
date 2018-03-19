@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 6.12
+  - 6.12.0
 branches:
   only:
   - master
@@ -14,4 +14,5 @@ before_install:
 #   - AWS_ACCESS_KEY_ID=$access_key_id
 #   - AWS_SECRET_ACCESS_KEY=$secret_access_key
 script:
+  - npm install
   - aws s3 ls
