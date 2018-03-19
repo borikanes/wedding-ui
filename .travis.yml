@@ -6,7 +6,7 @@ branches:
   - master
   - feature/travis
 before_install:
-  - pip install awscli
+  - sudo pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
 env:
   - AWS_ACCESS_KEY_ID=$access_key_id
