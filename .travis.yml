@@ -4,19 +4,12 @@ node_js:
 branches:
   only:
   - master
+  - feature/travis
 before_install:
-  - pip install --user awscli
+  - pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
+env:
+  - AWS_ACCESS_KEY_ID=$access_key_id
+  - AWS_SECRET_ACCESS_KEY=$secret_access_key
 script:
-  - 
-deploy:
-  provider: s3
-  access_key_id: 
-    secure: "k00HucB5KW+N7D3K7Lp/zLvEuhibuCO0nD8aWw3/QnRcssbLv+HZW1JDe512VA2PGZKn4zx7OSij6M9yoboxz5PuUxI3COoJOiYrilRCVyWsA6JsUXkz4u8hPSuH4Hev5SbtR5QZ8ShmUPGE24lGBSgDWRB3SHXbBq2BIVJ68QeOZv0l5kkAIzvlQOZTrYSVn67RcmfdsEz5inLNtZFAe7U/UHdq06zrbJLXwtaCquyS3JM4ysyGsk7CkcqdULrsLCMTapGW8651R1Fa/FiquqPzHY/NwW0IqTGyLeKAxHcuC+jfKEUXRWae04AMBy/MpJuZbZv8MOfmemF+bRSJRgiQfGJXoaGzBB+eoXXETBUfDnO2rX0ltu2rhUKAb8Wz7i8jtdAkQ2OAUpsAkJo9oXPocvdpYfnCBOij7oj64TxGmmTfL4lzQgBdPI/WOUyaY96/SbwyK2K5XMtivr8ZxhlMm56mTr3CBUvO3AfYm3QVTC5+kIXlFtbcq0Bpu3JZaFZR+kWxzvWMdsyRnh5zTxzl/ANmicb/7KVq9K02B0BY2n/kR3cJxoNzeW2EFtJtcqCrp/03AznWzIuTzsK+pKVe2e63EKUJow5Bb/WGTmXekI4prJPA5CcS5TwGFR0Jm8eOoqhnGx85LO8rPdUVT5X1KVev45hKWY+nXBwG9Xk="
-  secret_access_key:
-    secure: on6GlN5pSVeVs/n32eNM3TuZZNFCW3oA87jSdRbejz+S4PnKn4qHCoX/A0Lpbtohnw3/0My7DyOPBOen/D1aUuJb6PHRxg196hyr1TKN6bnJreLiW7YbSLhWJMjef07n6LvMc9+J3QhvcC1hbl0pIz4bXmlj9DQ+cXp2BdZbNKcC11q8ARTR58H7QQ72Iy4Sot9pm+PvuVTfGrkC7h2ACZBoBv/cjtUAycqIxe4Oybg9J34lheLlOSBm1skoCfzhfb3YXkNa/09evl/NNt5sPWZsT1P6PJ3kewH63t1Q4cYewAe36BJHI0VhYfa+W78kpgmbtReUeSEVOLMLCTfEPosBDHbjLskD9ZVO5XiaD2cHjVLWCOxI8J+yMECynDdT1nlKNRh9+INSKR9u8+i4AjaxpVrI56AkdoP6P8vdvbkymiTtf7/WprgekN+tH697DbJ/e2kQW5WtJ2bFb+ftVugduTuzvDcULs+oO1mIrXLz7UaOci8Ag/aZVb+TTu/GfUCCX0toqgR5sHN4ejKovrBgER3f8nkae5uuS4cMIQs41e/HJVvxx6rMWg7MFIXiwc1SUaVqq3ychtJUOeUt1XXlT/7OEptR2k/gIC4O9L5dx9aw0OH1+lGbDB1ZorYQ+ILWgH9v304L9NhMdSJBgcJpD1saDJM2j5TL0+Fu75k=
-  bucket: boriandmallorytest.com
-  local-dir: "./build/*"
-  acl: public_read
-  on:
-    repo: borikanes/wedding-ui
+  - aws s3 ls
