@@ -15,7 +15,7 @@ install:
 script:
   - aws s3 ls
   - REACT_APP_API_URL=$REACT_APP_API_URL npm run build
-  - aws s3 cp build/* s3://boriandmallorytravis/ --recursive
+  - aws s3 cp build s3://boriandmallorytravis/ --recursive
 cache:
   directories:
     - "node_modules"
