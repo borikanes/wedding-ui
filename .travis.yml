@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 6.12.0
+branches:
+  only:
+  - master
+before_install:
+  - sudo pip install awscli
+  - export PATH=$PATH:$HOME/.local/bin
+  - export AWS_ACCESS_KEY_ID=$access_key_id
+  - export AWS_SECRET_ACCESS_KEY=$secret_access_key
+install:
+  - npm install
+script:
+  - REACT_APP_API_URL=$REACT_APP_API_URL npm run build
+  - aws s3 cp build $s3_bucket --recursive --acl public-read
+cache:
+  directories:
+    - "node_modules"
