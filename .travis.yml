@@ -4,6 +4,7 @@ node_js:
 branches:
   only:
   - master
+  - feature/travis
 before_install:
   - sudo pip install awscli
   - export PATH=$PATH:$HOME/.local/bin
@@ -14,7 +15,7 @@ install:
 script:
   - aws s3 ls
   - REACT_APP_API_URL=$REACT_APP_API_URL npm run build
-  - aws s3 cp build s3://boriandmallorytravis/ --recursive --acl public-read
+  - aws s3 cp build $s3_bucket --recursive --acl public-read
 cache:
   directories:
     - "node_modules"
