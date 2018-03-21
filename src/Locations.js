@@ -23,7 +23,8 @@ export default class Locations extends Component {
             receptionAddress: '',
             receptionDirection: '',
             receptionTime: '',
-            didRequestFail: false
+            didRequestFail: false,
+            isLoading: false
         };
     }
 
@@ -61,7 +62,8 @@ export default class Locations extends Component {
             headers: {'LocationCode': this.state.passwd.toLowerCase()}
         });
         let self = this;
-        axiosInstance.get()
+        this.setState({isLoading : true}, () => {
+            axiosInstance.get()
             .then( response => {
                 if (response.status === 200) {
                     let responseJson = JSON.parse(response.data)
@@ -74,26 +76,31 @@ export default class Locations extends Component {
                         receptionName: responseJson.reception.Name,
                         receptionAddress: responseJson.reception.Address,
                         receptionDirection: responseJson.reception.Direction,
-                        receptionTime: responseJson.reception.Time
+                        receptionTime: responseJson.reception.Time,
+                        isLoading : false
                     });
                 } else {
                     self.setState({
-                        didRequestFail: true
+                        didRequestFail: true,
+                        isLoading : false
                     })
                 }
             }).catch(error => {
                 if (error.response && error.response.status === 403) { // Lambda/APIGW will return 403 for wrong code entered
                     self.setState({
-                        isCodeWrong: true
+                        isCodeWrong: true,
+                        isLoading : false
                     });
                 } else {
                     if (error) {
                         self.setState({
-                            didRequestFail: true
+                            didRequestFail: true,
+                            isLoading : false
                         })
                     }
                 }
         });
+        })
     }
 
     render() {
@@ -124,7 +131,9 @@ export default class Locations extends Component {
         }
 
         if (this.state.isAllowedToSeeContent) {
-            if (!this.state.churchAddress) { // If response from server doesn't come back or it's still loading
+            console.log(this.state.isLoading)
+            if (this.state.isLoading) { // If response from server doesn't come back or it's still loading
+
                 return(
                     <div className="MidSection-parent-div">
                         <p style={{'fontSize': '50px', 'color': 'white'}}>Loading.....</p>
@@ -138,7 +147,9 @@ export default class Locations extends Component {
                 );
             } else {
                 var churchDirection = ''
+                var receptionDirection = ''
                 churchDirection = this.state.churchDirection
+                receptionDirection = this.state.receptionDirection
                 return (
                     <div className="MidSection-parent-div">
                         <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
@@ -164,7 +175,7 @@ export default class Locations extends Component {
                                         <p>{this.state.receptionName}</p>
                                         <p>{this.state.receptionTime}</p>
                                         <p>{this.state.receptionAddress}</p>
-                                        <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button">Get Directions</button>
+                                        <button onClick={()=> window.open(receptionDirection)} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                 </div>
                                 <div className="Locations-initials-div">
@@ -182,34 +193,47 @@ export default class Locations extends Component {
                 );
             }
         } else { //If not authenticated don't show location
-            return (
-                <div className="MidSection-parent-div">
-                    <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
-                    <div className="MidSection-body-content-div" >
-                        <div className="MidSection-mid-top-left-arc-div"></div>
-                        <div className="MidSection-mid-top-right-arc-div"></div>
-                        <div className="MidSection-inner-div" >
-                            <div className="Locations-passwd-parent-div" >
-                                <p>To view the wedding locations, please enter the code we sent you. It's in your wedding invite email. Reach out to Bori or Mallory if you can't find it</p>
-                                {errorParagraph}
-                                <div>
-                                    <input style={inputErrorState} className="Locations-input" type="text" placeholder="Enter code here..." value={this.state.passwd} onChange={this.handlePasswordTextChange} />
-                                    <button style={disabledButtonStyle} disabled={this.state.shouldBeDisabled} onClick={this.handlePasswordSubmit} className="Locations-input-button">S u b m i t</button>
+            if (this.state.isLoading) { // If response from server doesn't come back or it's still loading
+                return(
+                    <div className="MidSection-parent-div">
+                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <div className="Locations-loading-parent-div">
+                            <div className="loader"></div>
+                        </div>
+                        <div className="MidSection-footer-divider-div" ></div>
+                        <Footer />
+                    </div>
+                );
+            } else {
+                return (
+                    <div className="MidSection-parent-div">
+                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <div className="MidSection-body-content-div" >
+                            <div className="MidSection-mid-top-left-arc-div"></div>
+                            <div className="MidSection-mid-top-right-arc-div"></div>
+                            <div className="MidSection-inner-div" >
+                                <div className="Locations-passwd-parent-div" >
+                                    <p>To view the wedding locations, please enter the code we sent you. It's in your wedding invite email. Reach out to Bori or Mallory if you can't find it</p>
+                                    {errorParagraph}
+                                    <div>
+                                        <input style={inputErrorState} className="Locations-input" type="text" placeholder="Enter code here..." value={this.state.passwd} onChange={this.handlePasswordTextChange} />
+                                        <button style={disabledButtonStyle} disabled={this.state.shouldBeDisabled} onClick={this.handlePasswordSubmit} className="Locations-input-button">S u b m i t</button>
+                                    </div>
+                                </div>
+                                <div className="Locations-initials-div">
+                                    <p>M</p>
+                                    <div className="Locations-initials-vertical-line-div" ></div>
+                                    <p>B</p>
                                 </div>
                             </div>
-                            <div className="Locations-initials-div">
-                                <p>M</p>
-                                <div className="Locations-initials-vertical-line-div" ></div>
-                                <p>B</p>
-                            </div>
+                            <div className="MidSection-mid-bottom-left-arc-div"></div>
+                            <div className="MidSection-mid-bottom-right-arc-div"></div>
                         </div>
-                        <div className="MidSection-mid-bottom-left-arc-div"></div>
-                        <div className="MidSection-mid-bottom-right-arc-div"></div>
+                        <div className="MidSection-footer-divider-div" ></div>
+                        <Footer />
                     </div>
-                    <div className="MidSection-footer-divider-div" ></div>
-                    <Footer />
-                </div>
-            );
+                );
+            }
         }
     }
 }
