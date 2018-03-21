@@ -152,7 +152,7 @@ export default class Locations extends Component {
                                         <p>{this.state.churchName}</p>
                                         <p>{this.state.churchTime}</p>
                                         <p>{this.state.churchAddress}</p>
-                                        <button onClick={()=> window.open(churchDirection)} className="Locations-direction-button" >D i r e c t i o n s</button>
+                                        <button onClick={()=> window.open(churchDirection)} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                     <div className="Locations-vertical-line-enclosing-div" >
                                         <div className="Locations-vertical-line-div" ></div>
@@ -164,7 +164,7 @@ export default class Locations extends Component {
                                         <p>{this.state.receptionName}</p>
                                         <p>{this.state.receptionTime}</p>
                                         <p>{this.state.receptionAddress}</p>
-                                        <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button" >D i r e c t i o n s</button>
+                                        <button onClick={()=> window.open('https://goo.gl/maps/jGxfRMpbvpS2')} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                 </div>
                                 <div className="Locations-initials-div">

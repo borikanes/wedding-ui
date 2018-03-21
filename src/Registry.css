@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: center;
     font-size: 50px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Sacramento', cursive;
 }
 
 .Initials-vertical-line-div {
@@ -164,6 +164,10 @@
     .Registry-information-div p {
         font-size: 17px;
     }
+
+    .Initials-vertical-line-div {
+        height: 70% !important;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -209,7 +213,7 @@
     }
     
     .Initials-vertical-line-div {
-        height: 77% !important;
+        height: 60% !important;
     }
 }
 

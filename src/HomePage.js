@@ -37,16 +37,13 @@ export default class HomePage extends Component {
                         <div className="Homepage-mid-top-right-arc-div"></div>
                         <div className="Homepage-mid-name-div">
                             <div className="Homepage-mid-mallory-div">
-                                <h1> 
-                                    Mallory 
-                                    <span> McDonald </span>
-                                </h1>
+                                <h1 className="Homepage-mid-mallory-top-h1">Mallory</h1>
+                                <h1 className="Homepage-mid-mallory-bottom-h1">McDonald</h1>
                             </div>
                             <span style={ampersandSpanStyle}>&</span>
                             <div className="Homepage-mid-bori-div">
                                 <h1> 
-                                    
-                                    Bori
+                                    Oluwabori
                                     <span> Oludemi </span>
                                 </h1>
                             </div>
