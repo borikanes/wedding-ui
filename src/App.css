@@ -203,11 +203,12 @@
 }
 
 .App-mid-initials-vertical-line-div {
-  height: 100%;
+  height: 80%;
   width: 2px;
   color: #800020;
   background-color: #800020;
   margin: 20px;
+  margin-bottom: 45px;
 }
 
 .App-mid-bottom-left-arc-div {
@@ -366,6 +367,11 @@
     font-size: 4em;
     margin-left: -20px;
   }
+
+  .App-mid-initials-vertical-line-div {
+    /* height: 80%; */
+    margin-bottom: 35px;
+  }
 }
 
 @media only screen and (max-width : 680px) {
@@ -421,6 +427,20 @@
   }
 }
 
+@media only screen and (max-width : 420px) {
+  .App-mid-initials-div {
+    font-size: 40px;
+    height: 80px;
+    width: 60%;
+    margin-top: 70px;
+  }
+
+  .App-mid-initials-vertical-line-div {
+    height: 80%;
+    margin: 10px;
+    margin-left: 15px;
+  }
+}
 @media only screen and (max-width : 400px) {
   .App-mid-innerbase-div {
     height: 1080px;
@@ -493,6 +513,9 @@
 }
 
 @media only screen and (max-width : 327px) {
+  .App-mid-innerbase-div {
+    height: 1100px;
+  }
   .App-mid-initials-div {
     font-size: 40px;
     height: 80px;
