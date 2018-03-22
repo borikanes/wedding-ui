@@ -48,6 +48,10 @@
 }
 
 .App-mid-name-div h1 {
+  font-weight: normal;
+}
+
+.App-mid-name-div h1 {
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -158,6 +162,7 @@
 
 .App-location-div h1 {
   margin: 0;
+  font-weight: normal;
 }
 
 .App-mid-bottom-horizontal-line-div {

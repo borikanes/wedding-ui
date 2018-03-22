@@ -58,7 +58,7 @@ class App extends Component {
                                 <h1>McDonald</h1>
                             </div>
                             <div className="App-ampersand-div">
-                                <h1>&</h1>
+                                <h1 style={{'fontSize': '2.2em'}}>&</h1>
                             </div>
                             <div className="App-bori-div">
                                 <h1>Oluwabori</h1>
@@ -67,8 +67,8 @@ class App extends Component {
                         </div>
                         <div className="App-uppermid-div">
                             <h1 className="App-save-the-date-h1" >SAVE THE DATE!</h1>
-                            <h1 style={{'marginBottom': '0', 'marginTop': '10px'}} >We're getting married</h1>
-                            <h1 style={{'marginBottom': '0', 'marginTop': '0'}} >on</h1>
+                            <h1 style={{'marginBottom': '0', 'marginTop': '10px', 'fontWeight': 'normal'}} >We're getting married</h1>
+                            <h1 style={{'marginBottom': '0', 'marginTop': '0', 'fontWeight': 'normal'}} >on</h1>
                         </div>
                         <div className="App-date-div" >
                             <div className="App-month-div">
