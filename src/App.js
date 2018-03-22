@@ -93,7 +93,7 @@ class App extends Component {
                             <hr className="App-bottom-horizontal-line" />
                         </div>
                         <div className="App-webiste-info-div" >
-                            <p>Wedding Website - <a href="http://boriandmallory.com">boriandmallory.com</a></p>
+                            <p>Wedding Website - <a href="https://boriandmallory.com">boriandmallory.com</a></p>
                         </div>
                         <div className="App-mid-initials-div">
                             <p>M</p>

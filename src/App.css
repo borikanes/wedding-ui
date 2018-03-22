@@ -186,8 +186,8 @@
   display: inline-flex;
   justify-content: space-evenly;
   flex-direction: row;
-  font-size: 1.2em;
-  font-family: 'Inconsolata', cursive;
+  font-size: 2.2em;
+  font-family: 'Tangerine', cursive;
 }
 
 .App-webiste-info-div p {
