@@ -346,10 +346,6 @@
     background-image: url("images/bottom-right-small.png");
   }
 
-  .App-mid-initials-div {
-    /* margin-top: 50px; */
-  }
-
   .App-mid-initials-vertical-line-div {
     height: 80%;
   }
@@ -374,7 +370,6 @@
   }
 
   .App-mid-initials-vertical-line-div {
-    /* height: 80%; */
     margin-bottom: 35px;
   }
 }
@@ -405,7 +400,7 @@
   }
 
   .App-webiste-info-div {
-    font-size: 1.1em;
+    font-size: 2em;
   }
 }
 
@@ -428,7 +423,7 @@
   }
 
   .App-webiste-info-div {
-    font-size: 1em;
+    font-size: 1.7em;
   }
 }
 
