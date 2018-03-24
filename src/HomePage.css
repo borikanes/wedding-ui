@@ -62,12 +62,10 @@
 
 .Homepage-mid-name-div {
     top: 40px;
-    /* background-color: black; */
     height: 200px;
     width: 70%;
     position: relative;
     display: inline-flex;
-    /* display: flex; */
     justify-content: space-evenly;
 }
 
@@ -78,21 +76,26 @@
 }
 
 .Homepage-mid-mallory-div {
-    /* background-color: brown; */
     width: 40%;
     display: flex;
     justify-content: center;
     vertical-align: middle;
     align-items: center;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive !important;
 }
 
-.Homepage-mid-mallory-div h1 {
-    font-family: 'Dancing Script', cursive !important;
+.Homepage-mid-mallory-top-h1 {
     font-size: 50px;
+    margin-bottom: 1px;
+}
+
+.Homepage-mid-mallory-bottom-h1 {
+    font-size: 50px;
+    margin-top: 1px;
 }
 
 .Homepage-mid-bori-div {
-    /* background-color: blue; */
     width: 40%;
     display: flex;
     justify-content: center;
@@ -105,28 +108,27 @@
     font-size: 50px;
 }
 
-    .Homepage-mid-bottom-left-arc-div {
-        height: 70px;
-        width: 70px;
-        left: 0px;
-        bottom: 0px;
-        position: absolute;
-        background-image: url("images/bottom-left.png");
-    }
+.Homepage-mid-bottom-left-arc-div {
+    height: 70px;
+    width: 70px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("images/bottom-left.png");
+}
 
-    .Homepage-mid-bottom-right-arc-div {
-        height: 70px;
-        width: 70px;
-        right: 0px;
-        bottom: 0px;
-        position: absolute;
-        background-image: url("images/bottom-right.png");
-    }
+.Homepage-mid-bottom-right-arc-div {
+    height: 70px;
+    width: 70px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-image: url("images/bottom-right.png");
+}
 
 /* Date and hashtag section */
 
 .Homepage-mid-hashtag-div {
-    /* background-color: tomato; */
     top: 30px;
     width: 70%;
     height: 30px;
@@ -192,7 +194,6 @@
 }
 
 .Homepage-mid-hashtag-div {
-    /* background-color: tomato; */
     top: 30px;
     width: 70%;
     height: 30px;
@@ -215,7 +216,6 @@
 
 /* Location in mid section*/
 .Homepage-mid-location-div {
-    /* background-color: violet; */
     top: 30px;
     width: 70%;
     height: 30px;
@@ -227,7 +227,6 @@
 }
 
 .Homepage-mid-bottom-horizontal-line-div {
-    /* background-color: gold; */
     top: 70px;
     width: 70%;
     height: 30px;
@@ -251,7 +250,7 @@
     align-items: center;
     justify-content: center;
     font-size: 80px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Sacramento', cursive;
 }
 
 .Homepage-mid-initials-vertical-line-div {
@@ -291,6 +290,14 @@
         width: 35px;
         float: right;
         background-image: url("images/top-right-small.png");
+    }
+
+    .Homepage-mid-mallory-div h1 {
+        font-size: 40px;
+    }
+
+    .Homepage-mid-bori-div h1 {
+        font-size: 40px;
     }
 
     .Homepage-mid-bottom-left-arc-div {
@@ -337,6 +344,14 @@
 
     .Homepage-mid-bottom-horizontal-line-div {
         width: 80%;
+    }
+
+    .Homepage-mid-initials-div {
+        font-size: 45px;
+    }
+
+    .Homepage-mid-initials-vertical-line-div {
+        height: 80%;
     }
 }
 
@@ -467,9 +482,11 @@
 
     .Homepage-mid-initials-div {
         width: 60%;
+        top: 195px;
+        font-size: 40px;
     }
 
-    .Homepage-mid-initials-div {
-        top: 155px;
+    .Homepage-mid-initials-vertical-line-div {
+        height: 65%;
     }
 }

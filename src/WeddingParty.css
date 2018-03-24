@@ -70,7 +70,6 @@
 .WeddingParty-question-answer-space-div {
     width: 100%;
     height: 120px;
-    /* background-color: black; */
 }
 
 .Wedding-mid-initials-div {
@@ -81,11 +80,11 @@
     align-items: center;
     justify-content: center;
     font-size: 80px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Sacramento', cursive;
 }
 
 .Wedding-mid-initials-vertical-line-div {
-    height: 80%;
+    height: 100%;
     width: 2px;
     color: #800020;
     background-color: #800020;
@@ -194,11 +193,23 @@
     .Wedding-mid-initials-div {
         font-size: 50px;
     }
+
+    .Wedding-mid-initials-vertical-line-div {
+        height: 70%;
+    }
 }
 
 @media only screen and (max-width : 410px) {
     .Wedding-question-answer-parent-div {
         width: 85%;
+    }
+
+    .Wedding-mid-initials-div {
+        font-size: 40px;
+    }
+
+    .Wedding-mid-initials-vertical-line-div {
+        height: 60%;
     }
 }
 
