@@ -13,7 +13,7 @@ export default class Registry extends Component {
 
     handleClick() {
         console.log('GOT CLICKED');
-        window.open("https://www.zola.com/registry/dashboard")
+        // window.open("https://www.zola.com/registry/dashboard")
     }
 
     render(){
@@ -74,6 +74,15 @@ class Initials extends Component {
 }
 
 class TextInCircle extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            topLabel: 'For',
+            bottomLabel: 'Mallory and Bori',
+            mouseLeft: true,
+            mouseEntered: false
+        }
+    }
     render(){
         var circleStyle = {
             height: this.props.height + 'px',
@@ -84,9 +93,36 @@ class TextInCircle extends Component {
             circleStyle.marginTop = '15px'
         }
         return(
-            <div style={circleStyle} className="TextInCircle">
-                <p>For</p>
-                <p style={{marginTop: '0'}}>Mallory and Bori</p>
+            <div onMouseEnter={() => {
+                this.setState({
+                    topLabel: 'For',
+                    bottomLabel: 'Mallory and Bori',
+                    mouseLeft: false,
+                    mouseEntered: true
+                })
+            }} onMouseOver={() => {
+                console.log('On mouse over ran')
+                setTimeout( () => {
+                    if (!this.state.mouseLeft) {
+                        this.setState({
+                            topLabel: 'Thank',
+                            bottomLabel: 'You!'
+                        }) 
+                    }
+                }, 500)
+            }} onMouseLeave={() => {
+                console.log('On mouse leave ran')
+                setTimeout( () => {
+                    this.setState({
+                        topLabel: 'For',
+                        bottomLabel: 'Mallory and Bori',
+                        mouseLeft: true
+                        
+                    })
+                }, 550)
+            }} style={circleStyle} className="TextInCircle">
+                <p>{this.state.topLabel}</p>
+                <p style={{marginTop: '0'}}>{this.state.bottomLabel}</p>
             </div>
         );
     }
