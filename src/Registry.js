@@ -101,7 +101,6 @@ class TextInCircle extends Component {
                     mouseEntered: true
                 })
             }} onMouseOver={() => {
-                console.log('On mouse over ran')
                 setTimeout( () => {
                     if (!this.state.mouseLeft) {
                         this.setState({
@@ -111,7 +110,6 @@ class TextInCircle extends Component {
                     }
                 }, 500)
             }} onMouseLeave={() => {
-                console.log('On mouse leave ran')
                 setTimeout( () => {
                     this.setState({
                         topLabel: 'For',
