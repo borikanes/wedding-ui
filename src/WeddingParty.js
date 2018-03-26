@@ -16,7 +16,7 @@ export default class WeddingParty extends Component {
         // }
         return(
             <div className="MidSection-parent-div">
-                <TopicHeader title="Wedding Party" detail="Meet our friends" />
+                <TopicHeader title="Wedding Party" detail="Meet the people who will be standing next to us on our wedding day!" />
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>

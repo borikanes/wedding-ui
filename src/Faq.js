@@ -15,18 +15,22 @@ export default class Faq extends Component {
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
-                        <QuestionAndAnswer height="100px" question="Which hotel can I stay at the night before the wedding" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="What hotel can I stay at the night before the wedding?" answer="You can stay at any hotel in College Park or in Laurel."/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="Parking at the chapel is limited. You'll receive more information as we get closer to the wedding day."/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="What places can I visit around the area?" answer="You can stay at any hotel in College park or in Laurel"/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="Can I bring guests to the wedding?" answer="The number of guests that you may bring is noted in your invitation. You may not bring more than the number indicated."/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer height="100px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="What is the dress code?" answer="Semi-formal OR traditional Nigerian clothing."/>
                         <div className="Faq-question-answer-space-div" ></div>
-                        <QuestionAndAnswer height="200px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <QuestionAndAnswer height="100px" question="What is the color of the wedding?" answer="Teal and Champagne."/>
                         <div className="Faq-question-answer-space-div" ></div>
+                        <QuestionAndAnswer height="100px" question="What is the wedding schedule?" answer="Link to Itinerary page here."/>
+                        <div className="Faq-question-answer-space-div" ></div>
+                        {/* <QuestionAndAnswer height="200px" question="Where can I find parking?" answer="You can stay at any hotel in College park or in Laurel"/>
+                        <div className="Faq-question-answer-space-div" ></div> */}
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-mid-initials-div">
                             <p>M</p>

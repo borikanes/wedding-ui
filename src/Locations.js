@@ -152,7 +152,7 @@ export default class Locations extends Component {
                 receptionDirection = this.state.receptionDirection
                 return (
                     <div className="MidSection-parent-div">
-                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <TopicHeader title="Locations" detail="These are the venues of our wedding day." />
                         <div className="MidSection-body-content-div" >
                             <div className="MidSection-mid-top-left-arc-div"></div>
                             <div className="MidSection-mid-top-right-arc-div"></div>
@@ -161,8 +161,8 @@ export default class Locations extends Component {
                                     <div className="Locations-church-div" >
                                         <h1>Church</h1>
                                         <p>{this.state.churchName}</p>
-                                        <p>{this.state.churchTime}</p>
                                         <p>{this.state.churchAddress}</p>
+                                        <p>{this.state.churchTime}</p>
                                         <button onClick={()=> window.open(churchDirection)} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                     <div className="Locations-vertical-line-enclosing-div" >
@@ -173,8 +173,8 @@ export default class Locations extends Component {
                                         <h2 style={{'marginTop': 0, 'marginBottom': 0}} >&</h2>
                                         <h2 style={{'marginTop': 0}}>Nigerian ceremony</h2>
                                         <p>{this.state.receptionName}</p>
-                                        <p>{this.state.receptionTime}</p>
                                         <p>{this.state.receptionAddress}</p>
+                                        <p>{this.state.receptionTime}</p>
                                         <button onClick={()=> window.open(receptionDirection)} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@ export default class Locations extends Component {
             if (this.state.isLoading) { // If response from server doesn't come back or it's still loading
                 return(
                     <div className="MidSection-parent-div">
-                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <TopicHeader title="Locations" detail="These are the venues of our wedding day." />
                         <div className="Locations-loading-parent-div">
                             <div className="loader"></div>
                         </div>
@@ -207,13 +207,13 @@ export default class Locations extends Component {
             } else {
                 return (
                     <div className="MidSection-parent-div">
-                        <TopicHeader title="Locations" detail="These are the venues the wedding will be taking place" />
+                        <TopicHeader title="Locations" detail="These are the venues of our wedding day." />
                         <div className="MidSection-body-content-div" >
                             <div className="MidSection-mid-top-left-arc-div"></div>
                             <div className="MidSection-mid-top-right-arc-div"></div>
                             <div className="MidSection-inner-div" >
                                 <div className="Locations-passwd-parent-div" >
-                                    <p>To view the wedding locations, please enter the code we sent you. It's in your wedding invite email. Reach out to Bori or Mallory if you can't find it</p>
+                                    <p>To view the wedding locations, please enter the code we sent you via email. Reach out to Bori or Mallory if you can't find it.</p>
                                     {errorParagraph}
                                     <div>
                                         <input style={inputErrorState} className="Locations-input" type="text" placeholder="Enter code here..." value={this.state.passwd} onChange={this.handlePasswordTextChange} />

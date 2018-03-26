@@ -9,7 +9,7 @@ export default class Rsvp extends Component {
     render(){
         return(
             <div className="MidSection-parent-div">
-                <TopicHeader title="RSVP" detail="Please RSVP because we need to know if you can join us. Danke!" />
+                <TopicHeader title="RSVP" detail="Please RSVP by July 22nd." />
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
