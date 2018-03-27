@@ -21,7 +21,7 @@ export default class Rsvp extends Component {
                         </p>
                         <br/> 
                         <p>
-                            To RSVP go <a href="https://boriandmallory.anrsvp.com/" target="_blank">here</a> and put in your first name and surname. This will only work for those we actually sent the invite to. If you're a plus invite, the RSVP won't work for you.
+                            To RSVP go <a href="https://boriandmallory.anrsvp.com/" target="_blank" rel="noopener noreferrer">here</a> and put in your first name and surname. This will only work for those we actually sent the invite to. If you're a plus invite, the RSVP won't work for you.
                         </p>
                         <br/> 
                         <p>

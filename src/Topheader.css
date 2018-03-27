@@ -75,7 +75,7 @@
     display: none;
 }
 
-@media only screen and (max-width : 780px) {
+@media only screen and (max-width : 899px) {
 
     .Top-row-div {
         display: none
@@ -101,7 +101,7 @@
 
     .Header-dropdown-div {
         width: 110%;
-        height: 21em;
+        height: 24em;
         display: inline-block;
         margin-top: -0.71875em;
         margin-left: -1.25em;
@@ -143,7 +143,7 @@
             height: 0em;
         }
         to { 
-            height: 21em; 
+            height: 24em; 
         }
     }
 
