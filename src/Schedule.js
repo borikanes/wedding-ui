@@ -15,11 +15,15 @@ export default class Schedule extends Component {
     }
 
     render() {
-        var fontSizeValue;
+        var fontSizeStyle;
         if (window.matchMedia("(max-width: 400px)").matches) {
-            fontSizeValue = '15px';
+            fontSizeStyle = {
+                fontSize: '15px'
+            }
         } else {
-            fontSizeValue = '20px';
+            fontSizeStyle = {
+                fontSize: '20px'
+            }
         }
 
         
@@ -30,32 +34,37 @@ export default class Schedule extends Component {
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
                         <div className="Schedule-parent-div" >
-                        <Timeline>
-                            <TimelineEvent 
-                                title=""
-                                createdAt="11:00 AM"
-                                bubbleStyle={{backgroundColor: 'teal'}}
-                                contentStyle={{fontSize: fontSizeValue}}
-                            >
-                                Church wedding ceremony starts
-                            </TimelineEvent>
-                            <TimelineEvent
-                                title=""
-                                createdAt="02:00 PM"
-                                bubbleStyle={{backgroundColor: 'teal'}}
-                                contentStyle={{fontSize: fontSizeValue}}
-                            >
-                                Nigerian traditional ceremony starts
-                            </TimelineEvent>
-                            <TimelineEvent
-                                title=""
-                                createdAt="04:00 PM"
-                                bubbleStyle={{backgroundColor: 'teal'}}
-                                contentStyle={{fontSize: fontSizeValue}}
-                            >
-                                Reception starts
-                            </TimelineEvent>
-                        </Timeline>
+                            <Timeline>
+                                <TimelineEvent 
+                                    title=""
+                                    createdAt="11:00 AM"
+                                    bubbleStyle={{backgroundColor: 'teal'}}
+                                    contentStyle={fontSizeStyle}
+                                >
+                                    Church wedding ceremony starts
+                                </TimelineEvent>
+                                <TimelineEvent
+                                    title=""
+                                    createdAt="02:00 PM"
+                                    bubbleStyle={{backgroundColor: 'teal'}}
+                                    contentStyle={fontSizeStyle}
+                                >
+                                    Nigerian traditional ceremony starts
+                                </TimelineEvent>
+                                <TimelineEvent
+                                    title=""
+                                    createdAt="04:00 PM"
+                                    bubbleStyle={{backgroundColor: 'teal'}}
+                                    contentStyle={fontSizeStyle}
+                                >
+                                    Reception starts
+                                </TimelineEvent>
+                            </Timeline>
+                        </div>
+                        <div className="Schedule-initials-div">
+                            <p>M</p>
+                            <div className="Schedule-initials-vertical-line-div" ></div>
+                            <p>B</p>
                         </div>
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
