@@ -10,6 +10,7 @@ import Weddingparty from './WeddingParty.js';
 import Registry from './Registry.js';
 import Locations from './Locations.js';
 import Rsvp from './Rsvp.js';
+import Schedule from './Schedule.js';
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route exact path="/registry" component={Registry}/>
                     <Route exact path="/rsvp" component={Rsvp}/>
                     <Route exact path="/locations" component={Locations}/>
+                    <Route exact path="/schedule" component={Schedule}/>
                     <Route exact path="/" component={HomePage}/>
                 </div>
             </Router>
