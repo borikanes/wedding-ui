@@ -49,7 +49,7 @@ export default class WeddingParty extends Component {
                         leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
-                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
+                        rightSrc="https://secure.gravatar.com/userimage/135717332/c54a8abf76d3b3ab72f97a446853744f" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="Wedding-mid-initials-div">
