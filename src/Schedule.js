@@ -10,22 +10,34 @@ export default class Schedule extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isSmallerScreen: false
+            isSmallerScreen: false,
+            fontSize: '20px'
+        }
+        this.updateDimensions = this.updateDimensions.bind(this);
+    }
+
+    componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener("resize", this.updateDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions);
+    }
+
+    updateDimensions() {
+        if (window.matchMedia("(max-width: 400px)").matches) {
+            this.setState({
+                fontSize: '15px'
+            })
+        } else {
+            this.setState({
+                fontSize: '20px'
+            })
         }
     }
 
     render() {
-        var fontSizeStyle;
-        if (window.matchMedia("(max-width: 400px)").matches) {
-            fontSizeStyle = {
-                fontSize: '15px'
-            }
-        } else {
-            fontSizeStyle = {
-                fontSize: '20px'
-            }
-        }
-
         
        return(<div className="MidSection-parent-div">
                 <TopicHeader title="SCHEDULE" detail="This is the schdule on the day of our wedding" />
@@ -39,7 +51,7 @@ export default class Schedule extends Component {
                                     title=""
                                     createdAt="11:00 AM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
-                                    contentStyle={fontSizeStyle}
+                                    contentStyle={{fontSize: this.state.fontSize}}
                                 >
                                     Church wedding ceremony starts
                                 </TimelineEvent>
@@ -47,7 +59,7 @@ export default class Schedule extends Component {
                                     title=""
                                     createdAt="02:00 PM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
-                                    contentStyle={fontSizeStyle}
+                                    contentStyle={{fontSize: this.state.fontSize}}
                                 >
                                     Nigerian traditional ceremony starts
                                 </TimelineEvent>
@@ -55,7 +67,7 @@ export default class Schedule extends Component {
                                     title=""
                                     createdAt="04:00 PM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
-                                    contentStyle={fontSizeStyle}
+                                    contentStyle={{fontSize: this.state.fontSize}}
                                 >
                                     Reception starts
                                 </TimelineEvent>
