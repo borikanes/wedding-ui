@@ -32,17 +32,13 @@ export default class Rsvp extends Component {
                 height: '1200px',
                 fontSize : '13px'
             })
-        } else if(window.matchMedia("(max-width: 480px)").matches) {
+        } else if(window.matchMedia("(max-width: 500px)").matches) {
             this.setState({
-                height: '1500px'
-            })
-        } else if(window.matchMedia("(max-width: 670px)").matches) {
-            this.setState({
-                height: '1400px'
+                height: '1250px'
             })
         } else if(window.matchMedia("(max-width: 700px)").matches) {
             this.setState({
-                height: '1450px'
+                height: '1400px'
             })
         } 
         else {
@@ -59,30 +55,30 @@ export default class Rsvp extends Component {
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
-                    <div style={{'height': this.state.height, 'fontSize': this.state.fontSize}} className="MidSection-inner-div" >
+                    <div style={{'height': this.state.height}} className="MidSection-inner-div" >
                         <div className="Rsvp-paragraph-div" >
-                        <p>
-                        Because we are passionate about technology (Bori) and saving trees (Mallory), we will NOT be sending out paper invitations but rather will send them via email.
-                        </p>
-                        <br/> 
-                        <p>
-                        To RSVP, type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
-                        </p>
-                        <iframe title="anrsvp" style={{'display':'block', 'width': '100%', 'height': '575px', 'border': 'none', 'overflow': 'hidden'}}
-                            src="https://boriandmallory.anrsvp.com/?embed=true">
-                        </iframe>
-                        <br/> 
-                        <p style={{'marginTop':'0px'}} >
-                        We encourage you to RSVP as soon as you can so we can plan adequately for you, our guests.
-                        </p>
-                        <br/> 
-                        <p>
-                        Please RSVP by July 22, 2018 at the latest.
-                        </p>
-                        <br/> 
-                        <p>
-                            We are honored and ecstatic to have you celebrate our love.
-                        </p>
+                            <p>
+                                Because we are passionate about technology (Bori) and saving trees (Mallory), we will NOT be sending out paper invitations but rather will send them via email.
+                            </p>
+                            <br/> 
+                            <p>
+                                To RSVP, type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
+                            </p>
+                            <iframe title="anrsvp" style={{'display':'block', 'width': '100%', 'height': '575px', 'border': 'none', 'overflow': 'hidden'}}
+                                src="https://boriandmallory.anrsvp.com/?embed=true">
+                            </iframe>
+                            {/* <br/>  */}
+                            <p style={{'marginTop':'0px'}} >
+                                We encourage you to RSVP as soon as you can so we can plan adequately for you, our guests.
+                            </p>
+                            <br/> 
+                            <p>
+                                Please RSVP by July 22, 2018 at the latest.
+                            </p>
+                            <br/> 
+                            <p>
+                                We are honored and ecstatic to have you celebrate our love.
+                            </p>
                         </div>
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>
