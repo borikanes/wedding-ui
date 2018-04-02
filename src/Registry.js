@@ -8,12 +8,15 @@ import './HomePage.css';
 export default class Registry extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            heightValue: '190'
+        }
         this.handleClick = this.handleClick.bind(this);
+
     }
 
     handleClick() {
-        console.log('GOT CLICKED');
-        // window.open("https://www.zola.com/registry/dashboard")
+        window.open("https://www.zola.com/registry/dashboard")
     }
 
     render(){

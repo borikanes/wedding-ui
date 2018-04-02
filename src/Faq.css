@@ -2,9 +2,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    margin: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-top: 20px;
 }
 
 .Faq-question-div {
@@ -62,7 +60,9 @@
 .Faq-question-answer-space-div {
     width: 100%;
     height: 80px;
-    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Faq-mid-initials-div {
@@ -84,6 +84,10 @@
     margin: 20px;
 }
 
+.Faq-mid-initials-horizontal-line-div {
+    display: none;
+}
+
 @media only screen and (min-width : 1520px) {
     .Faq-mid-initials-div {
         width: 92%;
@@ -91,11 +95,6 @@
 }
 
 @media only screen and (max-width : 1120px) {
-    .Faq-question-answer-parent-div {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
-    
     .Faq-question-div p {
         font-size: 18px;
         margin-top: 0;
@@ -107,115 +106,61 @@
     }
 }
 
-@media only screen and (max-width : 880px) {
+@media only screen and (max-width : 720px) {
     .Faq-question-answer-parent-div {
-        margin-left: 75px;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: 0;
     }
-}
 
-@media only screen and (max-width : 800px) {
-    .Faq-question-answer-parent-div {
-        margin-left: 70px;
+    .Faq-question-div {
+        width: 100%;
     }
-}
 
-@media only screen and (max-width : 770px) {
-    .Faq-question-answer-parent-div {
-        margin-left: 65px;
+    .Faq-answer-div {
+        width: 100%;
     }
-}
 
-@media only screen and (max-width : 730px) {
-    .Faq-question-answer-parent-div {
-        margin-left: 60px;
-        /* margin-right: 80px; */
+    .Faq-vertical-line-enclosing-div {
+        display: none;
+    }
+
+    .Faq-question-div h1 {
+        font-size: 15px;
+    }
+
+    .Faq-question-div p {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .Faq-question-answer-space-div {
+        height: 40px;
+    }
+
+    .Faq-mid-initials-horizontal-line-div {
+        width: 80%;
+        height: 2px;
+        color: #800020;
+        background-color: #800020;
+        margin: 20px;
+        display: block;
     }
 }
 
 @media only screen and (max-width : 710px) {
-    .Faq-question-div h1 {
-        font-size: 13px;
-    }
-    
-    .Faq-question-div p {
-        font-size: 16px;
-        margin-top: 0;
-    }
-
-    .Faq-answer-div h1 {
-        font-size: 13px;
-    }
-    
-    .Faq-answer-div p {
-        font-size: 16px;
-        margin-top: 0;
-    }
-
-    .Faq-question-answer-parent-div {
-        margin-left: 50px;
-        margin-right: 80px;
-    }
+   
 }
 
 @media only screen and (max-width : 600px) {
-    .Faq-question-div h1 {
-        font-size: 12px;
-    }
-    
-    .Faq-question-div p {
-        font-size: 14px;
-        margin-top: 0;
-    }
-
-    .Faq-answer-div h1 {
-        font-size: 12px;
-    }
-    
-    .Faq-answer-div p {
-        font-size: 14px;
-        margin-top: 0;
-    }
-
-    .Faq-question-answer-parent-div {
-        margin-left: 35px;
-        margin-right: 50px;
-    }
-
     .Faq-mid-initials-div {
         font-size: 50px;
     }
 }
 
 @media only screen and (max-width : 410px) {
-    .Faq-question-div h1 {
-        font-size: 9px;
-    }
-    
-    .Faq-question-div p {
-        font-size: 13px;
-        margin-top: 0;
-    }
-
-    .Faq-answer-div h1 {
-        font-size: 9px;
-    }
-    
-    .Faq-answer-div p {
-        font-size: 13px;
-        margin-top: 0;
-    }
-
-    .Faq-question-answer-parent-div {
-        margin-left: 30px;
-        margin-right: 25px;
-    }
-
     .Faq-mid-initials-div {
         font-size: 40px;
     }
-
-    .Faq-mid-initials-vertical-line-div {
-        height: 60%;
-    }
-
 }
