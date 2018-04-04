@@ -17,30 +17,30 @@ export default class WeddingParty extends Component {
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="TUMI OLUDEMI" rightName="RACHEL POISALL"
-                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        leftDescription="He's my brother. Automatically becomes one of my groomsmen. We often have fights about who's funnier. FYI I am funnier." 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="MIKE FERRACO" rightName="ALLISON SEELEY"
-                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        leftDescription="Could've been roommates with this but I thought he would be annoying just based on his Facebook pictures but now we're very good friends. Don't judge a book by its cover" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="http://gravatar.com/avatar/a97d67d08221ce54272481f69c000a6a?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="JOSHUA ODUMOSU" rightName="JENNY EVENSEEN"
-                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        leftDescription="He's my cousin. Basically known him since I was born. All the way from Nigeria to America....we can't seem to get away from each other" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
-                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        leftDescription="Can you believe I have to work with this guy? He's half Mexican and Argentine, can you tell?" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc={Chris_Profile} rightSrc={Chris_Profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="RACHEL PURFIELD"
-                        leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
+                        leftDescription="Ope is also my cousin. He basically knows everything. He was my google search engine when we were younger." 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://secure.gravatar.com/userimage/135717332/c54a8abf76d3b3ab72f97a446853744f" />
