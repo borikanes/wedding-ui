@@ -5,15 +5,10 @@ import TopicHeader from './TopicHeader.js';
 import './MidSection.css';
 import Footer from './Footer.js';
 import Avatar from 'react-avatar';
+import Chris_Profile from './images/chris_profile.png';
 
 export default class WeddingParty extends Component {
     render(){
-        // let parentDivHeight
-        // if (window.matchMedia("(max-width: 700px)").matches) {
-        //     parentDivHeight = "600px"
-        // } else {
-        //     parentDivHeight = "200px"
-        // }
         return(
             <div className="MidSection-parent-div">
                 <TopicHeader title="Wedding Party" detail="Meet the people who will be standing next to us on our wedding day!" />
@@ -42,8 +37,7 @@ export default class WeddingParty extends Component {
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
                         leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
-                        leftSrc="https://secure.gravatar.com/userimage/135717332/2050d5be0c77b1d106a1c281b4042ca0" 
-                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
+                        leftSrc={Chris_Profile} rightSrc={Chris_Profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="RACHEL PURFIELD"
                         leftDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test" 
@@ -103,6 +97,16 @@ class WeddingPartyProfile extends Component {
                 <div className="Wedding-vertical-line-small-enclosing-div" >
                     <div className="Wedding-vertical-line-small-div" ></div>
                 </div>
+            </div>
+        );
+    }
+}
+
+class WeddingPartyAvatar extends Component {
+    render() {
+        return (
+            <div className="Wedding-avatar-parent-div">
+                <img style={{'borderRadius': '50%'}} src={this.props.src} alt={Chris_Profile} height="120px" width="120px" />
             </div>
         );
     }

@@ -99,6 +99,13 @@
     display: none;
 }
 
+.Wedding-avatar-parent-div {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
 @media only screen and (min-width : 1100px) {
     .Wedding-question-answer-parent-div {
         margin-left: 80px;
@@ -210,6 +217,13 @@
 
     .Wedding-mid-initials-vertical-line-div {
         height: 60%;
+    }
+
+    .Wedding-avatar-parent-div {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border-radius: 50%;
     }
 }
 
