@@ -25,7 +25,7 @@ export default class WeddingParty extends Component {
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="MIKE FERRACO" rightName="ALLISON SEELEY"
                         leftDescription="Bori could've been roommates with Mike but he thought Mike would be annoying just based on his Facebook pictures but now they're very good friends. Don't judge a book by its cover" 
-                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        rightDescription="Allison and Mallory have been friends ever since she thought Mallory accidentally invited her to her birthday party in high school, when in reality Mallory wanted to be friends with this gal and invited her on purpose. They have remained very close friends even through years of long distance."
                         leftSrc="http://gravatar.com/avatar/a97d67d08221ce54272481f69c000a6a?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
@@ -73,6 +73,12 @@ class WeddingPartyProfile extends Component {
         } else {
             leftAvatar = <Avatar className="Wedding-avatar-style" size={100} round={true} src={this.props.leftSrc} />
         }
+        var paragraphStyle = {};
+        if (this.props.rightName === "ALLISON SEELEY") {
+            paragraphStyle = {
+                fontSize: '0.7em'
+            }
+        }
         
         return (
             <div /*style={{'height': this.props.height}}*/ className="Wedding-question-answer-parent-div">
@@ -93,7 +99,7 @@ class WeddingPartyProfile extends Component {
                     </div>
                     <h1>{this.props.rightName}</h1>
                     <p>Bridesmaid</p>
-                    <p>{this.props.rightDescription}</p>
+                    <p style={paragraphStyle} >{this.props.rightDescription}</p>
                 </div>
                 <div className="Wedding-vertical-line-small-enclosing-div" >
                     <div className="Wedding-vertical-line-small-div" ></div>

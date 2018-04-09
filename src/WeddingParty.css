@@ -1,6 +1,6 @@
 .Wedding-question-answer-parent-div {
     width: 80%;
-    height: 200px;
+    height: 270px;
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -11,7 +11,7 @@
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: white;
 }
@@ -29,7 +29,7 @@
 
 .Wedding-vertical-line-enclosing-div {
     width: 40%;
-    height: 150%;
+    height: 130%;
     display: flex;
     justify-content: center;
 }
@@ -47,7 +47,7 @@
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     background-color: white;
 }
@@ -124,6 +124,12 @@
     }
 }
 
+@media only screen and (max-width : 900px) {
+    .Wedding-question-answer-parent-div {
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width : 830px) {
     .Wedding-right-profile-div h1 {
         font-size: 1em;
@@ -137,6 +143,7 @@
 
     .Wedding-question-answer-parent-div {
         margin-left: 50px;
+        height: 300px;
     }
 }
 
@@ -161,6 +168,14 @@
         height: 50px;
         margin-top: 75px;
         margin-bottom: 50px;
+    }
+
+    .Wedding-left-profile-div {
+        justify-content: center;
+    }
+
+    .Wedding-right-profile-div {
+        justify-content: center;
     }
     
     .Wedding-vertical-line-div {
