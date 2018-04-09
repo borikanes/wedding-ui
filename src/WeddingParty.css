@@ -223,6 +223,10 @@
 
 @media only screen and (max-width : 410px) {
     .Wedding-question-answer-parent-div {
+        height: 760px;
+    }
+
+    .Wedding-question-answer-parent-div {
         width: 85%;
     }
 
