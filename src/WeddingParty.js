@@ -6,6 +6,7 @@ import './MidSection.css';
 import Footer from './Footer.js';
 import Avatar from 'react-avatar';
 import Chris_Profile from './images/chris_profile.png';
+import Rachel_profile from './images/rachel_profile.png';
 
 export default class WeddingParty extends Component {
     render(){
@@ -17,31 +18,31 @@ export default class WeddingParty extends Component {
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div className="MidSection-inner-div" >
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="TUMI OLUDEMI" rightName="RACHEL POISALL"
-                        leftDescription="He's my brother. Automatically becomes one of my groomsmen. We often have fights about who's funnier. FYI I am funnier." 
-                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftDescription="He's bori's only brother. Automatically becomes one of Bori's groomsmen. They often have fights about who's funnier. FYI Bori's funnier." 
+                        rightDescription="Rachel and Mallory have been close friends since first grade! They have shared about 20 years of laughs together, and way too many weird/embarrassing stories. Enough said. "
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
-                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
+                        rightSrc={Rachel_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="MIKE FERRACO" rightName="ALLISON SEELEY"
-                        leftDescription="Could've been roommates with this but I thought he would be annoying just based on his Facebook pictures but now we're very good friends. Don't judge a book by its cover" 
+                        leftDescription="Bori could've been roommates with Mike but he thought Mike would be annoying just based on his Facebook pictures but now they're very good friends. Don't judge a book by its cover" 
                         rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
                         leftSrc="http://gravatar.com/avatar/a97d67d08221ce54272481f69c000a6a?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="JOSHUA ODUMOSU" rightName="JENNY EVENSEEN"
-                        leftDescription="He's my cousin. Basically known him since I was born. All the way from Nigeria to America....we can't seem to get away from each other" 
-                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftDescription="He's bori's cousin. They basically have known each other from birth. All the way from Nigeria to America....they can't seem to get away from each other" 
+                        rightDescription="Jenny and Mallory lived together for part of their time at UMD. These two bond over travel, tea, and talking for hours about life. Mallory feels so lucky to have Jenny in her life!"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
-                        leftDescription="Can you believe I have to work with this guy? He's half Mexican and Argentine, can you tell?" 
-                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        leftDescription="Can you believe bori has to work with this guy? He's half Mexican and Argentine, can you tell?" 
+                        rightDescription="Rachel and Mallory go way back - they met in elementary school and have been there for each other ever since. Mallory was recently a bridesmaid in Rachel’s wedding and now has two best friends named “Rachel P.” "
                         leftSrc={Chris_Profile} rightSrc={Chris_Profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
-                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="RACHEL PURFIELD"
-                        leftDescription="Ope is also my cousin. He basically knows everything. He was my google search engine when we were younger." 
-                        rightDescription="I'm the most awesome person ever but not really this is just a placeholder for text to test"
+                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="NATALIE DOHNER"
+                        leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger." 
+                        rightDescription="Mallory and Natalie met in high school through mission trips to New Orleans. Mallory cherishes all the letters that Natalie has written her over the years, and is honored to have Natalie by her side on her wedding day."
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://secure.gravatar.com/userimage/135717332/c54a8abf76d3b3ab72f97a446853744f" />
                         <div className="WeddingParty-question-answer-space-div"></div>
@@ -97,16 +98,6 @@ class WeddingPartyProfile extends Component {
                 <div className="Wedding-vertical-line-small-enclosing-div" >
                     <div className="Wedding-vertical-line-small-div" ></div>
                 </div>
-            </div>
-        );
-    }
-}
-
-class WeddingPartyAvatar extends Component {
-    render() {
-        return (
-            <div className="Wedding-avatar-parent-div">
-                <img style={{'borderRadius': '50%'}} src={this.props.src} alt={Chris_Profile} height="120px" width="120px" />
             </div>
         );
     }
