@@ -221,6 +221,12 @@
     }
 }
 
+@media only screen and (max-width : 510px) {
+    .Wedding-question-answer-parent-div {
+        height: 650px;
+    }
+}
+
 @media only screen and (max-width : 410px) {
     .Wedding-question-answer-parent-div {
         height: 760px;
