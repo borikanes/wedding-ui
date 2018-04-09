@@ -41,7 +41,7 @@ export default class WeddingParty extends Component {
                         leftSrc={Chris_Profile} rightSrc={Chris_Profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="NATALIE DOHNER"
-                        leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger." 
+                        leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger, before Google was a thing." 
                         rightDescription="Mallory and Natalie met in high school through mission trips to New Orleans. Mallory cherishes all the letters that Natalie has written her over the years, and is honored to have Natalie by her side on her wedding day."
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc="https://secure.gravatar.com/userimage/135717332/c54a8abf76d3b3ab72f97a446853744f" />
