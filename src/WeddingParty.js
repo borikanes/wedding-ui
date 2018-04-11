@@ -5,8 +5,10 @@ import TopicHeader from './TopicHeader.js';
 import './MidSection.css';
 import Footer from './Footer.js';
 import Avatar from 'react-avatar';
-import Chris_Profile from './images/chris_profile.png';
+import Chris_Profile from './images/chris_profile.jpg';
 import Rachel_profile from './images/rachel_profile.png';
+import Natalie_profile from './images/natalie_profile.png';
+import Rachel_p_profile from './images/rachel_p_profile.png';
 
 export default class WeddingParty extends Component {
     render(){
@@ -38,13 +40,13 @@ export default class WeddingParty extends Component {
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
                         leftDescription="Can you believe bori has to work with this guy? He's half Mexican and Argentine, can you tell?" 
                         rightDescription="Rachel and Mallory go way back - they met in elementary school and have been there for each other ever since. Mallory was recently a bridesmaid in Rachel’s wedding and now has two best friends named “Rachel P.” "
-                        leftSrc={Chris_Profile} rightSrc={Chris_Profile} />
+                        leftSrc={Chris_Profile} rightSrc={Rachel_p_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="NATALIE DOHNER"
                         leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger, before Google was a thing." 
                         rightDescription="Mallory and Natalie met in high school through mission trips to New Orleans. Mallory cherishes all the letters that Natalie has written her over the years, and is honored to have Natalie by her side on her wedding day."
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
-                        rightSrc="https://secure.gravatar.com/userimage/135717332/c54a8abf76d3b3ab72f97a446853744f" />
+                        rightSrc={Natalie_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="Wedding-mid-initials-div">
