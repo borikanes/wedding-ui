@@ -81,6 +81,13 @@ class WeddingPartyProfile extends Component {
                 fontSize: '0.7em'
             }
         }
+
+        var dividerLine = {};
+        if (this.props.rightName === "NATALIE DOHNER") {
+            dividerLine = {
+                display: 'none'
+            }
+        }
         
         return (
             <div /*style={{'height': this.props.height}}*/ className="Wedding-question-answer-parent-div">
@@ -103,7 +110,7 @@ class WeddingPartyProfile extends Component {
                     <p>Bridesmaid</p>
                     <p style={paragraphStyle} >{this.props.rightDescription}</p>
                 </div>
-                <div className="Wedding-vertical-line-small-enclosing-div" >
+                <div style={dividerLine} className="Wedding-vertical-line-small-enclosing-div" >
                     <div className="Wedding-vertical-line-small-div" ></div>
                 </div>
             </div>
