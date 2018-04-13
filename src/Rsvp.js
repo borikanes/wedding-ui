@@ -24,23 +24,27 @@ export default class Rsvp extends Component {
     updateDimensions() {
         if(window.matchMedia("(max-width: 350px)").matches) {
             this.setState({
-                height: '1200px',
+                height: '1300px',
                 fontSize : '13px'
             })
         } else if(window.matchMedia("(max-width: 400px)").matches) {
             this.setState({
-                height: '1200px',
+                height: '1300px',
                 fontSize : '13px'
             })
         } else if(window.matchMedia("(max-width: 500px)").matches) {
             this.setState({
-                height: '1250px'
+                height: '1350px'
             })
         } else if(window.matchMedia("(max-width: 700px)").matches) {
             this.setState({
-                height: '1400px'
+                height: '1500px'
             })
-        } 
+        } else if(window.matchMedia("(max-width: 1250px)").matches) {
+            this.setState({
+                height: '1350px'
+            })
+        }
         else {
             this.setState({
                 height: '1250px'
@@ -62,7 +66,7 @@ export default class Rsvp extends Component {
                             </p>
                             <br/> 
                             <p>
-                                To RSVP, type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
+                                To RSVP, either click the link we sent you via email OR type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
                             </p>
                             <iframe title="anrsvp" style={{'display':'block', 'width': '100%', 'height': '575px', 'border': 'none', 'overflow': 'hidden'}}
                                 src="https://boriandmallory.anrsvp.com/?embed=true">
@@ -79,6 +83,11 @@ export default class Rsvp extends Component {
                             <p>
                                 We are honored and ecstatic to have you celebrate our love.
                             </p>
+                        </div>
+                        <div className="Rsvp-initials-div">
+                            <p>M</p>
+                            <div className="Rsvp-initials-vertical-line-div" ></div>
+                            <p>B</p>
                         </div>
                     </div>
                     <div className="MidSection-mid-bottom-left-arc-div"></div>

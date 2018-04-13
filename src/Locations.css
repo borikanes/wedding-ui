@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Sacramento', cursive;
     margin-top: 120px;
 }
@@ -156,6 +156,10 @@
     .Locations-direction-button{
         margin-left: 20%;
         margin-right: 20%;
+    }
+
+    .Locations-initials-div {
+        font-size: 50px;
     }
 }
 
