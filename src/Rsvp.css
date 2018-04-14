@@ -6,6 +6,32 @@
     font-size: 20px
 }
 
+.Rsvp-initials-div {
+    height: 120px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 70px;
+    font-family: 'Sacramento', cursive;
+    margin-top: 30px;
+}
+
+.Rsvp-initials-vertical-line-div {
+    height: 86%;
+    width: 2px;
+    color: #800020;
+    background-color: #800020;
+    margin: 20px;
+}
+
+@media only screen and (max-width : 750px) {
+    .Rsvp-initials-div {
+        font-size: 40px;
+    }
+}
+
 @media only screen and (max-width : 500px) {
     .Rsvp-paragraph-div p {
         font-size: 16px
@@ -15,5 +41,14 @@
 @media only screen and (max-width : 400px) {
     .Rsvp-paragraph-div p {
         font-size: 13px
+    }
+
+    .Rsvp-initials-div {
+        font-size: 40px;
+    }
+
+    .Rsvp-initials-vertical-line-div {
+        height: 66%;
+        margin: 15px;
     }
 }

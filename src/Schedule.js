@@ -57,7 +57,7 @@ export default class Schedule extends Component {
                                 </TimelineEvent>
                                 <TimelineEvent
                                     title=""
-                                    createdAt="02:00 PM"
+                                    createdAt="03:00 PM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
                                     contentStyle={{fontSize: this.state.fontSize}}
                                 >
@@ -65,7 +65,7 @@ export default class Schedule extends Component {
                                 </TimelineEvent>
                                 <TimelineEvent
                                     title=""
-                                    createdAt="04:00 PM"
+                                    createdAt="05:00 PM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
                                     contentStyle={{fontSize: this.state.fontSize}}
                                 >
