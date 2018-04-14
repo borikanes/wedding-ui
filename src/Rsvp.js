@@ -6,51 +6,6 @@ import './MidSection.css';
 import Footer from './Footer.js';
 
 export default class Rsvp extends Component {
-    constructor (props) {
-        super(props)
-        this.state = { height: '1250px', fontSize : '20px' }
-        this.updateDimensions = this.updateDimensions.bind(this);
-    }
-
-    componentDidMount() {
-        this.updateDimensions();
-        window.addEventListener("resize", this.updateDimensions);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateDimensions);
-    }
-
-    updateDimensions() {
-        if(window.matchMedia("(max-width: 350px)").matches) {
-            this.setState({
-                height: '1300px',
-                fontSize : '13px'
-            })
-        } else if(window.matchMedia("(max-width: 400px)").matches) {
-            this.setState({
-                height: '1300px',
-                fontSize : '13px'
-            })
-        } else if(window.matchMedia("(max-width: 500px)").matches) {
-            this.setState({
-                height: '1350px'
-            })
-        } else if(window.matchMedia("(max-width: 700px)").matches) {
-            this.setState({
-                height: '1500px'
-            })
-        } else if(window.matchMedia("(max-width: 1250px)").matches) {
-            this.setState({
-                height: '1350px'
-            })
-        }
-        else {
-            this.setState({
-                height: '1250px'
-            })
-        }
-      }
 
     render(){
         return(
@@ -59,7 +14,7 @@ export default class Rsvp extends Component {
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
-                    <div style={{'height': this.state.height}} className="MidSection-inner-div" >
+                    <div className="MidSection-inner-div" >
                         <div className="Rsvp-paragraph-div" >
                             <p>
                                 Because we are passionate about technology (Bori) and saving trees (Mallory), we will NOT be sending out paper invitations but rather will send them via email.
@@ -67,6 +22,9 @@ export default class Rsvp extends Component {
                             <br/> 
                             <p>
                                 To RSVP, either click the link we sent you via email OR type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
+                            </p>
+                            <p>
+                                NOTE: The RSVP tool below works best on bigger screens
                             </p>
                             <iframe title="anrsvp" style={{'display':'block', 'width': '100%', 'height': '575px', 'border': 'none', 'overflow': 'hidden'}}
                                 src="https://boriandmallory.anrsvp.com/?embed=true">
