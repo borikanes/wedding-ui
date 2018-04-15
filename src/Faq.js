@@ -91,6 +91,8 @@ export default class Faq extends Component {
                         <QuestionAndAnswer height={this.state.evenLonger} question="What should I expect at the traditional Nigerian ceremony?" answer=""/>
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-question-answer-space-div" ></div>
+                        <div className="Faq-question-answer-space-div" ></div>
+                        <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-mid-initials-div">
                             <p>M</p>
                             <div className="Faq-mid-initials-vertical-line-div" ></div>

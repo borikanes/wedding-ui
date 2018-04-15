@@ -1,6 +1,6 @@
 .Schedule-parent-div {
     width: 80%;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: left;
     align-content: center;
@@ -26,6 +26,12 @@
     color: #800020;
     background-color: #800020;
     margin: 20px;
+}
+
+@media only screen and (min-height : 720px) and (max-height : 830px) {
+    .Schedule-parent-div {
+        height: 675px;
+    }
 }
 
 @media only screen and (max-width : 400px) {
