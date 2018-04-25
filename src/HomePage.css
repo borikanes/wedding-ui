@@ -19,9 +19,9 @@
 }
 
 .Homepage-top-image {
-    height: 100%;
+    height: 550px;
     width: 100%;
-    background: url("images/home-picture1.jpg");
+    background: url("images/home-picture-big.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -266,6 +266,15 @@
         font-family: 'Dancing Script', cursive !important;
         font-size: 45px;
     }
+
+    .Homepage-top-image {
+        /* height: 100%; */
+        height: 550px;
+        width: 100%;
+        background: url("images/home-picture-1440.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 @media only screen and (max-width : 1050px) {
@@ -274,6 +283,14 @@
         width: 90%;
         position: relative;
         display: inline-block;
+    }
+
+    .Homepage-top-image {
+        height: 100%;
+        width: 100%;
+        background: url("images/home_picture.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -488,5 +505,14 @@
 
     .Homepage-mid-initials-vertical-line-div {
         height: 65%;
+    }
+}
+@media only screen and (max-width : 320px) {
+    .Homepage-top-image {
+        height: 100%;
+        width: 100%;
+        background: url("images/home-picture-small.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
