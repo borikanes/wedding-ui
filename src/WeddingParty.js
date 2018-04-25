@@ -9,6 +9,7 @@ import Chris_Profile from './images/chris_profile.jpg';
 import Rachel_profile from './images/rachel_profile.png';
 import Natalie_profile from './images/natalie_profile.png';
 import Rachel_p_profile from './images/rachel_p_profile.png';
+import Allison_profile from './images/allison_profile.png';
 
 export default class WeddingParty extends Component {
     render(){
@@ -29,7 +30,7 @@ export default class WeddingParty extends Component {
                         leftDescription="Bori could've been roommates with Mike but he thought Mike would be annoying just based on his Facebook pictures but now they're very good friends. Don't judge a book by its cover" 
                         rightDescription="Allison and Mallory have been friends ever since she thought Mallory accidentally invited her to her birthday party in high school, when in reality Mallory wanted to be friends with this gal and invited her on purpose. They have remained very close friends even through years of long distance."
                         leftSrc="http://gravatar.com/avatar/a97d67d08221ce54272481f69c000a6a?s=200" 
-                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
+                        rightSrc={Allison_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="JOSHUA ODUMOSU" rightName="JENNY EVENSEEN"
                         leftDescription="He's bori's cousin. They basically have known each other from birth. All the way from Nigeria to America....they can't seem to get away from each other" 

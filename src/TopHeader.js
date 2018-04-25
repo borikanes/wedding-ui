@@ -17,7 +17,7 @@ export default class TopHeader extends Component {
                     <h1>Mallory & Bori</h1>
                 </div>
                 <div className="Header-title">
-                    <h1>Mallory & Bori</h1>
+                    <h1><a href="https://boriandmallory.com" style={{'textDecoration': 'none', 'color': 'white'}}>Mallory & Bori</a></h1>
                 </div>
                 <div className="Header-nav-buttons-div">
                     <a href="/" className="Header-nav-buttons-first">HOME</a>
