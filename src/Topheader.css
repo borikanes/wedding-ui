@@ -32,9 +32,14 @@
 
 .Header-title {
     float: center;
-    font-size: 1.2em;
-    letter-spacing: 0.7em;
+    font-size: 1.9em;
+    /* letter-spacing: 0.7em; */
     margin-top: -1em;
+    font-family: 'Cookie', cursive;
+}
+
+.Header-title h1 {
+    margin-bottom: 10px;
 }
 
 .Header-nav-buttons-div {
@@ -84,7 +89,7 @@
     .Header-title {
         float: left;
         font-size: 1em;
-        letter-spacing: 0.5em;
+        /* letter-spacing: 0.5em; */
         margin-top: -3.55em;
     }
 
@@ -168,7 +173,7 @@
     .Header-title {
         float: left;
         font-size: 0.8em;
-        letter-spacing: 0.2em;
+        /* letter-spacing: 0.2em; */
         margin-top: -3.7em;
     }
 

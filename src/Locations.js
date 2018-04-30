@@ -169,9 +169,9 @@ export default class Locations extends Component {
                                         <div className="Locations-vertical-line-div" ></div>
                                     </div>
                                     <div className="Locations-reception-div" >
-                                        <h1 style={{'marginTop': 0, 'marginBottom': 0}}>Reception</h1>
+                                        <h2 style={{'marginTop': 0, 'marginBottom': 0}}>Nigerian ceremony</h2>
                                         <h2 style={{'marginTop': 0, 'marginBottom': 0}} >&</h2>
-                                        <h2 style={{'marginTop': 0}}>Nigerian ceremony</h2>
+                                        <h2 style={{'marginTop': 0}}>Reception</h2>
                                         <p>{this.state.receptionName}</p>
                                         <p>{this.state.receptionAddress}</p>
                                         <p>{this.state.receptionTime}</p>
