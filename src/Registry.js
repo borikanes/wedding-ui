@@ -16,7 +16,7 @@ export default class Registry extends Component {
     }
 
     handleClick() {
-        window.open("https://www.zola.com/registry/dashboard")
+        window.open("https://www.zola.com/registry/boriandmallory")
     }
 
     render(){
@@ -34,7 +34,9 @@ export default class Registry extends Component {
 
         return(
             <div className="MidSection-parent-div">
-                <TopicHeader title="Registry" detail="Check out our registry!" />
+                <TopicHeader height="210px" title="Registry" detail="Should you wish to honor us with a gift, please use the link below to select something or contribute to a fund that you know we will love. What we value most is making memories together, as opposed to items. Thank you!!" />
+                <br />
+                <br />
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>

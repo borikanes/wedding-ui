@@ -10,6 +10,7 @@ import Rachel_profile from './images/rachel_profile.png';
 import Natalie_profile from './images/natalie_profile.png';
 import Rachel_p_profile from './images/rachel_p_profile.png';
 import Allison_profile from './images/allison_profile.png';
+import Jenny_profile from './images/jenny-profile.png';
 
 export default class WeddingParty extends Component {
     render(){
@@ -36,7 +37,7 @@ export default class WeddingParty extends Component {
                         leftDescription="He's bori's cousin. They basically have known each other from birth. All the way from Nigeria to America....they can't seem to get away from each other" 
                         rightDescription="Jenny and Mallory lived together for part of their time at UMD. These two bond over travel, tea, and talking for hours about life. Mallory feels so lucky to have Jenny in her life!"
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
-                        rightSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" />
+                        rightSrc={Jenny_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
                         leftDescription="Can you believe bori has to work with this guy? He's half Mexican and Argentine, can you tell?" 
@@ -46,7 +47,7 @@ export default class WeddingParty extends Component {
                         <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="OPE OSUNKOYA" rightName="NATALIE DOHNER"
                         leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger, before Google was a thing." 
                         rightDescription="Mallory and Natalie met in high school through mission trips to New Orleans. Mallory cherishes all the letters that Natalie has written her over the years, and is honored to have Natalie by her side on her wedding day."
-                        leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
+                        leftSrc="" 
                         rightSrc={Natalie_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="WeddingParty-question-answer-space-div"></div>
