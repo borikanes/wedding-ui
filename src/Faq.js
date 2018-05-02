@@ -47,7 +47,7 @@ export default class Faq extends Component {
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
-                        <QuestionAndAnswer question="Things to do around the area?" answer=""/>
+                        <QuestionAndAnswer question="What are some things to do around the area?" answer=""/>
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-question-answer-space-div" ></div>
@@ -78,7 +78,7 @@ class QuestionAndAnswer extends Component {
         }
 
         var longerHeightVerticalLine = {}
-        if (this.props.question.includes('Things to do around the area')) {
+        if (this.props.question.includes('to do around the area')) {
             longerHeightVerticalLine = {
                 height: '450px'
             }
@@ -110,7 +110,7 @@ class QuestionAndAnswer extends Component {
                         </p> :
                         <p style={{'display': 'none'}}>{this.props.answer}</p>
                     }
-                    { this.props.question.includes('Things to do') ? 
+                    { this.props.question.includes('to do around the area') ? 
                         <p style={evenLonger}>Close to Banquet Hall:<br/>
                             <a href="http://www.savagemill.com/">Historic Savage Mill</a><br/>
                             <a href="https://jailbreakbrewing.com/">Jailbreak Brewing Company</a><br/><br/>

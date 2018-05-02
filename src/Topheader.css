@@ -32,10 +32,10 @@
 
 .Header-title {
     float: center;
-    font-size: 1.9em;
-    letter-spacing: 0.5em;
+    font-size: 2.1em;
+    /* letter-spacing: 0.5em; */
     margin-top: -1em;
-    font-family: 'Cookie', cursive;
+    font-family: 'Allura', cursive;
 }
 
 .Header-title h1 {
@@ -80,7 +80,7 @@
     display: none;
 }
 
-@media only screen and (max-width : 899px) {
+@media only screen and (max-width : 900px) {
 
     .Top-row-div {
         display: none
@@ -88,7 +88,7 @@
 
     .Header-title {
         float: left;
-        font-size: 1em;
+        font-size: 1.2em;
         /* letter-spacing: 0.5em; */
         margin-top: -3.05em;
     }
@@ -172,7 +172,7 @@
 
     .Header-title {
         float: left;
-        font-size: 0.8em;
+        font-size: 1.0em;
         /* letter-spacing: 0.2em; */
         margin-top: -3.3em;
     }
