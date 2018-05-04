@@ -61,7 +61,7 @@ export default class Schedule extends Component {
                                     bubbleStyle={{backgroundColor: 'teal'}}
                                     contentStyle={{fontSize: this.state.fontSize}}
                                 >
-                                    O'dourves/snacks and drinks available at Banquet hall
+                                    O'dourves/snacks and drinks available at banquet hall
                                 </TimelineEvent>
                                 <TimelineEvent
                                     title=""
