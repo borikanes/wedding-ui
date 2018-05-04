@@ -39,7 +39,7 @@ export default class WeddingParty extends Component {
                         leftSrc="https://www.gravatar.com/avatar/7bcbb578177aaa9846709fb8d8732966?s=200" 
                         rightSrc={Jenny_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
-                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL ABREMSKI"
+                        <WeddingPartyProfile /*height={parentDivHeight}*/ leftName="CHRIS LONGE" rightName="RACHEL PURFIELD"
                         leftDescription="Can you believe bori has to work with this guy? He's half Mexican and Argentine, can you tell?" 
                         rightDescription="Rachel and Mallory go way back - they met in elementary school and have been there for each other ever since. Mallory was recently a bridesmaid in Rachel’s wedding and now has two best friends named “Rachel P.” "
                         leftSrc={Chris_Profile} rightSrc={Rachel_p_profile} />

@@ -21,7 +21,7 @@ export default class Rsvp extends Component {
                             </p>
                             <br/> 
                             <p>
-                                To RSVP, either click the link we sent you via email OR type in your first name and surname below. This will only work for those who received an invitation in their inbox. If you are a “plus” invitee, the RSVP will not work for you.
+                                To RSVP, either click the link we sent you via email OR type in your first name and surname below. This will only work for those who received an invitation in their inbox.
                             </p>
                             <p>
                                 NOTE: The RSVP tool below works best on bigger screens
@@ -39,7 +39,7 @@ export default class Rsvp extends Component {
                             </p>
                             <br/> 
                             <p>
-                                We are honored and ecstatic to have you celebrate our love.
+                                We are honored and ecstatic to have you celebrate our love with us.
                             </p>
                         </div>
                         <div className="Rsvp-initials-div">
