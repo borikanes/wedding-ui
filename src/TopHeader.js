@@ -11,7 +11,7 @@ export default class TopHeader extends Component {
                 <div className="Top-row-div">
                     <h5 className="Top-row-div-date-location">September 22, 2018</h5>
                     <h5 className="Top-row-div-date-location">College Park, Maryland</h5>
-                    <h5 className="Top-row-div-hashtag">#Maluwabori</h5>
+                    <h5 className="Top-row-div-hashtag">#maluwabori</h5>
                 </div>
                 <div className="Header-title-dummy">
                     <h1>Mallory & Bori</h1>

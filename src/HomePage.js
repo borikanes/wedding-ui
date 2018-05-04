@@ -49,7 +49,7 @@ export default class HomePage extends Component {
                             </div>
                         </div>
                         <div className="Homepage-mid-hashtag-div">
-                            <p>#malloryandbori</p>
+                            <p>#maluwabori</p>
                         </div>
                         <div className="Homepage-mid-date-base-div">
                             <div className="Homepage-mid-date-month-div">
