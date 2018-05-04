@@ -40,7 +40,7 @@ export default class Schedule extends Component {
     render() {
         
        return(<div className="MidSection-parent-div">
-                <TopicHeader title="SCHEDULE" detail="This is the schdule on the day of our wedding" />
+                <TopicHeader title="SCHEDULE" detail="This is the schedule on the day of our wedding." />
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
@@ -77,7 +77,7 @@ export default class Schedule extends Component {
                                     bubbleStyle={{backgroundColor: 'teal'}}
                                     contentStyle={{fontSize: this.state.fontSize}}
                                 >
-                                    Reception starts
+                                    Dinner followed by reception
                                 </TimelineEvent>
                             </Timeline>
                         </div>

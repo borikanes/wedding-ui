@@ -32,22 +32,21 @@ export default class Faq extends Component {
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
-                        
+
+                        <QuestionAndAnswer question="What should I expect at the traditional Nigerian ceremony?" answer=""/>
+                        <div className="Faq-question-answer-space-div" >
+                            <div className="Faq-mid-initials-horizontal-line-div" ></div>
+                        </div>
+                        <QuestionAndAnswer question="What are some things to do around the area?" answer=""/>
+                        <div className="Faq-question-answer-space-div" >
+                            <div className="Faq-mid-initials-horizontal-line-div" ></div>
+                        </div>
                         <QuestionAndAnswer question="What is the color of the wedding?" answer="Teal and Champagne."/>
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
 
                         <QuestionAndAnswer question="What is the wedding schedule?" answer={"You can view the schedule "}/>                        
-                        <div className="Faq-question-answer-space-div" >
-                            <div className="Faq-mid-initials-horizontal-line-div" ></div>
-                        </div>
-
-                        <QuestionAndAnswer question="What should I expect at the traditional Nigerian ceremony?" answer=""/>
-                        <div className="Faq-question-answer-space-div" >
-                            <div className="Faq-mid-initials-horizontal-line-div" ></div>
-                        </div>
-                        <QuestionAndAnswer question="Things to do around the area?" answer=""/>
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-question-answer-space-div" ></div>
                         <div className="Faq-question-answer-space-div" ></div>
@@ -78,7 +77,7 @@ class QuestionAndAnswer extends Component {
         }
 
         var longerHeightVerticalLine = {}
-        if (this.props.question.includes('Things to do around the area')) {
+        if (this.props.question.includes('to do around the area')) {
             longerHeightVerticalLine = {
                 height: '450px'
             }
@@ -110,13 +109,13 @@ class QuestionAndAnswer extends Component {
                         </p> :
                         <p style={{'display': 'none'}}>{this.props.answer}</p>
                     }
-                    { this.props.question.includes('Things to do') ? 
+                    { this.props.question.includes('to do around the area') ? 
                         <p style={evenLonger}>Close to Banquet Hall:<br/>
-                            <a href="http://www.savagemill.com/">Historic Savage Mill</a><br/>
-                            <a href="https://jailbreakbrewing.com/">Jailbreak Brewing Company</a><br/><br/>
+                            - <a href="http://www.savagemill.com/">Historic Savage Mill</a><br/>
+                            - <a href="https://jailbreakbrewing.com/">Jailbreak Brewing Company</a><br/><br/>
                             Close to Chapel:<br/>
-                            <a href="https://www.umd.edu/">University of Maryland</a> - you can go to the Visitor Center (7757 Baltimore Ave, College Park, MD 20740) for a self-guided tour map<br/>
-                            <a href="http://www.collegeparkaviationmuseum.com/1593/College-Park-Aviation-Museum">College Park Aviation Museum</a><br/><br/>
+                            - <a href="https://www.umd.edu/">University of Maryland</a> - you can go to the Visitor Center (7757 Baltimore Ave, College Park, MD 20740) for a self-guided tour map<br/>
+                            - <a href="http://www.collegeparkaviationmuseum.com/1593/College-Park-Aviation-Museum">College Park Aviation Museum</a><br/><br/>
                             Washington DC is less than 10 miles south of College Park!<br/>
                             We recommend the Smithsonian museums and checking out the memorials. More info <a href="https://washington.org/things-do-washington-dc">here</a>. 
                         </p> :

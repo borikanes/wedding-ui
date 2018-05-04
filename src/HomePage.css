@@ -5,6 +5,7 @@
     position: relative;
     font-family: 'Merienda One', cursive;
     z-index: -1;
+    margin-top: 20px;
 }
 
 .Homepage-top-image-text-div {
@@ -294,6 +295,13 @@
     }
 }
 
+@media only screen and (max-width : 900px) {
+    .Homepage-top-image-div {
+        height: 420px;
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width : 767px) {
     .Homepage-mid-top-left-arc-div {
         height: 35px;
@@ -335,6 +343,7 @@
 @media only screen and (max-width : 660px) {
     .Homepage-top-image-div {
         height: 420px;
+        margin-top: 0;
     }
 
     .Homepage-mid-mallory-div h1 {
