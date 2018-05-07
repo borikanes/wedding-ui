@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/borikanes/wedding-ui.svg?branch=master)](https://travis-ci.com/borikanes/wedding-ui)
 ## Code documentation
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
