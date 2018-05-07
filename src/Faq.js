@@ -92,7 +92,6 @@ class QuestionAndAnswer extends Component {
                 <div style={longerHeightVerticalLine} className="Faq-vertical-line-enclosing-div" >
                     <div className="Faq-vertical-line-div" ></div>
                 </div>
-                {/* This is different from the normal space div*/}
                 <div className="Faq-question-answer-space" ></div>
                 <div className="Faq-answer-div">
                     <h1>ANSWER</h1>
