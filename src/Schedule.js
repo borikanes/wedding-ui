@@ -59,7 +59,7 @@ export default class Schedule extends Component {
                                     title=""
                                     createdAt="12:30 PM"
                                     bubbleStyle={{backgroundColor: 'teal'}}
-                                    contentStyle={{fontSize: this.state.fontSize}}
+                                    contentStyle={{fontSize: this.state.fontSize, width: '99%'}}
                                 >
                                     O'dourves/snacks and drinks available at banquet hall
                                 </TimelineEvent>

@@ -19,7 +19,7 @@ export default class Faq extends Component {
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
-                        <QuestionAndAnswer question="What hotel can I stay at the night before the wedding?" answer="You can stay at any hotel in the area. We recommend the Fairfield Inn by Marriott in Laurel. There are also several low-budget hotels close to the Banquet Hall."/>
+                        <QuestionAndAnswer question="Where can I stay during the wedding weekend?" answer=""/>
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
@@ -96,19 +96,6 @@ class QuestionAndAnswer extends Component {
                 <div className="Faq-question-answer-space" ></div>
                 <div className="Faq-answer-div">
                     <h1>ANSWER</h1>
-                    { this.props.question.includes('wedding schedule?') && !this.props.question.includes('expect at the traditional') ? 
-                        <p>You can view the schedule <a href="https://boriandmallory.com/schedule">here</a>.</p> :
-                        <p style={evenLonger}>{this.props.answer}</p>
-                    }
-                    {
-                        this.props.question.includes('expect at the traditional') ? 
-                        <p style={{'marginTop': '0', 'marginBottom': '0'}}>The Nigerian traditional ceremony is unique. We want to point your attention to one thing
-                            that may seem strange. Spraying Money. Yes, you read that right. The bride and groom(and anyone who dances well)
-                            gets sprayed money. You can read about it <a href="https://www.quora.com/Why-do-Nigerians-like-spraying-money-in-weddings-and-other-occasions"> here</a>. Also,
-                            <a href="https://www.youtube.com/watch?v=C1NJDdw7nP8"> here's a video</a> showing how it typically goes.
-                        </p> :
-                        <p style={{'display': 'none'}}>{this.props.answer}</p>
-                    }
                     { this.props.question.includes('to do around the area') ? 
                         <p style={evenLonger}>Close to Banquet Hall:<br/>
                             - <a href="http://www.savagemill.com/">Historic Savage Mill</a><br/>
@@ -119,7 +106,29 @@ class QuestionAndAnswer extends Component {
                             Washington DC is less than 10 miles south of College Park!<br/>
                             We recommend the Smithsonian museums and checking out the memorials. More info <a href="https://washington.org/things-do-washington-dc">here</a>. 
                         </p> :
-                        <p style={{'display': 'none'}}>{this.props.answer}</p>
+                        <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
+                    }
+                    {
+                        this.props.question.includes('Where can I stay during the wedding weekend?') ? 
+                        <p style={{'marginTop': '0', 'marginBottom': '0'}}>
+                        You can stay at any hotel in the area. We recommend the <a href="https://www.marriott.com/hotels/travel/waslr-fairfield-inn-laurel/">Fairfield Inn by Marriott</a> in Laurel. There are also several low-budget hotels close to the Banquet Hall.
+                        </p> :
+                        <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
+                    }
+                    { this.props.question.includes('What is the wedding schedule?') && (!this.props.question.includes('expect at the traditional')
+                        || !this.props.question.includes('What is the dress code') || !this.props.question.includes('Where can I find parking') || !this.props.question.includes('Can I bring guests to the wedding')
+                        ) ? 
+                        <p>You can view the schedule <a href="https://boriandmallory.com/schedule">here</a>.</p> :
+                        <p style={evenLonger}>{this.props.answer}</p>
+                    }
+                    {
+                        this.props.question.includes('expect at the traditional') ? 
+                        <p style={{'marginTop': '0', 'marginBottom': '0'}}>The Nigerian traditional ceremony is unique. We want to point your attention to one thing
+                            that may seem strange. Spraying Money. Yes, you read that right. The bride and groom
+                            get sprayed money. You can read about it <a href="https://www.quora.com/Why-do-Nigerians-like-spraying-money-in-weddings-and-other-occasions"> here</a>. Also,
+                            <a href="https://www.youtube.com/watch?v=C1NJDdw7nP8"> here's a video</a> showing how it typically goes.
+                        </p> :
+                        <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
                     }
                 </div>
             </div>
