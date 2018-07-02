@@ -11,6 +11,7 @@ import Natalie_profile from './images/natalie_profile.png';
 import Rachel_p_profile from './images/rachel_p_profile.png';
 import Allison_profile from './images/allison_profile.png';
 import Jenny_profile from './images/jenny-profile.png';
+import Jacob_profile from './images/jacob_profile.png';
 
 export default class WeddingParty extends Component {
     render(){
@@ -44,10 +45,10 @@ export default class WeddingParty extends Component {
                         rightDescription="Rachel and Mallory go way back - they met in elementary school and have been there for each other ever since. Mallory was recently a bridesmaid in Rachel’s wedding and now has two best friends named “Rachel P.” "
                         leftSrc={Chris_Profile} rightSrc={Rachel_p_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
-                        <WeddingPartyProfile leftName="OPE OSUNKOYA" rightName="NATALIE DOHNER"
-                        leftDescription="Ope is also Bori's cousin. He basically knows everything. He was Bori's Google search engine when they were younger, before Google was a thing." 
+                        <WeddingPartyProfile leftName="JACOB OSEGHALE" rightName="NATALIE DOHNER"
+                        leftDescription="Jacob, the accountant, has been a great friend since I moved to America. He's one of those people that's easy to talk to. That said, when you see him, talk to him about your taxes.....he's an accountant."
                         rightDescription="Mallory and Natalie met in high school through mission trips to New Orleans. Mallory cherishes all the letters that Natalie has written her over the years, and is honored to have Natalie by her side on her wedding day."
-                        leftSrc="" 
+                        leftSrc={Jacob_profile} 
                         rightSrc={Natalie_profile} />
                         <div className="WeddingParty-question-answer-space-div"></div>
                         <div className="WeddingParty-question-answer-space-div"></div>
