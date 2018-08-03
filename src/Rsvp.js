@@ -10,7 +10,7 @@ export default class Rsvp extends Component {
     render(){
         return(
             <div className="MidSection-parent-div">
-                <TopicHeader title="RSVP" detail="Please RSVP by July 22nd." />
+                <TopicHeader title="RSVP" detail="" />
                 <div className="MidSection-body-content-div" >
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
@@ -32,10 +32,6 @@ export default class Rsvp extends Component {
                             {/* <br/>  */}
                             <p style={{'marginTop':'0px'}} >
                                 We encourage you to RSVP as soon as you can so we can plan adequately for you, our guests.
-                            </p>
-                            <br/> 
-                            <p>
-                                Please RSVP by July 22, 2018 at the latest.
                             </p>
                             <br/> 
                             <p>
