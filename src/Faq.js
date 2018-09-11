@@ -23,7 +23,7 @@ export default class Faq extends Component {
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer="Parking at the Chapel is limited. Check back here for information as we get closer to the wedding day. Parking at the Banquet Hall is abundant."/>
+                        <QuestionAndAnswer question="Where can I find parking?" answer=""/>
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
@@ -112,6 +112,11 @@ class QuestionAndAnswer extends Component {
                         <p style={{'marginTop': '0', 'marginBottom': '0'}}>
                         You can stay at any hotel in the area. We recommend the <a href="https://www.marriott.com/hotels/travel/waslr-fairfield-inn-laurel/">Fairfield Inn by Marriott</a> in Laurel. There are also several low-budget hotels close to the Banquet Hall.
                         </p> :
+                        <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
+                    }
+                    {
+                        this.props.question.includes('Where can I find parking') ? 
+                        <p>Parking at the Chapel is limited due to the football game on the day of the wedding. Please view this <a href="https://s3.amazonaws.com/boriandmallory-public-resources/parking-info.pdf">detailed parking instructions</a>.</p> :
                         <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
                     }
                     { this.props.question.includes('What is the wedding schedule?') && (!this.props.question.includes('expect at the traditional')
