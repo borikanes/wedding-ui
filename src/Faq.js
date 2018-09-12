@@ -15,6 +15,11 @@ export default class Faq extends Component {
                     <div className="MidSection-mid-top-left-arc-div"></div>
                     <div className="MidSection-mid-top-right-arc-div"></div>
                     <div style={{'alignItems': 'center'}} className="MidSection-inner-div" >
+                        <QuestionAndAnswer question="Where can I find parking?" answer=""/>
+                            <div className="Faq-question-answer-space-div" >
+                                <div className="Faq-mid-initials-horizontal-line-div" ></div>
+                            </div>
+                        <br/>
                         <QuestionAndAnswer question="Can I bring guests to the wedding?" answer="The number of guests that you may bring is noted in your invitation. You may not bring more than the number indicated. The wedding is strictly by invitation."/>
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
@@ -23,11 +28,6 @@ export default class Faq extends Component {
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
                         </div>
-                        <QuestionAndAnswer question="Where can I find parking?" answer=""/>
-                        <div className="Faq-question-answer-space-div" >
-                            <div className="Faq-mid-initials-horizontal-line-div" ></div>
-                        </div>
-                        <br/>
                         <QuestionAndAnswer question="What is the dress code?" answer="Semi-formal OR traditional Nigerian clothing."/>
                         <div className="Faq-question-answer-space-div" >
                             <div className="Faq-mid-initials-horizontal-line-div" ></div>
@@ -116,7 +116,7 @@ class QuestionAndAnswer extends Component {
                     }
                     {
                         this.props.question.includes('Where can I find parking') ? 
-                        <p>Parking at the Chapel is limited due to the football game on the day of the wedding. Please view this <a href="https://s3.amazonaws.com/boriandmallory-public-resources/parking-info.pdf">detailed parking instructions</a>.</p> :
+                        <p>Parking at the Chapel is limited due to the football game on the day of the wedding. Please view these <a href="https://s3.amazonaws.com/boriandmallory-public-resources/parking-info.pdf">detailed parking instructions</a>.</p> :
                         <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
                     }
                     { this.props.question.includes('What is the wedding schedule?') && (!this.props.question.includes('expect at the traditional')
