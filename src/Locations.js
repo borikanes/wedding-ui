@@ -104,21 +104,21 @@ export default class Locations extends Component {
     }
 
     render() {
-        var errorParagraph;
-        var inputErrorState = {};
-        var disabledButtonStyle = {};
+        // var errorParagraph;
+        // var inputErrorState = {};
+        // var disabledButtonStyle = {};
         if (this.state.isCodeWrong) {
-            errorParagraph = <p style={{'color': 'red', 'fontSize': '15px'}} >Sorry, the code you entered is wrong. Reach out to bori or mallory if you don't know the code</p>
-            inputErrorState = {
-                'border': '1px solid red'
-            }
+            // errorParagraph = <p style={{'color': 'red', 'fontSize': '15px'}} >Sorry, the code you entered is wrong. Reach out to bori or mallory if you don't know the code</p>
+            // inputErrorState = {
+            //     'border': '1px solid red'
+            // }
         }
 
         // Makes button disabled
         if (this.state.shouldBeDisabled) {
-            disabledButtonStyle = {
-                'opacity': '0.5'
-            };
+            // disabledButtonStyle = {
+            //     'opacity': '0.5'
+            // };
         }
 
         // If there's any kind of network error when reaching the APIGW/Lambda, show this paragraph
@@ -146,10 +146,10 @@ export default class Locations extends Component {
             //         </div>
             //     );
             // } else {
-                var churchDirection = ''
-                var receptionDirection = ''
-                churchDirection = this.state.churchDirection
-                receptionDirection = this.state.receptionDirection
+                // var churchDirection = ''
+                // var receptionDirection = ''
+                // churchDirection = this.state.churchDirection
+                // receptionDirection = this.state.receptionDirection
                 return (
                     <div className="MidSection-parent-div">
                         <TopicHeader title="Locations" detail="These are the venues of our wedding day." />
