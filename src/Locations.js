@@ -163,7 +163,7 @@ export default class Locations extends Component {
                                         <p>UMD Chapel</p>
                                         <p>7744 Regents Drive, College Park, MD 20742</p>
                                         <p>Church ceremony starts at 11am</p>
-                                        <button onClick={()=> window.open("https://goo.gl/maps/UKgk26s4yBK2")} className="Locations-direction-button">Get Directions</button>
+                                        <button onClick={()=> window.open("https://goo.gl/maps/ducjQXEWzUt")} className="Locations-direction-button">Get Directions</button>
                                     </div>
                                     <div className="Locations-vertical-line-enclosing-div" >
                                         <div className="Locations-vertical-line-div" ></div>
