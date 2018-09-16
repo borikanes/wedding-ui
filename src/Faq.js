@@ -116,7 +116,7 @@ class QuestionAndAnswer extends Component {
                     }
                     {
                         this.props.question.includes('Where can I find parking') ? 
-                        <p>Parking at the Chapel is limited due to the football game on the day of the wedding. Please view these <a href="https://s3.amazonaws.com/boriandmallory-public-resources/parking-info.pdf">detailed parking instructions</a>.</p> :
+                        <p>Parking at the Chapel is limited due to the football game on the day of the wedding. Please view these <a href="https://s3.amazonaws.com/boriandmallory-public-resources/parking-info.pdf">detailed parking instructions</a>. Also, here are <a href="https://s3.amazonaws.com/boriandmallory-public-resources/game_day_directions.pdf">driving directions</a> that will help you avoid traffic.</p> :
                         <p style={{'display': 'none', 'margin': '0'}}>{this.props.answer}</p>
                     }
                     { this.props.question.includes('What is the wedding schedule?') && (!this.props.question.includes('expect at the traditional')
